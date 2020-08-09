@@ -1,1 +1,1 @@
-.partner-list{padding:4.28571rem 0}.partner-list__item a{border:1px solid #d9d9d9;margin-bottom:1.42857rem}.partner-list__item a img{pointer-events:none}
+.partner-list{padding:4.28571rem 0}@media (max-width:991.98px){.partner-list>.container>.row{margin-left:-7.5px;margin-right:-7.5px}}@media (max-width:991.98px){.partner-list>.container>.row>div{padding-left:7.5px;padding-right:7.5px}}.partner-list__item a{border:1px solid #d9d9d9;margin-bottom:1.42857rem}.partner-list__item a img{pointer-events:none}
