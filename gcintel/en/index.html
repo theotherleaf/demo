@@ -88,7 +88,9 @@
   </div>
 </section>
 
-    <section class="feature-urls">
+
+    <div class="wrapper">
+      <section class="feature-urls">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
@@ -119,7 +121,7 @@
   </div>
 </section>
 
-    <section class="about-us">
+      <section class="about-us">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-5">
@@ -132,7 +134,7 @@
   </div>
 </section>
 
-    <section class="feature-products">
+      <section class="feature-products">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -175,6 +177,8 @@
   </div>
 </section>
 
+    </div>
+    
     <section class="contact-us">
   <div class="container">
     <div class="row">
@@ -332,10 +336,12 @@
     var vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', vh + 'px');
 
-    window.addEventListener('resize', function () {
-      var vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', vh + 'px');
-    });
+    if (!((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1))) {
+      window.addEventListener('resize', function () {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', vh + 'px');
+      });
+    }
   });
 </script>
 
