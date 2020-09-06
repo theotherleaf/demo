@@ -27,7 +27,8 @@
     <header>
   <nav class="navbar fixed-top navbar-expand-lg">
     <a class="navbar-brand" href="https://theotherleaf.com/demo/linkuc/" title="LinkUC Inc.">
-      <img class="navbar-brand__white" src="https://theotherleaf.com/demo/linkuc/assets/images/img-logo@2x.png" alt="LinkUC Inc." />
+      <img class="navbar-brand__white" src="https://theotherleaf.com/demo/linkuc/assets/images/img-logo.png" alt="LinkUC Inc." />
+      <img class="navbar-brand__white" src="https://theotherleaf.com/demo/linkuc/assets/images/img-logo-black.png" alt="LinkUC Inc." />
     </a>
     <div class="nav-item--last">
       <a class="nav-link" href="https://theotherleaf.com/demo/linkuc/contact-us" title="Contact Us">Contact Us</a>
@@ -52,6 +53,7 @@
                     </div>
                     <p>
                       <span>X series</span>
+                      <span>See, hear and interact with each</span>
                     </p>
                   </a>
                 </li>
@@ -61,7 +63,8 @@
                       <img src="https://theotherleaf.com/demo/linkuc/assets/images/dummy-product-description.png" class="img-fluid" alt="VN series">
                     </div>
                     <p>
-                      <span>VN series</span>
+                      <span>X series</span>
+                      <span>See, hear and interact with each</span>
                     </p>
                   </a>
                 </li>
@@ -71,7 +74,8 @@
                       <img src="https://theotherleaf.com/demo/linkuc/assets/images/dummy-product-description.png" class="img-fluid" alt="RS+ series">
                     </div>
                     <p>
-                      <span>RS+ series</span>
+                      <span>X series</span>
+                      <span>See, hear and interact with each</span>
                     </p>
                   </a>
                 </li>
@@ -81,7 +85,8 @@
                       <img src="https://theotherleaf.com/demo/linkuc/assets/images/dummy-product-description.png" class="img-fluid" alt="I series">
                     </div>
                     <p>
-                      <span>I series</span>
+                      <span>X series</span>
+                      <span>See, hear and interact with each</span>
                     </p>
                   </a>
                 </li>
@@ -91,7 +96,8 @@
                       <img src="https://theotherleaf.com/demo/linkuc/assets/images/dummy-product-description.png" class="img-fluid" alt="IP series">
                     </div>
                     <p>
-                      <span>IP series</span>
+                      <span>X series</span>
+                      <span>See, hear and interact with each</span>
                     </p>
                   </a>
                 </li>
@@ -101,7 +107,8 @@
                       <img src="https://theotherleaf.com/demo/linkuc/assets/images/dummy-product-description.png" class="img-fluid" alt='NT series'>
                     </div>
                     <p>
-                      <span>NT series</span>
+                      <span>X series</span>
+                      <span>See, hear and interact with each</span>
                     </p>
                   </a>
                 </li>
@@ -403,6 +410,12 @@
 
     <script src="https://theotherleaf.com/demo/linkuc/assets/js/jquery.min.js"></script>
 <script src="https://theotherleaf.com/demo/linkuc/assets/js/bootstrap.bundle.min.js"></script>
-
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function() {
+      $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 0);
+    });
+  });
+</script>
   </body>
 </html>
