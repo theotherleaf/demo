@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>修改問卷調查 - 嘉義懸政府陳情系統</title>
+    <meta name="description" content="">
+    
+    <base href="/" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/libs/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/css/style.css">
+    <!-- Page Specific CSS -->
+    
+    <!-- Prio JS -->
+    <script src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/libs/jquery/jquery.js"></script>
+    <script src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/libs/jquery-ui-i18n/ui/i18n/datepicker-zh-TW.js"></script>
+    <script src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/js/side-menu.js"></script>
+    <script src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/js/layout.js"></script>
+    <script src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/js/theme-config.js"></script>
+    
+
+
+<link rel="icon" type="image/x-icon" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/favicons/favicon.ico" />
+
+  </head>
+  <body class="bg-gray-100">
+    <div class="layout layout--theme--light--primary">
+      <div class="layout__sidebar">
+        
+
+<div class="sidebar sidebar--animations-enabled">
+  <div class="sidebar__close">
+    <a href="javascript:;" class="action--sidebar-trigger">
+    <i class="fa fa-times-circle fa-fw"></i>
+    </a>
+  </div>
+  <!-- START Sidebar TOP FIXED ALWAYS  -->
+  <div class="sidebar__section sidebar__hide-slim">
+    <a class="sidebar__brand" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/case-management/general-assignment">
+    <img
+      src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/img/logos/chiayi-logo.png"
+      data-brand-logo
+      alt="Logo"
+      class="d-block img-fluid"
+      />
+    </a>
+  </div>
+  <!-- END Sidebar TOP FIXED ALWAYS  -->
+  <div class="sidebar__mobile-fluid">
+    <!-- START Sidebar User -->
+    <div class="sidebar__section pt-0">
+      <!-- START Dropdown Profile  -->
+      <div class="dropdown">
+        <button
+          class="btn btn-link sidebar__link sidebar__hide-slim dropdown-toggle no-caret pl-0 pb-0 mb-0 h6"
+          type="button"
+          data-toggle="dropdown"
+          >
+        <span>Hanson Wu</span>
+        <i class="fa fa-angle-down fa-fw sidebar__link--muted"></i>
+        </button>                                        
+        <!-- Slim Sidebar Avatar -->
+        <button class="sidebar__show-slim btn btn-link p-0" type="button" data-toggle="dropdown">
+          <div class="avatar-image avatar-image--loaded mt-3">
+            <div class="avatar avatar--sm avatar-image__image">
+              <div class="avatar__icon avatar__icon--stack">
+                <i class="text-white fa fa-circle"></i>
+                <i class="text-success fa fa-circle"></i>
+              </div>
+              <div class="avatar__content">
+                H
+              </div>
+            </div>
+          </div>
+        </button>
+        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="javascript:;">
+          帳號管理
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/login">
+          <i class="fa mr-1 fa-sign-out text-muted"></i> 
+          登出
+          </a>
+        </div>
+      </div>
+      <div class="sidebar__link--muted small sidebar__hide-slim">
+        <span>系統開發人員</span>
+      </div>
+      <!-- END Dropdown Profile  -->
+    </div>
+    <!-- END Sidebar User-->
+    <!-- START Sidebar MIDDLE -->
+    <div class="sidebar__section sidebar__section--fluid sidebar__section--cover">
+      
+
+<ul class="sidebar-menu">
+  <li class="sidebar-menu__entry sidebar-menu__entry--nested">
+    <a href="javascript:;" class="sidebar-menu__entry__link">
+    <i class="fa fa-fw fa-copy sidebar-menu__entry__icon"></i>
+    <span>案件管理</span>
+    </a>
+    <ul class="sidebar-submenu">
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/case-management/general-assignment">
+        <span>總分派案件管理</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/case-management/unit-assignment">
+        <span>單位分派案件管理</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/case-management/case-in-charge">
+        <span>承辦案件管理</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/case-management/case-inquiry">
+        <span>案件查詢管理</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/case-management/report">
+        <span>陳情案件稽催管理</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/case-management/unestablished">
+        <span>未成立案件管理</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="sidebar-menu__entry sidebar-menu__entry--nested">
+    <a href="javascript:;" class="sidebar-menu__entry__link">
+    <i class="fa fa-fw fa-cog sidebar-menu__entry__icon"></i>
+    <span>系統設定</span>
+    </a>
+    <ul class="sidebar-submenu">
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/system-configuration/main-category">
+        <span>主分類設定</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/system-configuration/sub-category">
+        <span>次分類設定</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/system-configuration/holiday">
+        <span>假日設定</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/system-configuration/questionnaire">
+        <span>問卷調查設定</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="sidebar-menu__entry sidebar-menu__entry--nested">
+    <a href="javascript:;" class="sidebar-menu__entry__link">
+    <i class="fa fa-fw fa-file sidebar-menu__entry__icon"></i>
+    <span>報表作業</span>
+    </a>
+    <ul class="sidebar-submenu">
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/report/general">
+        <span>陳情案件總報表</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/report/acceptance-case">
+        <span>受理網絡反映案件統計</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/report/processing-period">
+        <span>陳情案件辦理日數分析</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/report/town">
+        <span>鄉鎮市類別統計表</span>
+        </a>
+      </li>
+      <li class="sidebar-submenu__entry">
+        <a class="sidebar-submenu__entry__link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/report/form">
+        <span>存查信件統計表</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+    <!-- END Sidebar MIDDLE -->
+    <!-- START Sidebar BOTTOM -->
+    <div class="sidebar__section sidebar__hide-slim">
+      <!-- START Footer -->
+      <p class="small text-muted">
+        © 嘉義縣政府陳情系統 2020
+        <br>
+        Designed by <a href="https://www.theotherleaf.com" class="sidebar__link" target="_blank">The Other Leaf</a>
+      </p>
+      <!-- END Footer -->
+    </div>
+    <!-- END Sidebar BOTTOM -->
+  </div>
+</div>
+
+        <script>
+          Dashboard.Sidebar.init($, window);
+        </script>
+      </div>
+      <div class="layout__wrap">
+        <div class="layout__navbar">
+          <!-- START NAVBAR -->
+<nav class="navbar navbar-expand navbar-light bg-none">
+  <!-- START Navbar Left Side -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link action--sidebar-trigger"><i class="fa fa-bars fa-fw"></i></a>
+    </li>
+    <li class="navbar-brand ml-2 fw-600 d-lg-none">
+      <a href="https://www.theotherleaf.com/demo/chiayi-petition-admin/case-management/general-assignment" class="d-block">
+      <img class="d-block" src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/img/logos/chiayi-logo.png" data-brand-logo alt="Logo" height="30">
+      </a>
+    </li>
+    <li class="nav-item d-none d-md-block">
+      <span class="ml-4 navbar-text">
+      <a href="https://www.theotherleaf.com/demo/chiayi-petition-admin/">
+      <i class="fa fa-home"></i>
+      </a>
+      
+      <i class="fa fa-angle-right ml-2 mr-2"></i>
+      修改問卷調查
+      </span>
+    </li>
+  </ul>
+  <!-- END Navbar Left Side -->
+  <!-- START Navbar Right Side -->
+  <ul class="ml-auto navbar-nav">
+    <li class="mr-3 nav-item">
+      <a class="nav-link" href="javascript:;">
+        登出倒數 <span class="logout-countdown"></span>
+      </a>
+    </li>
+    <li class="ml-3 nav-item">
+      <a class="nav-link" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/login">
+        <i class="fa mr-1 fa-sign-out text-muted"></i> 
+        登出
+      </a>
+    </li>
+  </ul>
+  <!-- END Navbar Right Side -->
+</nav>
+<!-- END NAVBAR -->
+
+<script>
+  var timerContent = "30:01";
+  var interval = setInterval(function() {
+    var timer = timerContent.split(':');
+    var minutes = parseInt(timer[0], 10);
+    var seconds = parseInt(timer[1], 10);
+    --seconds;
+    minutes = (seconds < 0) ? --minutes : minutes;
+    if (minutes < 0) {
+      clearInterval(interval);
+      window.location = "https://www.theotherleaf.com/demo/chiayi-petition-admin/login";
+    }
+    seconds = (seconds < 0) ? 59 : seconds;
+    seconds = (seconds < 10) ? '0' + seconds : seconds;
+    $('.logout-countdown').html(minutes + ':' + seconds);
+    timerContent = minutes + ':' + seconds;
+  }, 1000);
+</script>
+
+        </div>
+        <div class="layout__content">
+          <div class="container">
+            <!-- START CONTENT -->
+            <div class="d-flex justify-content-between mb-4">
+  <h4 class="mb-0 align-self-center">問卷調查 - 修改</h4>
+</div>
+<section class="mb-4">
+  <div class="card mb-4">
+    <div class="card-body">
+      <form>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="topic">主題</label>
+            <input type="text" class="form-control" id="topic" name="topic" placeholder="請輸入">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="from">開始日期</label>
+            <input type="text" class="form-control datepicker" id="from" name="from" placeholder="請選擇日期">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="to">結束日期</label>
+            <input type="text" class="form-control datepicker" id="to" name="to" placeholder="請選擇日期">
+          </div>
+          <div class="col-md-12">
+            <label for="question">題目</label>
+            <div class="question-wrapper">
+              <div class="question-body mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-end mb-3">
+                      <button type="button" class="btn btn-outline-danger btn-remove-question mr-3">刪除題目</button>
+                      <button type="button" class="btn btn-outline-primary btn-add-question">新增題目</button>
+                    </div>
+                    <div class="mb-3">
+                      <label for="question1">問題</label>
+                      <input type="text" class="form-control" id="question1" name="question1" placeholder="請輸入">
+                    </div>
+                    <div class="mb-3">
+                      <label for="type1">回答</label>
+                      <select name="type1" class="custom-select">
+                        <option value="1" selected>複選</option>
+                        <option value="2">單選</option>
+                        <option value="3">下拉</option>
+                      </select>
+                    </div>
+                    <hr />
+                    <div class="row mb-3">
+                      <div class="col-md-5">
+                        選項
+                      </div>
+                      <div class="col-md-5">
+                        分數
+                      </div>
+                      <div class="col-md-2">
+                        操作
+                      </div>
+                    </div>
+                    <div class="option-body">
+                      <div class="row mb-3">
+                        <div class="col-md-5">
+                          <input type="text" class="form-control" id="option" name="option" placeholder="請輸入">
+                        </div>
+                        <div class="col-md-5">
+                          <input type="number" class="form-control" id="score" name="score" placeholder="請輸入">
+                        </div>
+                        <div class="col-md-2">
+                          <button type="button" class="btn btn-outline-danger btn-remove-option w-100">刪除選項</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button type="button" class="btn btn-outline-primary btn-add-option">新增選項</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary mr-3">確認</button>
+            <a class="btn btn-secondary" href="https://www.theotherleaf.com/demo/chiayi-petition-admin/system-configuration/questionnaire">取消</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  $('.btn-add-question').click(function () {
+    var target = $(this).parents('.question-body');
+    target.clone(true, true).appendTo('.question-wrapper');
+    appendQuestionIndex();
+  });
+  $('.btn-remove-question').click(function () {
+    var count = $(this).parents('.question-wrapper').children().length;
+    if (count <= 1) {
+      return;
+    }
+    var target = $(this).parents('.question-body');
+    target.detach();
+    appendQuestionIndex();
+  });
+  $('.btn-add-option').click(function () {
+    var wrapper = $(this).parent().siblings('.option-body');
+    var target = wrapper.children().first();
+    target.clone(true, true).appendTo(wrapper);
+  });
+  $('.btn-remove-option').click(function () {
+    var count = $(this).parents('.option-body').children().length;
+    if (count <= 1) {
+      return;
+    }
+    var target = $(this).parents('.row');
+    target.detach();
+  });
+</script>
+
+<style>
+  .question-wrapper .question-body:nth-child(1) .btn-remove-question {
+    display: none;
+  }
+  .option-body .row:nth-child(1) .btn-remove-option {
+    display: none;
+  }
+</style>
+
+            <!-- END CONTENT -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      Dashboard.Layout.init($, window, document);
+    </script>
+    <!-- JS Libs -->
+    <script defer src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/libs/popper.js/popper.min.js"></script>
+    <script defer src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/libs/bootstrap/js/bootstrap.js"></script>
+    <script defer src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/libs/holderjs/holder.min.js"></script>
+    <!-- Own JS -->
+    <script defer src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/js/init.js"></script>
+    <script defer src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/js/dashboard-version.js"></script>
+    <script defer src="https://www.theotherleaf.com/demo/chiayi-petition-admin/assets/js/animate.js"></script>
+    <!-- Page Specific JS -->
+    
+    <script>
+      $(function() {
+        $('.datepicker').datepicker({
+          dateFormat: 'yy/mm/dd',
+          regional: 'zh-TW',
+          changeMonth: true,
+          changeYear: true,
+        });
+      });
+    </script>
+  </body>
+</html>
