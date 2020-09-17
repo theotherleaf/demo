@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>次分類設定 - 嘉義懸政府陳情系統</title>
+    <title>修改問卷調查 - 嘉義懸政府陳情系統</title>
     <meta name="description" content="">
     
     <base href="/" />
@@ -245,7 +245,7 @@
       </a>
       
       <i class="fa fa-angle-right ml-2 mr-2"></i>
-      次分類設定
+      修改問卷調查
       </span>
     </li>
   </ul>
@@ -292,224 +292,128 @@
           <div class="container">
             <!-- START CONTENT -->
             <div class="d-flex justify-content-between mb-4">
-  <h4 class="mb-0 align-self-center">次分類設定</h4>
-  <div class="btn-group-toggle align-self-center" data-toggle="buttons">
-    <a class="btn btn-primary" href="/system-configuration/sub-category/create">
-      新增
-    </a>
-  </div>
+  <h4 class="mb-0 align-self-center">問卷調查 - 修改</h4>
 </div>
 <section class="mb-4">
   <div class="card mb-4">
     <div class="card-body">
       <form>
-        <div class="d-flex justify-content-between mb-4">
-          <h5 class="align-self-center">資料篩選</h5>
-        </div>
         <div class="form-row">
           <div class="col-md-12 mb-3">
-            <label for="town">縣市</label>
-            <select id="town" name="town" class="custom-select">
-              <option selected>請選擇</option>
-              <option value="臺北市">臺北市</option>
-              <option value="新北市">新北市</option>
-              <option value="桃園市">桃園市</option>
-              <option value="臺中市">臺中市</option>
-              <option value="臺南市">臺南市</option>
-              <option value="高雄市">高雄市</option>
-              <option value="新竹縣">新竹縣</option>
-              <option value="苗栗縣">苗栗縣</option>
-              <option value="彰化縣">彰化縣</option>
-              <option value="南投縣">南投縣</option>
-              <option value="雲林縣">雲林縣</option>
-              <option value="嘉義縣">嘉義縣</option>
-              <option value="屏東縣">屏東縣</option>
-              <option value="宜蘭縣">宜蘭縣</option>
-              <option value="花蓮縣">花蓮縣</option>
-              <option value="臺東縣">臺東縣</option>
-              <option value="澎湖縣">澎湖縣</option>
-              <option value="金門縣">金門縣</option>
-              <option value="連江縣">連江縣</option>
-              <option value="基隆市">基隆市</option>
-              <option value="新竹市">新竹市</option>
-              <option value="嘉義市">嘉義市</option>
-            </select>
+            <label for="topic">主題</label>
+            <input type="text" class="form-control" id="topic" name="topic" placeholder="請輸入">
           </div>
-          <div class="col-md-12 mb-3">
-            <label for="main-category">主分類</label>
-            <input type="text" class="form-control" id="main-category" name="main-category" placeholder="請輸入">
+          <div class="col-md-6 mb-3">
+            <label for="from">開始日期</label>
+            <input type="text" class="form-control datepicker" id="from" name="from" placeholder="請選擇日期">
           </div>
-          <div class="col-md-12 mb-3">
-            <label for="sub-category">次分類</label>
-            <input type="text" class="form-control" id="sub-category" name="sub-category" placeholder="請輸入">
+          <div class="col-md-6 mb-3">
+            <label for="to">結束日期</label>
+            <input type="text" class="form-control datepicker" id="to" name="to" placeholder="請選擇日期">
+          </div>
+          <div class="col-md-12">
+            <label for="question">題目</label>
+            <div class="question-wrapper">
+              <div class="question-body mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-end mb-3">
+                      <button type="button" class="btn btn-outline-danger btn-remove-question mr-3">刪除題目</button>
+                      <button type="button" class="btn btn-outline-primary btn-add-question">新增題目</button>
+                    </div>
+                    <div class="mb-3">
+                      <label for="question1">問題</label>
+                      <input type="text" class="form-control" id="question1" name="question1" placeholder="請輸入">
+                    </div>
+                    <div class="mb-3">
+                      <label for="type1">回答</label>
+                      <select name="type1" class="custom-select">
+                        <option value="1" selected>複選</option>
+                        <option value="2">單選</option>
+                        <option value="3">下拉</option>
+                      </select>
+                    </div>
+                    <hr />
+                    <div class="row mb-3">
+                      <div class="col-md-5">
+                        選項
+                      </div>
+                      <div class="col-md-5">
+                        分數
+                      </div>
+                      <div class="col-md-2">
+                        操作
+                      </div>
+                    </div>
+                    <div class="option-body">
+                      <div class="row mb-3">
+                        <div class="col-md-5">
+                          <input type="text" class="form-control" id="option" name="option" placeholder="請輸入">
+                        </div>
+                        <div class="col-md-5">
+                          <input type="number" class="form-control" id="score" name="score" placeholder="請輸入">
+                        </div>
+                        <div class="col-md-2">
+                          <button type="button" class="btn btn-outline-danger btn-remove-option w-100">刪除選項</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button type="button" class="btn btn-outline-primary btn-add-option">新增選項</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-12 d-flex justify-content-end">
-            <button type="submit" class="btn btn-secondary">查詢</button>
+            <button type="submit" class="btn btn-primary mr-3">確認</button>
+            <a class="btn btn-secondary" href="/system-configuration/questionnaire">取消</a>
           </div>
         </div>
       </form>
     </div>
   </div>
 </section>
-<section>
-  <div class="card">
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-          <thead class="thead-light">
-            <tr>
-              <th>(次)排序</th>
-              <th>主分類</th>
-              <th>次分類</th>
-              <th>新增時間</th>
-              <th>狀態</th>
-              <th class="text-right">操作</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>垃圾、噪音、汙染及資源回收</td>
-              <td>無牌廢棄車、廢棄物處理(含醫療廢棄物)及資源回收</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>垃圾、噪音、汙染及資源回收</td>
-              <td>有牌廢棄車</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>道路、山坡地、路樹及路燈</td>
-              <td>橋梁、隧道、車( 人) 行地下道及涵洞積淹水(派工)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>公園、排水溝、下水道及自來水</td>
-              <td>雨水下水道維護</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>文教、體育、資訊、觀光及媒體</td>
-              <td>文化事務(樹木保護、文化資產、表演藝術、文化場館、藝文推廣)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>交通運輸</td>
-              <td>交通標誌及設施物損壞(含汙損)、傾斜(派工)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>都市發展、檢館、產業、財稅及地政</td>
-              <td>建築物使用管理、違建查報及拆除(含防火巷占用、固定式騎樓障礙物)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>衛福、勞動、民政及區政</td>
-              <td>食品衛生安全及藥品安全</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>警消、法律及政風</td>
-              <td>消防安全管理(含防災、搶救、火災調查及消防通道)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>非屬前述各類之其他事項</td>
-              <td>其他事項</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="d-flex justify-content-center mt-4">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">
-            <i class="fa fa-fw fa-angle-double-left"></i>
-            </a>
-          </li>
-          <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>
-          <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
-          <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">
-            <i class="fa fa-fw fa-angle-double-right"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+
+<script>
+  $('.btn-add-question').click(function () {
+    var target = $(this).parents('.question-body');
+    target.clone(true, true).appendTo('.question-wrapper');
+    appendQuestionIndex();
+  });
+  $('.btn-remove-question').click(function () {
+    var count = $(this).parents('.question-wrapper').children().length;
+    if (count <= 1) {
+      return;
+    }
+    var target = $(this).parents('.question-body');
+    target.detach();
+    appendQuestionIndex();
+  });
+  $('.btn-add-option').click(function () {
+    var wrapper = $(this).parent().siblings('.option-body');
+    var target = wrapper.children().first();
+    target.clone(true, true).appendTo(wrapper);
+  });
+  $('.btn-remove-option').click(function () {
+    var count = $(this).parents('.option-body').children().length;
+    if (count <= 1) {
+      return;
+    }
+    var target = $(this).parents('.row');
+    target.detach();
+  });
+</script>
+
+<style>
+  .question-wrapper .question-body:nth-child(1) .btn-remove-question {
+    display: none;
+  }
+  .option-body .row:nth-child(1) .btn-remove-option {
+    display: none;
+  }
+</style>
 
             <!-- END CONTENT -->
           </div>

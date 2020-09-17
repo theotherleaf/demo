@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>次分類設定 - 嘉義懸政府陳情系統</title>
+    <title>處理承辦案件 - 嘉義懸政府陳情系統</title>
     <meta name="description" content="">
     
     <base href="/" />
@@ -245,7 +245,7 @@
       </a>
       
       <i class="fa fa-angle-right ml-2 mr-2"></i>
-      次分類設定
+      處理承辦案件
       </span>
     </li>
   </ul>
@@ -292,24 +292,117 @@
           <div class="container">
             <!-- START CONTENT -->
             <div class="d-flex justify-content-between mb-4">
-  <h4 class="mb-0 align-self-center">次分類設定</h4>
-  <div class="btn-group-toggle align-self-center" data-toggle="buttons">
-    <a class="btn btn-primary" href="/system-configuration/sub-category/create">
-      新增
-    </a>
+  <h4 class="mb-0 align-self-center">承辦案件 - 處理</h4>
+  <div>
+    <a href="javascript:;" class="btn btn-secondary mr-3">退件</a>
+    <a href="javascript:;" class="btn btn-secondary" onClick="window.print()">列印</a>
   </div>
 </div>
 <section class="mb-4">
   <div class="card mb-4">
     <div class="card-body">
+      <h6 class="mb-4">案件信息</h6>
       <form>
-        <div class="d-flex justify-content-between mb-4">
-          <h5 class="align-self-center">資料篩選</h5>
+        <div class="form-group row">
+          <label for="case-status" class="col-sm-2 col-form-label">
+          案件狀態
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="case-status" value="待處理" disabled>
+          </div>
         </div>
-        <div class="form-row">
-          <div class="col-md-12 mb-3">
-            <label for="town">縣市</label>
-            <select id="town" name="town" class="custom-select">
+        <div class="form-group row">
+          <label for="case-id" class="col-sm-2 col-form-label">
+          案件編號
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="case-id" value="66112" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="main-category" class="col-sm-2 col-form-label">
+          案件主類型
+          </label>
+          <div class="col-sm-10">
+            <select id="main-category" name="main-category" class="custom-select" disabled>
+              <option>請選擇</option>
+              <option value="1" selected>垃圾、噪音、污染及資源回收</option>
+              <option value="2">道路、山坡地、路樹及路燈</option>
+              <option value="3">公園、排水溝、下水道及自來水</option>
+              <option value="4">文教、體育、資訊、觀光及媒體</option>
+              <option value="5">交通運輸</option>
+              <option value="6">都市發展、檢館、產業、財稅及地政</option>
+              <option value="7">衛福、勞動、民政及區政</option>
+              <option value="8">警消、法律及政風</option>
+              <option value="9">非屬前述竹口</option>
+              <option value="10">非屬前述各類之其他事項</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="sub-category" class="col-sm-2 col-form-label">
+          案件次類型
+          </label>
+          <div class="col-sm-10">
+            <select id="sub-category" name="sub-category" class="custom-select" disabled>
+              <option selected>請選擇</option>
+              <option value="1" selected>垃圾、噪音、污染及資源回收</option>
+              <option value="2">道路、山坡地、路樹及路燈</option>
+              <option value="3">公園、排水溝、下水道及自來水</option>
+              <option value="4">文教、體育、資訊、觀光及媒體</option>
+              <option value="5">交通運輸</option>
+              <option value="6">都市發展、檢館、產業、財稅及地政</option>
+              <option value="7">衛福、勞動、民政及區政</option>
+              <option value="8">警消、法律及政風</option>
+              <option value="9">非屬前述竹口</option>
+              <option value="10">非屬前述各類之其他事項</option>
+              <option value="1">交通號（標）誌維護</option>
+              <option value="2">標誌損毀</option>
+              <option value="3">標線劃設(如紅線、黃線等)</option>
+              <option value="4">路牌損毀</option>
+              <option value="5">公車問題</option>
+              <option value="6">停車費問題</option>
+              <option value="7">佔用專用停車格</option>
+              <option value="8">號誌故障</option>
+              <option value="9">標誌設施(如反射鏡等)</option>
+              <option value="10">號誌秒差調整(號誌不順暢)</option>
+              <option value="11">候車亭設施損毀</option>
+              <option value="12">公共設備電扶梯</option>
+              <option value="13">停車場管理</option>
+              <option value="14">汽機車停車格</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="petition-time" class="col-sm-2 col-form-label">
+          民眾陳情時間
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="petition-time" value="2020/08/11 PM 04：33：22" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="established-time" class="col-sm-2 col-form-label">
+          案件成立時間
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="established-time" value="2020/08/11 PM 04：35：22" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="petition-person" class="col-sm-2 col-form-label">
+          陳情人
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="petition-person" value="王先生" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="town" class="col-sm-2 col-form-label">
+          陳情鄉鎮市
+          </label>
+          <div class="col-sm-10">
+            <select id="town" name="town" class="custom-select" disabled>
               <option selected>請選擇</option>
               <option value="臺北市">臺北市</option>
               <option value="新北市">新北市</option>
@@ -335,181 +428,285 @@
               <option value="嘉義市">嘉義市</option>
             </select>
           </div>
-          <div class="col-md-12 mb-3">
-            <label for="main-category">主分類</label>
-            <input type="text" class="form-control" id="main-category" name="main-category" placeholder="請輸入">
+        </div>
+        <div class="form-group row">
+          <label for="location" class="col-sm-2 col-form-label">
+          案件位置
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="location" value="無" disabled>
           </div>
-          <div class="col-md-12 mb-3">
-            <label for="sub-category">次分類</label>
-            <input type="text" class="form-control" id="sub-category" name="sub-category" placeholder="請輸入">
+        </div>
+        <div class="form-group row">
+          <label for="phone" class="col-sm-2 col-form-label">
+          聯絡電話
+          </label>
+          <div class="col-sm-10">
+            <input type="tel" class="form-control" id="phone" value="無" disabled>
           </div>
-          <div class="col-md-12 d-flex justify-content-end">
-            <button type="submit" class="btn btn-secondary">查詢</button>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label">
+          電子郵件
+          </label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" value="aaa@mail.com" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="summary" class="col-sm-2 col-form-label">
+          陳情摘要
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="summary" value="垃圾違規亂丟" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="details" class="col-sm-2 col-form-label">陳情內容</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="details" rows="4" disabled>某某地點發現有心人士亂丟垃圾</textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="details" class="col-sm-2 col-form-label">檔案連結</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="details" rows="4" disabled>https://google.com</textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="details" class="col-sm-2 col-form-label">附件</label>
+          <div class="col-sm-10">
+            <div class="d-block">
+              <a target="_blank" href="javascript:;">身分證正面.jpg</a> 
+            </div>
+            <div class="d-block">
+              <a target="_blank" href="javascript:;">身分證背面.jpg</a> 
+            </div>
           </div>
         </div>
       </form>
     </div>
   </div>
 </section>
-<section>
-  <div class="card">
+
+<section class="mb-4">
+  <div class="card mb-4">
     <div class="card-body">
+      <h6 class="mb-4">案件歷程</h6>
       <div class="table-responsive">
         <table class="table table-bordered table-hover">
           <thead class="thead-light">
             <tr>
-              <th>(次)排序</th>
-              <th>主分類</th>
-              <th>次分類</th>
-              <th>新增時間</th>
+              <th>日期時間</th>
               <th>狀態</th>
-              <th class="text-right">操作</th>
+              <th>單位</th>
+              <th>單位使用者</th>
+              <th>描述</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>垃圾、噪音、汙染及資源回收</td>
-              <td>無牌廢棄車、廢棄物處理(含醫療廢棄物)及資源回收</td>
-              <td>2020-07-09 15:47:44</td>
+              <td>2020/08/11 AM 08:22:22</td>
+              <td>陳情</td>
+              <td>前台</td>
+              <td>王添財</td>
               <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
+            </tr>
+            <tr>
+              <td>2020/08/11 AM 08:22:22</td>
+              <td>總收發派案</td>
+              <td>考管科</td>
+              <td>陳家烽</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2020/08/13 AM 09:22:22</td>
+              <td>單位派案</td>
+              <td>民政局</td>
+              <td>吳曉華</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2020/08/15 AM 09:22:22</td>
+              <td>退件</td>
+              <td>戶政科</td>
+              <td>游宏隆</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2020/08/16 AM 09:22:22</td>
+              <td>單位派案</td>
+              <td>民政局</td>
+              <td>吳曉華</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2020/08/16 AM 09:22:22</td>
+              <td>回覆信件</td>
+              <td>戶政科</td>
+              <td>游宏隆</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2020/08/17 AM 09:22:22</td>
+              <td>回覆信件並結案</td>
+              <td>戶政科</td>
+              <td>游宏隆</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-4">
+  <div class="card mb-4">
+    <div class="card-body">
+      <h6 class="mb-4">前台查詢紀錄</h6>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>查詢時間</th>
+              <th>查詢IP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2020/08/11 AM 10:22:11</td>
+              <td>63.222.1.55</td>
+            </tr>
+            <tr>
+              <td>2020/08/11 AM 09:22:11</td>
+              <td>63.222.1.55</td>
+            </tr>
+            <tr>
+              <td>2020/08/08 AM 09:22:11</td>
+              <td>63.222.1.55</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-4">
+  <div class="card mb-4">
+    <div class="card-body">
+      <h6 class="mb-4">前台查詢紀錄</h6>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>回覆時間</th>
+              <th>回覆內容</th>
+              <th>功能</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2020/08/11 AM 09:22:11</td>
+              <td>第三次回覆</td>
+              <td>
+                <button type="button" class="btn btn-outline-primary w-100" data-toggle="modal" data-target="#modal-1">
+                  觀看
                 </button>
               </td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>垃圾、噪音、汙染及資源回收</td>
-              <td>有牌廢棄車</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
+              <td>2020/08/10 AM 09:22:11</td>
+              <td>第二次回覆</td>
+              <td>
+                <button type="button" class="btn btn-outline-primary w-100" data-toggle="modal" data-target="#modal-1">
+                  觀看
                 </button>
               </td>
             </tr>
             <tr>
-              <td>3</td>
-              <td>道路、山坡地、路樹及路燈</td>
-              <td>橋梁、隧道、車( 人) 行地下道及涵洞積淹水(派工)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>公園、排水溝、下水道及自來水</td>
-              <td>雨水下水道維護</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>文教、體育、資訊、觀光及媒體</td>
-              <td>文化事務(樹木保護、文化資產、表演藝術、文化場館、藝文推廣)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>交通運輸</td>
-              <td>交通標誌及設施物損壞(含汙損)、傾斜(派工)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>都市發展、檢館、產業、財稅及地政</td>
-              <td>建築物使用管理、違建查報及拆除(含防火巷占用、固定式騎樓障礙物)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>衛福、勞動、民政及區政</td>
-              <td>食品衛生安全及藥品安全</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>警消、法律及政風</td>
-              <td>消防安全管理(含防災、搶救、火災調查及消防通道)</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>非屬前述各類之其他事項</td>
-              <td>其他事項</td>
-              <td>2020-07-09 15:47:44</td>
-              <td></td>
-              <td class="text-right">
-                <a href="/system-configuration/sub-category/edit" class="btn btn-outline-primary px-4 r-30">
-                  修改
+              <td>2020/08/08 AM 09:22:11</td>
+              <td>第一次回覆</td>
+              <td>
+                <button type="button" class="btn btn-outline-primary w-100" data-toggle="modal" data-target="#modal-1">
+                  觀看
                 </button>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div class="d-flex justify-content-center mt-4">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">
-            <i class="fa fa-fw fa-angle-double-left"></i>
-            </a>
-          </li>
-          <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>
-          <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
-          <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">
-            <i class="fa fa-fw fa-angle-double-right"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
 </section>
+
+<section class="mb-4">
+  <div class="card mb-4">
+    <div class="card-body">
+      <h6 class="mb-4">回覆內容</h6>
+      <form>
+        <div class="form-group">
+          <textarea class="form-control" id="reply" rows="6"></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="mb-4">
+  <div class="d-flex justify-content-end">
+    <a href="javascript:;" class="btn btn-primary mr-3">回覆</a>
+    <a href="javascript:;" class="btn btn-primary" data-toggle="modal" data-target="#modal-2">回覆並結案</a>
+  </div>
+</section>
+
+<div class="modal" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">回覆資訊</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>親愛的○○○您好：</p>
+        <p>有關您反映………，經交由本府○○局/處（室）處理說明如下：</p>
+        <p>一、………………</p>
+        <p>二、………………</p>
+        <p>三、………………</p>
+        <p>謝謝您來信與指教，敬祝 順心如意</p>
+        <p>嘉義縣政府 敬上</p>
+        <p>＊您對回覆內容如有任何疑問，請洽：○○組（室）承辦人：○○○</p>
+        <p>電話：（03）3374628 轉分機：○○</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">確認訊息</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="mb-3">確定回覆案給【XXX】民眾?</h3 class="mb-3">
+        <p>1、發送電子郵件通知</p>
+        <p>2、若點選【回覆並結案】案件將不可再回復民眾</p>
+        <p>3、若點選【退件】案件將退至單位登記桌</p>
+      </div>
+      <div class="modal-footer d-flex">
+        <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">確定</button>
+      </div>
+    </div>
+  </div>
+</div>
 
             <!-- END CONTENT -->
           </div>

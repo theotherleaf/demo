@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>陳情案件稽催管理 - 嘉義懸政府陳情系統</title>
+    <title>處理單位分派案件 - 嘉義懸政府陳情系統</title>
     <meta name="description" content="">
     
     <base href="/" />
@@ -245,7 +245,7 @@
       </a>
       
       <i class="fa fa-angle-right ml-2 mr-2"></i>
-      陳情案件稽催管理
+      處理單位分派案件
       </span>
     </li>
   </ul>
@@ -292,54 +292,40 @@
           <div class="container">
             <!-- START CONTENT -->
             <div class="d-flex justify-content-between mb-4">
-  <h4 class="mb-0 align-self-center">陳情案件稽催管理</h4>
-  <div class="btn-group-toggle align-self-center" data-toggle="buttons">
-    <button type="button" class="btn btn-primary" onclick="javascipt:;">
-      稽催
-    </button>
+  <h4 class="mb-0 align-self-center">單位分派案件 - 處理</h4>
+  <div>
+    <a href="javascript:;" class="btn btn-secondary" onClick="window.print()">列印</a>
   </div>
 </div>
 <section class="mb-4">
   <div class="card mb-4">
     <div class="card-body">
+      <h6 class="mb-4">案件信息</h6>
       <form>
-        <div class="d-flex justify-content-between mb-4">
-          <h5 class="align-self-center">資料篩選</h5>
-          <div class="btn-group-toggle align-self-center" data-toggle="buttons">
-            <label class="btn btn-outline-secondary active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked> 已分案
-            </label>
-            <label class="btn btn-outline-secondary">
-            <input type="radio" name="options" id="option2" autocomplete="off"> 已逾期
-            </label>
-            <label class="btn btn-outline-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> 未派案
-            </label>
-            <label class="btn btn-outline-secondary">
-            <input type="radio" name="options" id="option4" autocomplete="off"> 未結案
-            </label>
-            <label class="btn btn-outline-secondary">
-            <input type="radio" name="options" id="option5" autocomplete="off"> 退件
-            </label>
-            <label class="btn btn-outline-secondary">
-            <input type="radio" name="options" id="option6" autocomplete="off"> 未處理
-            </label>
+        <div class="form-group row">
+          <label for="case-status" class="col-sm-2 col-form-label">
+          案件狀態
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="case-status" value="待處理" disabled>
           </div>
         </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="case-from">陳情日期（起）</label>
-            <input type="text" class="form-control datepicker" id="case-from" name="case-from" placeholder="請選擇日期">
+        <div class="form-group row">
+          <label for="case-id" class="col-sm-2 col-form-label">
+          案件編號
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="case-id" value="66112" disabled>
           </div>
-          <div class="col-md-6 mb-3">
-            <label for="case-to">陳情日期（迄）</label>
-            <input type="text" class="form-control datepicker" id="case-to" name="case-to" placeholder="請選擇日期">
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="main-category">陳情主類型</label>
-            <select id="main-category" name="main-category" class="custom-select">
-              <option selected>請選擇</option>
-              <option value="1">垃圾、噪音、污染及資源回收</option>
+        </div>
+        <div class="form-group row">
+          <label for="main-category" class="col-sm-2 col-form-label">
+          案件主類型
+          </label>
+          <div class="col-sm-10">
+            <select id="main-category" name="main-category" class="custom-select" disabled>
+              <option>請選擇</option>
+              <option value="1" selected>垃圾、噪音、污染及資源回收</option>
               <option value="2">道路、山坡地、路樹及路燈</option>
               <option value="3">公園、排水溝、下水道及自來水</option>
               <option value="4">文教、體育、資訊、觀光及媒體</option>
@@ -351,15 +337,15 @@
               <option value="10">非屬前述各類之其他事項</option>
             </select>
           </div>
-          <div class="col-md-6 mb-3">
-            <label for="case-id">案件編號</label>
-            <input type="text" class="form-control" id="case-id" name="case-id" placeholder="請輸入">
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="sub-category">陳情次類型</label>
-            <select id="sub-category" name="sub-category" class="custom-select">
+        </div>
+        <div class="form-group row">
+          <label for="sub-category" class="col-sm-2 col-form-label">
+          案件次類型
+          </label>
+          <div class="col-sm-10">
+            <select id="sub-category" name="sub-category" class="custom-select" disabled>
               <option selected>請選擇</option>
-              <option value="1">垃圾、噪音、污染及資源回收</option>
+              <option value="1" selected>垃圾、噪音、污染及資源回收</option>
               <option value="2">道路、山坡地、路樹及路燈</option>
               <option value="3">公園、排水溝、下水道及自來水</option>
               <option value="4">文教、體育、資訊、觀光及媒體</option>
@@ -385,210 +371,281 @@
               <option value="14">汽機車停車格</option>
             </select>
           </div>
-          <div class="col-md-6 mb-3">
-            <label for="case-email">陳情電子信箱</label>
-            <input type="email" class="form-control" id="case-email" name="case-email" placeholder="請輸入">
+        </div>
+        <div class="form-group row">
+          <label for="petition-time" class="col-sm-2 col-form-label">
+          民眾陳情時間
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="petition-time" value="2020/08/11 PM 04：33：22" disabled>
           </div>
-          <div class="col-md-12 d-flex justify-content-end">
-            <button type="submit" class="btn btn-secondary">查詢</button>
+        </div>
+        <div class="form-group row">
+          <label for="established-time" class="col-sm-2 col-form-label">
+          案件成立時間
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="established-time" value="2020/08/11 PM 04：35：22" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="petition-person" class="col-sm-2 col-form-label">
+          陳情人
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="petition-person" value="王先生" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="town" class="col-sm-2 col-form-label">
+          陳情鄉鎮市
+          </label>
+          <div class="col-sm-10">
+            <select id="town" name="town" class="custom-select" disabled>
+              <option selected>請選擇</option>
+              <option value="臺北市">臺北市</option>
+              <option value="新北市">新北市</option>
+              <option value="桃園市">桃園市</option>
+              <option value="臺中市">臺中市</option>
+              <option value="臺南市">臺南市</option>
+              <option value="高雄市">高雄市</option>
+              <option value="新竹縣">新竹縣</option>
+              <option value="苗栗縣">苗栗縣</option>
+              <option value="彰化縣">彰化縣</option>
+              <option value="南投縣">南投縣</option>
+              <option value="雲林縣">雲林縣</option>
+              <option value="嘉義縣">嘉義縣</option>
+              <option value="屏東縣">屏東縣</option>
+              <option value="宜蘭縣">宜蘭縣</option>
+              <option value="花蓮縣">花蓮縣</option>
+              <option value="臺東縣">臺東縣</option>
+              <option value="澎湖縣">澎湖縣</option>
+              <option value="金門縣">金門縣</option>
+              <option value="連江縣">連江縣</option>
+              <option value="基隆市">基隆市</option>
+              <option value="新竹市">新竹市</option>
+              <option value="嘉義市">嘉義市</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="location" class="col-sm-2 col-form-label">
+          案件位置
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="location" value="無" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="phone" class="col-sm-2 col-form-label">
+          聯絡電話
+          </label>
+          <div class="col-sm-10">
+            <input type="tel" class="form-control" id="phone" value="無" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label">
+          電子郵件
+          </label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" value="aaa@mail.com" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="summary" class="col-sm-2 col-form-label">
+          陳情摘要
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="summary" value="垃圾違規亂丟" disabled>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="details" class="col-sm-2 col-form-label">陳情內容</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="details" rows="4" disabled>某某地點發現有心人士亂丟垃圾</textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="details" class="col-sm-2 col-form-label">檔案連結</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="details" rows="4" disabled>https://google.com</textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="details" class="col-sm-2 col-form-label">附件</label>
+          <div class="col-sm-10">
+            <div class="d-block">
+              <a target="_blank" href="javascript:;">身分證正面.jpg</a> 
+            </div>
+            <div class="d-block">
+              <a target="_blank" href="javascript:;">身分證背面.jpg</a> 
+            </div>
           </div>
         </div>
       </form>
     </div>
   </div>
 </section>
-<section>
-  <div class="card">
+
+<section class="mb-4">
+  <div class="card mb-4">
     <div class="card-body">
-      <h5 class="card-title mb-4">案件清單列表</h5>
+      <h6 class="mb-4">分派單位</h6>
+      <h6 class="mb-4">救助科</h6>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit1-1" name="unit1-1" class="custom-control-input">
+        <label class="custom-control-label" for="unit1-1">王大民</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit1-2" name="unit1-2" class="custom-control-input">
+        <label class="custom-control-label" for="unit1-2">蔡小林</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit1-3" name="unit1-3" class="custom-control-input">
+        <label class="custom-control-label" for="unit1-3">吳大縣</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit1-4" name="unit1-4" class="custom-control-input">
+        <label class="custom-control-label" for="unit1-4">劉大龍</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit1-5" name="unit1-5" class="custom-control-input">
+        <label class="custom-control-label" for="unit1-5">陳大天</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit1-6" name="unit1-6" class="custom-control-input">
+        <label class="custom-control-label" for="unit1-6">周大倫</label>
+      </div>
+      <hr class="mt-0 mb-4" />
+      <h6 class="mb-4">兒少科</h6>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit2-1" name="unit2-1" class="custom-control-input">
+        <label class="custom-control-label" for="unit2-1">王大民</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit2-2" name="unit2-2" class="custom-control-input">
+        <label class="custom-control-label" for="unit2-2">蔡小林</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit2-3" name="unit2-3" class="custom-control-input">
+        <label class="custom-control-label" for="unit2-3">吳大縣</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit2-4" name="unit2-4" class="custom-control-input">
+        <label class="custom-control-label" for="unit2-4">劉大龍</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit2-5" name="unit2-5" class="custom-control-input">
+        <label class="custom-control-label" for="unit2-5">陳大天</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit2-6" name="unit2-6" class="custom-control-input">
+        <label class="custom-control-label" for="unit2-6">周大倫</label>
+      </div>
+      <hr class="mt-0 mb-4" />
+      <h6 class="mb-4">社會工作科</h6>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit3-1" name="unit3-1" class="custom-control-input">
+        <label class="custom-control-label" for="unit3-1">王大民</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit3-2" name="unit3-2" class="custom-control-input">
+        <label class="custom-control-label" for="unit3-2">蔡小林</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit3-3" name="unit3-3" class="custom-control-input">
+        <label class="custom-control-label" for="unit3-3">吳大縣</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit3-4" name="unit3-4" class="custom-control-input">
+        <label class="custom-control-label" for="unit3-4">劉大龍</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit3-5" name="unit3-5" class="custom-control-input">
+        <label class="custom-control-label" for="unit3-5">陳大天</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit3-6" name="unit3-6" class="custom-control-input">
+        <label class="custom-control-label" for="unit3-6">周大倫</label>
+      </div>
+      <hr class="mt-0 mb-4" />
+      <h6 class="mb-4">老人身障科</h6>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit4-1" name="unit4-1" class="custom-control-input">
+        <label class="custom-control-label" for="unit4-1">王大民</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit4-2" name="unit4-2" class="custom-control-input">
+        <label class="custom-control-label" for="unit4-2">蔡小林</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit4-3" name="unit4-3" class="custom-control-input">
+        <label class="custom-control-label" for="unit4-3">吳大縣</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit4-4" name="unit4-4" class="custom-control-input">
+        <label class="custom-control-label" for="unit4-4">劉大龍</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit4-5" name="unit4-5" class="custom-control-input">
+        <label class="custom-control-label" for="unit4-5">陳大天</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline mb-4 mr-4">
+        <input type="checkbox" id="unit4-6" name="unit4-6" class="custom-control-input">
+        <label class="custom-control-label" for="unit4-6">周大倫</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-4">
+  <div class="card mb-4">
+    <div class="card-body">
+      <h6 class="mb-4">案件歷程</h6>
       <div class="table-responsive">
         <table class="table table-bordered table-hover">
           <thead class="thead-light">
             <tr>
-              <th>
-                <div class="custom-control custom-checkbox custom-control-inline pb-0 mb-0">
-                  <input type="checkbox" class="custom-control-input mb-0" id="customCheck-th">
-                  <label class="custom-control-label pb-0 mb-0" for="customCheck-th"></label>
-                </div>
-              </th>
-              <th>案件編號</th>
-              <th>陳情成立時間</th>
-              <th>處理期限</th>
-              <th>陳情人</th>
-              <th>主類型</th>
-              <th>次類型</th>
-              <th>陳情摘要</th>
-              <th>承辦單位</th>
-              <th>承辦人員</th>
+              <th>日期時間</th>
               <th>狀態</th>
+              <th>單位</th>
+              <th>單位使用者</th>
+              <th>描述</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="customCheck">
-                  <label class="custom-control-label" for="customCheck"></label>
-                </div>
-              </td>
-              <td>AC123465</td>
-              <td>2020/07/22-09:23</td>
-              <td>2020/08/11</td>
-              <td>黃先生</td>
-              <td>垃圾噪音汙染</td>
-              <td>其他</td>
-              <td>垃圾汙染</td>
-              <td>建設處</td>
-              <td>王大民</td>
-              <td>待處理</td>
+              <td>2020/08/11 AM 08:22:22</td>
+              <td>陳情</td>
+              <td>前台</td>
+              <td>王添財</td>
+              <td></td>
             </tr>
             <tr>
-              <td>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="customCheck">
-                  <label class="custom-control-label" for="customCheck"></label>
-                </div>
-              </td>
-              <td>AB123465</td>
-              <td>2020/07/10-14:23</td>
-              <td>2020/08/11</td>
-              <td>劉先生</td>
-              <td>垃圾噪音汙染</td>
-              <td>有牌廢棄車</td>
-              <td>垃圾汙染</td>
-              <td>建設處</td>
-              <td>王大民</td>
-              <td>待處理</td>
+              <td>2020/08/11 AM 08:22:22</td>
+              <td>總收發派案</td>
+              <td>考管科</td>
+              <td>陳家烽</td>
+              <td></td>
             </tr>
             <tr>
-              <td>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="customCheck">
-                  <label class="custom-control-label" for="customCheck"></label>
-                </div>
-              </td>
-              <td>AC123465</td>
-              <td>2020/07/22-09:23</td>
-              <td>2020/08/11</td>
-              <td>陳先生</td>
-              <td>垃圾噪音汙染</td>
-              <td>其他</td>
-              <td>垃圾汙染</td>
-              <td>建設處</td>
-              <td>王大民</td>
-              <td>待處理</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="customCheck">
-                  <label class="custom-control-label" for="customCheck"></label>
-                </div>
-              </td>
-              <td>AB123465</td>
-              <td>2020/07/10-14:23</td>
-              <td>2020/08/11</td>
-              <td>吳小姐</td>
-              <td>垃圾噪音汙染</td>
-              <td>有牌廢棄車</td>
-              <td>垃圾汙染</td>
-              <td>建設處</td>
-              <td>王大民</td>
-              <td>待處理</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="customCheck">
-                  <label class="custom-control-label" for="customCheck"></label>
-                </div>
-              </td>
-              <td>AC123465</td>
-              <td>2020/07/22-09:23</td>
-              <td>2020/08/11</td>
-              <td>何小姐</td>
-              <td>垃圾噪音汙染</td>
-              <td>其他</td>
-              <td>垃圾汙染</td>
-              <td>建設處</td>
-              <td>王大民</td>
-              <td>待處理</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="customCheck">
-                  <label class="custom-control-label" for="customCheck"></label>
-                </div>
-              </td>
-              <td>AB123465</td>
-              <td>2020/07/10-14:23</td>
-              <td>2020/08/11</td>
-              <td>林小姐</td>
-              <td>垃圾噪音汙染</td>
-              <td>有牌廢棄車</td>
-              <td>垃圾汙染</td>
-              <td>建設處</td>
-              <td>王大民</td>
-              <td>待處理</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="customCheck">
-                  <label class="custom-control-label" for="customCheck"></label>
-                </div>
-              </td>
-              <td>AC123465</td>
-              <td>2020/07/22-09:23</td>
-              <td>2020/08/11</td>
-              <td>黃先生</td>
-              <td>垃圾噪音汙染</td>
-              <td>其他</td>
-              <td>垃圾汙染</td>
-              <td>建設處</td>
-              <td>王大民</td>
-              <td>待處理</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="customCheck">
-                  <label class="custom-control-label" for="customCheck"></label>
-                </div>
-              </td>
-              <td>AB123465</td>
-              <td>2020/07/10-14:23</td>
-              <td>2020/08/11</td>
-              <td>劉先生</td>
-              <td>垃圾噪音汙染</td>
-              <td>有牌廢棄車</td>
-              <td>垃圾汙染</td>
-              <td>建設處</td>
-              <td>王大民</td>
-              <td>待處理</td>
+              <td>2020/08/13 AM 09:22:22</td>
+              <td>單位派案</td>
+              <td>民政局</td>
+              <td>吳曉華</td>
+              <td></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div class="d-flex justify-content-center mt-4">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">
-            <i class="fa fa-fw fa-angle-double-left"></i>
-            </a>
-          </li>
-          <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>
-          <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
-          <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="javascript:;">
-            <i class="fa fa-fw fa-angle-double-right"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
+  </div>
+</section>
+
+<section class="mb-4">
+  <div class="d-flex justify-content-end">
+    <a href="javascript:;" class="btn btn-primary">派案</a>
   </div>
 </section>
 
