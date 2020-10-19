@@ -77,83 +77,75 @@
               <div>註冊完成</div>
             </div>
           </div>
-          <div class="step-content">
-            <div class="step-decide">
-              <h4>我要申請成為</h4>
-              <div class="step-inner">
-                <div class="upper-group">
-                  <a title="一般會員" class="btn btn-outline-primary to-general">一般會員</a>
+          <div class="step-content text-center">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">申請成為一般會員</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#profile">申請成為認證會員</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tab1">
+                <!-- step-inner1 -->
+                <div class="step-inner mt-4">
+                  <form>
+                    <div class="form-group">
+                      <label for="name"><span>*</span>姓名</label>
+                      <input type="text" class="form-control" id="name" placeholder="輸入姓名">
+                    </div>
+                    <div class="form-group">
+                      <label for="dob"><span>*</span>出生日期(民國)</label>
+                      <input type="text" class="form-control" id="dob" placeholder="如：0720105">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone"><span>*</span>行動電話</label>
+                      <input type="text" class="form-control" id="phone" placeholder="輸入行動電話">
+                    </div>
+                    <div class="form-group">
+                      <label for="email"><span>*</span>電子郵件</label>
+                      <input type="email" class="form-control" id="email" placeholder="輸入電子郵件" value="hi@theotherleaf.com" readonly>
+                    </div>
+                  </form>
                 </div>
-                <div class="divider">
-                  <span>或</span>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="tab2">
+                <!-- step-inner2 -->
+                <div class="text-center mt-3">
+                  <p class="m-0">
+                    <img class="icon-mydata" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-mydata.png" alt="">本系統採 <span class="pink">MyData</span> 數位服務認證，提供便利與安全的實名驗證機制!
+                  </p>
+                  <p class="text-center m-0">可使用驗證方式為: 1.以自然人憑證 2.TW-Fido 驗證</p>
+                  <p class="d-inline-block mt-3 mb-0">取得協助: </p>
+                  <a href="" class="icon-openlink">
+                    <span>安裝自然人憑證相關元件</span>
+                  </a>
+                  <a href="" class="icon-openlink">
+                    <span>如何使用TW-FidO</span>
+                  </a>
                 </div>
-                <div class="lower-group">
-                  <a title="認證會員" class="btn btn-secondary to-certified">認證會員</a>
-                  <p class="text-center mt-3">可使用驗證方式為: 1.以自然人憑證 2.TW-Fido 驗證</p>
+                <div class="step-inner mt-3">
+                  <form>
+                    <div class="form-group">
+                      <label for="identity"><span>*</span>行動電話</label>
+                      <input type="text" class="form-control" id="identity" placeholder="輸入行動電話">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone"><span>*</span>電子郵件</label>
+                      <input type="text" class="form-control" id="phone" placeholder="輸入電子郵件" value="hi@theotherleaf.com" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="email"><span>*</span>身分證字號</label>
+                      <input type="email" class="form-control" id="email" placeholder="輸入身分證字號">
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
-            <div class="step-fill general">
-              <h4>申請成為一般會員</h4>
-              <div class="step-inner">
-                <form>
-                  <div class="form-group">
-                    <label for="name"><span>*</span>姓名</label>
-                    <input type="text" class="form-control" id="name" placeholder="輸入姓名">
-                  </div>
-                  <div class="form-group">
-                    <label for="dob"><span>*</span>出生日期(民國)</label>
-                    <input type="text" class="form-control" id="dob" placeholder="如：0720105">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone"><span>*</span>行動電話</label>
-                    <input type="text" class="form-control" id="phone" placeholder="輸入行動電話">
-                  </div>
-                  <div class="form-group">
-                    <label for="email"><span>*</span>電子郵件</label>
-                    <input type="email" class="form-control" id="email" placeholder="輸入電子郵件" value="hi@theotherleaf.com" readonly>
-                  </div>
-                </form>
-                <div class="btn-group">
-                  <a class="btn btn-outline-primary to-prev" title="上一步">上一步</button>
-                  <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step4" class="btn btn-dark" title="確認送出">確認送出</a>
-                </div>
-              </div>
-            </div>
-            <div class="step-fill certified">
-              <h4>申請成為認證會員</h4>
-              <div class="bg text-center mt-3">
-                <p class="m-0">
-                  <img class="icon-mydata" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-mydata.png" alt="">本系統採 <span class="pink">MyData</span> 數位服務認證，提供便利與安全的實名驗證機制!
-                </p>
-                <p class="d-inline-block m-0">取得協助: </p>
-                <a href="" class="icon-openlink">
-                  <span>安裝自然人憑證相關元件</span>
-                </a>
-                <a href="" class="icon-openlink">
-                  <span>如何使用TW-FidO</span>
-                </a>
-              </div>
-              <div class="step-inner">
-                <form class="mt-4">
-                  <div class="form-group">
-                    <label for="identity"><span>*</span>行動電話</label>
-                    <input type="text" class="form-control" id="identity" placeholder="輸入行動電話">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone"><span>*</span>電子郵件</label>
-                    <input type="text" class="form-control" id="phone" placeholder="輸入電子郵件" value="hi@theotherleaf.com" readonly>
-                  </div>
-                  <div class="form-group">
-                    <label for="email"><span>*</span>身分證字號</label>
-                    <input type="email" class="form-control" id="email" placeholder="輸入身分證字號">
-                  </div>
-                </form>
-                <div class="btn-group">
-                  <a class="btn btn-outline-primary to-prev" title="上一步">上一步</button>
-                  <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step4" class="btn btn-dark" title="確認送出">確認送出</a>
-                </div>
-              </div>
+            <div class="btn-group">
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step2" class="btn btn-outline-primary to-prev" title="上一步">上一步</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step4" class="btn btn-dark" title="確認送出">確認送出</a>
             </div>
           </div>
         </div>
@@ -197,8 +189,8 @@
                   </div>
                 </a>
                 <div class="dropdown-menu">
-                  <a href="https://www.facebook.com/at.tainan" title="我在臺南FB" class="dropdown-item">我在臺南FB</a>
-                  <a href="https://www.facebook.com/tainantoday/" title="臺南 TODAY" class="dropdown-item">臺南 TODAY</a>
+                  <a target="_blank" href="https://www.facebook.com/at.tainan" title="我在臺南FB" class="dropdown-item">我在臺南FB</a>
+                  <a target="_blank" href="https://www.facebook.com/tainantoday/" title="臺南 TODAY" class="dropdown-item">臺南 TODAY</a>
                 </div>
               </div>
               <a target="_blank" href="https://line.me/R/ti/p/@tncg" title="我在臺南LINE" class="footer__link">
@@ -216,21 +208,5 @@
     <script src="https://theotherleaf.com/demo/tainan-member-centre/assets/js/jquery.slim.min.js"></script>
     <script src="https://theotherleaf.com/demo/tainan-member-centre/assets/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      $(document).ready(function() {
-        $('.to-general').on('click', function() {
-          $('.step-decide').css('display', 'none');
-          $('.step-fill.general').css('display', 'block');
-        });
-        $('.to-certified').on('click', function() {
-          $('.step-decide').css('display', 'none');
-          $('.step-fill.certified').css('display', 'block');
-        });
-        $('.to-prev').on('click', function() {
-          $('.step-decide').css('display', 'block');
-          $('.step-fill').css('display', 'none');
-        });
-      });
-    </script>
   </body>
 </html>

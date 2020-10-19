@@ -78,37 +78,69 @@
             </div>
           </div>
           <div class="step-content">
-            <div class="step-decide">
-              <h4>選擇帳號註冊方式</h4>
-              <div class="step-inner">
-                <div class="upper-group">
-                  <a title="使用電子郵件或手機號碼" class="btn btn-outline-primary to-next">使用電子郵件或手機號碼</a>
-                </div>
-                <div class="divider">
-                  <span>或</span>
-                </div>
-                <div class="lower-group">
-                  <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step3" title="使用 Facebook 繼續註冊" class="btn btn-facebook">使用 Facebook 繼續註冊</a>
-                  <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step3" title="使用 Google 繼續註冊" class="btn btn-google">使用 Google 繼續註冊</a>
-                </div>
-              </div>
-            </div>
-            <div class="step-fill">
-              <h4>使用電子郵件或手機號碼做為登入帳號</h4>
-              <div class="step-inner">
+            <h4>選擇帳號註冊方式</h4>
+            <div class="step-inner">
+              <div class="upper-group">
                 <form>
-                  <div class="form-group">
-                    <label for="account">電子郵件或手機號碼</label>
-                    <div class="input-group">
+                  <!-- Verification #1 -->
+                  <div class="verification-1">
+                    <div class="form-group">
+                      <label for="account">電子郵件或手機號碼</label>
                       <input type="text" class="form-control" id="account" placeholder="輸入電子郵件或手機號碼">
-                      <div class="input-group-append">
-                        <button class="btn btn-dark" type="button">發送驗證碼</button>
+                    </div>
+                    <div class="form-group">
+                      <div class="d-flex">
+                        <img src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/captcha.png" alt="captcha" class="mr-2" />
+                        <input type="text" class="form-control" id="captcha" placeholder="請輸入左方圖片的文字">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="verify-status incompleted">尚未驗證</div>
+                        <button class="btn btn-light btn-send-code" type="button">發送驗證碼</button>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label for="code">驗證碼</label>
-                    <input type="text" class="form-control" id="code" placeholder="輸入驗證碼">
+                  <!-- Verification #2 -->
+                  <div class="verification-2">
+                    <div class="form-group">
+                      <label for="account">電子郵件或手機號碼</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="account" placeholder="輸入電子郵件或手機號碼" value="09123456789" readonly>
+                        <div class="input-group-append">
+                          <button class="btn btn-dark btn-edit" type="button">修改</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="code" placeholder="輸入驗證碼">
+                        <div class="input-group-append">
+                          <button class="btn btn-dark btn-verify" type="button">驗證</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="verify-status incorrect">錯誤的驗證碼</div>
+                        <button class="btn btn-light btn-send-code" type="button">倒數15秒，可以重送驗證碼！</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Verification #3 -->
+                  <div class="verification-3">
+                    <div class="form-group">
+                      <label for="account">電子郵件或手機號碼</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="account" placeholder="輸入電子郵件或手機號碼" value="09123456789" readonly>
+                        <div class="input-group-append">
+                          <button class="btn btn-dark btn-edit" type="button">修改</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group align-items-center">
+                      <div class="verify-status completed">已驗證</div>
+                    </div>
                   </div>
                   <div class="form-group">
                     <label for="password">密碼</label>
@@ -120,9 +152,16 @@
                   </div>
                 </form>
                 <div class="btn-group">
-                  <a class="btn btn-outline-primary to-prev" title="上一步">上一步</button>
+                  <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step1" class="btn btn-outline-primary" title="上一步">上一步</button>
                   <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step3" class="btn btn-dark" title="下一步">下一步</a>
                 </div>
+              </div>
+              <div class="divider">
+                <span>或</span>
+              </div>
+              <div class="lower-group">
+                <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step3" title="使用 Facebook 繼續註冊" class="btn btn-facebook">使用 Facebook 繼續註冊</a>
+                <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step3" title="使用 Google 繼續註冊" class="btn btn-google">使用 Google 繼續註冊</a>
               </div>
             </div>
           </div>
@@ -167,8 +206,8 @@
                   </div>
                 </a>
                 <div class="dropdown-menu">
-                  <a href="https://www.facebook.com/at.tainan" title="我在臺南FB" class="dropdown-item">我在臺南FB</a>
-                  <a href="https://www.facebook.com/tainantoday/" title="臺南 TODAY" class="dropdown-item">臺南 TODAY</a>
+                  <a target="_blank" href="https://www.facebook.com/at.tainan" title="我在臺南FB" class="dropdown-item">我在臺南FB</a>
+                  <a target="_blank" href="https://www.facebook.com/tainantoday/" title="臺南 TODAY" class="dropdown-item">臺南 TODAY</a>
                 </div>
               </div>
               <a target="_blank" href="https://line.me/R/ti/p/@tncg" title="我在臺南LINE" class="footer__link">
@@ -188,13 +227,20 @@
 
     <script>
       $(document).ready(function() {
-        $('.to-next').on('click', function() {
-          $('.step-decide').css('display', 'none');
-          $('.step-fill').css('display', 'block');
+        $('.btn-send-code').on('click', function () {
+          $('.verification-1').css('display', 'none');
+          $('.verification-2').css('display', 'block');
+          $('.verification-3').css('display', 'none');
         });
-        $('.to-prev').on('click', function() {
-          $('.step-decide').css('display', 'block');
-          $('.step-fill').css('display', 'none');
+        $('.btn-verify').on('click', function () {
+          $('.verification-1').css('display', 'none');
+          $('.verification-2').css('display', 'none');
+          $('.verification-3').css('display', 'block');
+        });
+        $('.btn-edit').on('click', function () {
+          $('.verification-1').css('display', 'block');
+          $('.verification-2').css('display', 'none');
+          $('.verification-3').css('display', 'none');
         });
       });
     </script>

@@ -4,51 +4,42 @@
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>升級認證會員 - 臺南市政服務單一會員中心</title>
+    <title>忘記密碼 - 臺南市政服務單一會員中心</title>
     <meta name="description" content="">
     <meta name="keywords" content="臺南,臺南市政服務,臺南市政服務單一會員中心">
     <meta name="generator" content="The Other Leaf">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="臺南市政服務單一會員中心">
     <meta property="og:image" content="https://theotherleaf.com/demo/tainan-member-centre/assets/images/og-image.jpg">
-    <meta property="og:title" content="升級認證會員 - 臺南市政服務單一會員中心">
+    <meta property="og:title" content="忘記密碼 - 臺南市政服務單一會員中心">
     <meta property="og:description" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://theotherleaf.com/demo/tainan-member-centre/assets/images/og-image.jpg">
-    <meta name="twitter:title" content="升級認證會員 - 臺南市政服務單一會員中心">
+    <meta name="twitter:title" content="忘記密碼 - 臺南市政服務單一會員中心">
     <meta name="twitter:description" content="">
     <link type="image/x-icon" rel="shortcut icon" href="https://theotherleaf.com/demo/tainan-member-centre/favicon.ico">
     <link rel="apple-touch-icon" href="https://theotherleaf.com/demo/tainan-member-centre/assets/images/webclip.png">
     <link rel="stylesheet" href="https://theotherleaf.com/demo/tainan-member-centre/assets/css/main.min.css" />
 
-    <link rel="stylesheet" href="https://theotherleaf.com/demo/tainan-member-centre/assets/css/register.min.css" />
+    <link rel="stylesheet" href="https://theotherleaf.com/demo/tainan-member-centre/assets/css/forgot-password.min.css" />
   </head>
   <body>
-    <header class="header authenticated">
+    <header class="header">
       <nav class="navbar fixed-top navbar-expand-md">
       <div class="container-fluid">
-        <a href="https://theotherleaf.com/demo/tainan-member-centre/home" title="臺南市政服務單一會員中心" class="logo">
+        <a href="https://theotherleaf.com/demo/tainan-member-centre/" title="臺南市政服務單一會員中心" class="logo">
           <img src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/img-logo.png" alt="臺南市政服務單一會員中心" class="img-fluid">
         </a>
-        <div class="nav">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <button 
-                class="btn btn-primary dropdown-toggle" 
-                type="button" 
-                data-toggle="dropdown" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                <img src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-member.png" alt="" class="img-fluid">
-              </button>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-                <div class="dropdown-header">The Other Leaf</div>
-                <div class="dropdown-header">hi@theotherleaf.com</div>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership" title="會員中心">會員中心</a>
-                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/" title="登出">登出</a>
-              </div>
-
+            <li class="nav-item">
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/register/step1" title="會員註冊" class="btn btn-outline-primary nav-link">會員註冊</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/login" title="登入" class="btn btn-primary nav-link">登入</a>
             </li>
           </ul>
         </div>
@@ -57,60 +48,20 @@
     </header>
 
     <main>
+      
       <div class="container">
-        <div class="register">
-          <h2>升級認證會員</h2>
-          <div class="step-list">
-            <div class="item active">
-              <div>
-                <span>01</span>
+        <h4 class="forgot-password__header">忘記密碼</h4>
+          <div class="forgot-password">
+            <form>
+              <div class="form-group">
+                <label for="account">請輸入您的登入帳號</label>
+                <input type="text" class="form-control" id="account" placeholder="電子郵件 / 手機號碼">
               </div>
-              <div>會員認證</div>
-            </div>
-            <div class="item">
-              <div>
-                <span>02</span>
+              <div class="form-group">
+                <div class="reset-email-sent">已送出</div>
               </div>
-              <div>升級完成</div>
-            </div>
-          </div>
-          <div class="step-content">
-            <div class="step-fill d-block">
-              <h4>升級成為認證會員</h4>
-              <div class="bg text-center mt-3">
-                <p class="m-0">
-                  <img class="icon-mydata" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-mydata.png" alt="">本系統採 <span class="pink">MyData</span> 數位服務認證，提供便利與安全的實名驗證機制!
-                </p>
-                <p class="text-center m-0">可使用驗證方式為: 1.以自然人憑證 2.TW-Fido 驗證</p>
-                <p class="d-inline-block mt-3 mb-0">取得協助: </p>
-                <a href="" class="icon-openlink">
-                  <span>安裝自然人憑證相關元件</span>
-                </a>
-                <a href="" class="icon-openlink">
-                  <span>如何使用TW-FidO</span>
-                </a>
-              </div>
-              <div class="step-inner">
-                <form class="mt-4">
-                  <div class="form-group">
-                    <label for="identity"><span>*</span>行動電話</label>
-                    <input type="text" class="form-control" id="identity" placeholder="輸入行動電話">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone"><span>*</span>電子郵件</label>
-                    <input type="text" class="form-control" id="phone" placeholder="輸入電子郵件" value="hi@theotherleaf.com" readonly>
-                  </div>
-                  <div class="form-group">
-                    <label for="email"><span>*</span>身分證字號</label>
-                    <input type="email" class="form-control" id="email" placeholder="輸入身分證字號">
-                  </div>
-                </form>
-                <div class="btn-group">
-                  <a href="https://theotherleaf.com/demo/tainan-member-centre/membership" class="btn btn-outline-primary" title="確認送出">取消</a>
-                  <a href="https://theotherleaf.com/demo/tainan-member-centre/promote-membership/step2" class="btn btn-dark" title="確認送出">確認送出</a>
-                </div>
-              </div>
-            </div>
+              <a title="送出" class="btn btn-primary btn-send-reset-email w-100">送出</a>
+            </form>
           </div>
         </div>
       </div>
@@ -172,5 +123,12 @@
     <script src="https://theotherleaf.com/demo/tainan-member-centre/assets/js/jquery.slim.min.js"></script>
     <script src="https://theotherleaf.com/demo/tainan-member-centre/assets/js/bootstrap.bundle.min.js"></script>
 
+    <script>
+      $(document).ready(function() {
+        $('.btn-send-reset-email').on('click', function () {
+          $('.reset-email-sent').css('display', 'inline-block');
+        });
+      });
+    </script>
   </body>
 </html>
