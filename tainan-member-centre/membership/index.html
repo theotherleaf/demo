@@ -4,24 +4,24 @@
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>升級認證會員 - 臺南市政服務單一會員中心</title>
+    <title>會員中心 - 臺南市政服務單一會員中心</title>
     <meta name="description" content="">
     <meta name="keywords" content="臺南,臺南市政服務,臺南市政服務單一會員中心">
     <meta name="generator" content="The Other Leaf">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="臺南市政服務單一會員中心">
     <meta property="og:image" content="https://theotherleaf.com/demo/tainan-member-centre/assets/images/og-image.jpg">
-    <meta property="og:title" content="升級認證會員 - 臺南市政服務單一會員中心">
+    <meta property="og:title" content="會員中心 - 臺南市政服務單一會員中心">
     <meta property="og:description" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://theotherleaf.com/demo/tainan-member-centre/assets/images/og-image.jpg">
-    <meta name="twitter:title" content="升級認證會員 - 臺南市政服務單一會員中心">
+    <meta name="twitter:title" content="會員中心 - 臺南市政服務單一會員中心">
     <meta name="twitter:description" content="">
     <link type="image/x-icon" rel="shortcut icon" href="https://theotherleaf.com/demo/tainan-member-centre/favicon.ico">
     <link rel="apple-touch-icon" href="https://theotherleaf.com/demo/tainan-member-centre/assets/images/webclip.png">
     <link rel="stylesheet" href="https://theotherleaf.com/demo/tainan-member-centre/assets/css/main.min.css" />
 
-    <link rel="stylesheet" href="https://theotherleaf.com/demo/tainan-member-centre/assets/css/register.min.css" />
+    <link rel="stylesheet" href="https://theotherleaf.com/demo/tainan-member-centre/assets/css/membership.min.css" />
   </head>
   <body>
     <header class="header authenticated">
@@ -58,58 +58,116 @@
 
     <main>
       <div class="container">
-        <div class="register">
-          <h2>升級認證會員</h2>
-          <div class="step-list">
-            <div class="item active">
-              <div>
-                <span>01</span>
+        <div class="membership">
+          <h2>會員中心</h2>
+          <div class="membership-content">
+            <nav class="nav">
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership">基本資料</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/privacy">變更(設定)密碼</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/social-media">社群帳號設定</a>
+            </nav>
+            <div class="content">
+              <!-- conditional -->
+              <div class="membership-status promote d-block d-md-flex justify-content-md-between">
+                <div class="align-self-center">[提醒] 目前是一般會員，您可以進行身分認證，升級到「<span class="gold">認證會員</span>」。</div>
+                <div class="align-self-center"><a href="https://theotherleaf.com/demo/tainan-member-centre/promote-membership/step1" title="立即升級" class="btn btn-outline-primary">立即升級</a></div>
               </div>
-              <div>會員認證</div>
-            </div>
-            <div class="item">
-              <div>
-                <span>02</span>
-              </div>
-              <div>升級完成</div>
-            </div>
-          </div>
-          <div class="step-content">
-            <div class="step-fill d-block">
-              <h4>升級成為認證會員</h4>
-              <div class="text-center mt-3">
-                <p class="m-0">
-                  <img class="icon-mydata" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-mydata.png" alt="">本系統採 <span class="pink">MyData</span> 數位服務認證，提供便利與安全的實名驗證機制!
-                </p>
-                <p class="text-center m-0">可使用驗證方式為: 1.以自然人憑證 2.TW-Fido 驗證</p>
-                <p class="d-inline-block mt-3 mb-0">取得協助: </p>
-                <a href="" class="icon-openlink">
-                  <span>安裝自然人憑證相關元件</span>
-                </a>
-                <a href="" class="icon-openlink">
-                  <span>如何使用TW-FidO</span>
-                </a>
-              </div>
-              <div class="step-inner">
-                <form class="mt-4">
-                  <div class="form-group">
-                    <label for="identity"><span>*</span>行動電話</label>
-                    <input type="text" class="form-control" id="identity" placeholder="輸入行動電話">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone"><span>*</span>電子郵件</label>
-                    <input type="text" class="form-control" id="phone" placeholder="輸入電子郵件" value="hi@theotherleaf.com" readonly>
-                  </div>
-                  <div class="form-group">
-                    <label for="email"><span>*</span>身分證字號</label>
-                    <input type="email" class="form-control" id="email" placeholder="輸入身分證字號">
-                  </div>
-                </form>
-                <div class="btn-group">
-                  <a href="https://theotherleaf.com/demo/tainan-member-centre/membership" class="btn btn-outline-primary" title="確認送出">取消</a>
-                  <a href="https://theotherleaf.com/demo/tainan-member-centre/promote-membership/step2" class="btn btn-dark" title="確認送出">確認送出</a>
+            
+              <h3 class="highlight">基本資料</h3>
+              <form action="">
+                <div class="form-group">
+                  <label for="name">
+                    <span>*</span>姓名
+                  </label>
+                  <input type="text" class="form-control" id="name" placeholder="輸入姓名">
                 </div>
-              </div>
+                <div class="form-group">
+                  <label for="dob">
+                    <span>*</span>出生日期
+                  </label>
+                  <input type="text" class="form-control" id="dob" placeholder="輸入出生日期">
+                </div>
+                <div class="form-group">
+                  <label for="phone">
+                    <span>*</span>行動電話
+                  </label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="phone" placeholder="輸入行動電話" readonly>
+                    <div class="input-group-append">
+                      <button class="btn btn-dark btn-edit" type="button">修改</button>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mt-2">
+                    <div class="verify-status incompleted">尚未驗證</div>
+                    <small class="form-text text-muted ml-2">若有修改行動電話必須再進行驗證</small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">
+                    <span>*</span>電子郵件
+                  </label>
+                  <div class="input-group">
+                    <input type="email" class="form-control" id="email" placeholder="輸入電子郵件" value="hi@theotherleaf.com" readonly>
+                    <div class="input-group-append">
+                      <button class="btn btn-dark btn-edit" type="button">修改</button>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mt-2">
+                    <div class="verify-status completed">已驗證</div>
+                    <small class="form-text text-muted ml-2">若有修改電子郵件必須再進行驗證</small>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-submit">確定變更</button>
+              </form>
+
+              <hr>
+
+              <h3 class="highlight">其他資料</h3>
+              <form>
+                <div class="form-group">
+                  <label for="identity">
+                    <span>*</span>身分證字號
+                  </label>
+                  <input type="text" class="form-control" id="identity" placeholder="輸入身分證字號">
+                </div>
+                <div class="form-group">
+                  <label for="local-phone">市內電話</label>
+                  <input type="text" class="form-control" id="local-phone" placeholder="輸入市內電話">
+                </div>
+                <div class="form-group">
+                  <label for="">
+                    <span>*</span>戶籍地址
+                  </label><br>
+                  <div class="address-group">
+                    <div>
+                      <input type="text">
+                      <select name="" id="" class="form-conntrol">
+                        <option value="">台南市</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="">北區</option>
+                      </select>
+                    </div>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">通訊地址</label><br>
+                  <div class="address-group">
+                    <div>
+                      <input type="text">
+                      <select name="" id="">
+                        <option value="">台南市</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="">北區</option>
+                      </select>
+                    </div>
+                    <input type="text">
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-submit">確定變更</button>
+              </form>
             </div>
           </div>
         </div>
