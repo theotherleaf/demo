@@ -45,7 +45,10 @@
                 <div class="dropdown-header">The Other Leaf</div>
                 <div class="dropdown-header">hi@theotherleaf.com</div>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership" title="會員中心">會員中心</a>
+                <div class="dropdown-header">會員中心</div>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership" title="基本資料">基本資料</a>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership/privacy" title="變更(設定)密碼">變更(設定)密碼</a>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership/social-media" title="社群帳號設定">社群帳號設定</a>
                 <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/" title="登出">登出</a>
               </div>
 
@@ -57,10 +60,32 @@
     </header>
 
     <section class="herobanner">
-      <div class="container">
-        <div class="herobanner__body">
-          <h1>臺南市政服務<br class="d-block d-md-none" />單一會員中心</h1>
-          <p>單一帳號登入，免記多組帳號密碼</p>
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="herobanner__bg-1">
+              <div class="container">
+                <div class="herobanner__body">
+                  <h1>臺南市政服務<br class="d-block d-md-none" />單一會員中心</h1>
+                  <p>單一帳號登入，免記多組帳號密碼</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="herobanner__bg-2">
+              <div class="container">
+                <div class="herobanner__body">
+                  <h1>免記多組帳號密碼</h1>
+                  <p>您可以透過臺南會員中心單一帳號登入多項市政應用系統，輕鬆享有市政服務</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

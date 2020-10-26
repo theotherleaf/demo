@@ -45,7 +45,10 @@
                 <div class="dropdown-header">The Other Leaf</div>
                 <div class="dropdown-header">hi@theotherleaf.com</div>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership" title="會員中心">會員中心</a>
+                <div class="dropdown-header">會員中心</div>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership" title="基本資料">基本資料</a>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership/privacy" title="變更(設定)密碼">變更(設定)密碼</a>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership/social-media" title="社群帳號設定">社群帳號設定</a>
                 <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/" title="登出">登出</a>
               </div>
 
@@ -59,12 +62,13 @@
     <main>
       <div class="container">
         <div class="membership">
-          <h2>會員中心</h2>
+          <h2 class="d-none d-md-block">會員中心</h2>
           <div class="membership-content">
-            <nav class="nav">
-              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership">基本資料</a>
-              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/privacy">變更(設定)密碼</a>
-              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/social-media">社群帳號設定</a>
+            <nav class="nav d-none d-md-flex">
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership"><img class="membership-icon" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-regular-edit.svg" />基本資料</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/privacy"><img class="membership-icon" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-lock.svg" />變更(設定)密碼</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/social-media"><img class="membership-icon" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-globe.svg" />社群帳號設定</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/"><img class="membership-icon" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-sign-out-alt.svg" />登出</a>
             </nav>
             <div class="content">
               <!-- conditional -->
@@ -72,9 +76,14 @@
                 <div class="align-self-center">[提醒] 目前是一般會員，您可以進行身分認證，升級到「<span class="gold">認證會員</span>」。</div>
                 <div class="align-self-center"><a href="https://theotherleaf.com/demo/tainan-member-centre/promote-membership/step1" title="立即升級" class="btn btn-outline-primary">立即升級</a></div>
               </div>
+              <!-- conditional -->
+              <!-- <div class="membership-status promote d-block d-md-flex justify-content-md-between">
+                <div class="align-self-center">[提醒] 如要更新資料，請重新認證。</div>
+                <div class="align-self-center"><a href="https://theotherleaf.com/demo/tainan-member-centre/#" title="重新認證" class="btn btn-outline-primary">重新認證</a></div>
+              </div> -->
             
               <h3 class="highlight">基本資料</h3>
-              <form action="">
+              <div class="form">
                 <div class="form-group">
                   <label for="name">
                     <span>*</span>姓名
@@ -118,12 +127,12 @@
                   </div>
                 </div>
                 <button class="btn btn-primary btn-submit">確定變更</button>
-              </form>
+              </div>
 
               <hr>
 
               <h3 class="highlight">其他資料</h3>
-              <form>
+              <div class="form">
                 <div class="form-group">
                   <label for="identity">
                     <span>*</span>身分證字號
@@ -167,7 +176,7 @@
                   </div>
                 </div>
                 <button class="btn btn-primary btn-submit">確定變更</button>
-              </form>
+              </div>
             </div>
           </div>
         </div>

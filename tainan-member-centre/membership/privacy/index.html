@@ -45,7 +45,10 @@
                 <div class="dropdown-header">The Other Leaf</div>
                 <div class="dropdown-header">hi@theotherleaf.com</div>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership" title="會員中心">會員中心</a>
+                <div class="dropdown-header">會員中心</div>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership" title="基本資料">基本資料</a>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership/privacy" title="變更(設定)密碼">變更(設定)密碼</a>
+                <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/membership/social-media" title="社群帳號設定">社群帳號設定</a>
                 <a class="dropdown-item" href="https://theotherleaf.com/demo/tainan-member-centre/" title="登出">登出</a>
               </div>
 
@@ -59,18 +62,19 @@
     <main>
       <div class="container">
         <div class="membership">
-          <h2>會員中心</h2>
+          <h2 class="d-none d-md-block">會員中心</h2>
           <div class="membership-content">
-            <nav class="nav">
-              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership">基本資料</a>
-              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/privacy">變更(設定)密碼</a>
-              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/social-media">社群帳號設定</a>
+            <nav class="nav d-none d-md-flex">
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership"><img class="membership-icon" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-regular-edit.svg" />基本資料</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/privacy"><img class="membership-icon" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-lock.svg" />變更(設定)密碼</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/membership/social-media"><img class="membership-icon" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-globe.svg" />社群帳號設定</a>
+              <a href="https://theotherleaf.com/demo/tainan-member-centre/"><img class="membership-icon" src="https://theotherleaf.com/demo/tainan-member-centre/assets/images/icon-sign-out-alt.svg" />登出</a>
             </nav>
             <div class="content">
               <div class="membership-status d-flex justify-content-center flex-column">設定密碼後即可使用已驗證通過的電子郵件或手機號碼作為登入帳號登入系統。</div>
             
               <h3 class="highlight">變更密碼</h3>
-              <form action="">
+              <div class="form">
                 <div class="form-group">
                   <label for="current-password">
                     <span>*</span>目前密碼
@@ -90,7 +94,7 @@
                   <input type="password" class="form-control" id="confirm-password" placeholder="再次輸入新密碼">
                 </div>
                 <button class="btn btn-primary btn-submit">確定變更</button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
