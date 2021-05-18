@@ -56,6 +56,11 @@
         </div>
       </div>
       </nav>
+      <a class="sticky-register" href="#" title="馬上報名" target="_blank">
+        <div>去</div>
+        <div>報</div>
+        <div>名</div>
+      </a>
     </header>
     <main>
       <section class="herobanner">
@@ -598,9 +603,10 @@
         <img class="mw-100" src="https://theotherleaf.com/demo/letsbattle/assets/images/icon-next-arrow.png" alt="top" />
       </button>
       <div class="container">
+        <div class="footer__sponsor-label">主辦單位</div>
         <div class="footer__sponsor">
-          <img src="https://theotherleaf.com/demo/letsbattle/assets/images/logo-white.svg" alt="Taipei Whisky Live Bar Show" class="img-fluid">
           <img src="https://theotherleaf.com/demo/letsbattle/assets/images/logo-white-1.svg" alt="華揚國際展覽有限公司" class="img-fluid">
+          <img src="https://theotherleaf.com/demo/letsbattle/assets/images/logo-white.svg" alt="Taipei Whisky Live Bar Show" class="img-fluid">
         </div>
         <div class="footer__social-media">
           <a href="#" target="_blank" title="facebook">
@@ -631,6 +637,7 @@
     });
 
     var scrollTopButton = document.querySelector(".scroll-top");
+    var stickyRegisterButton = document.querySelector(".sticky-register");
 
     window.onscroll = function() {
       scrollFunction();
@@ -638,11 +645,11 @@
 
     function scrollFunction() {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollTopButton.style.pointerEvents = "all";
-        scrollTopButton.style.opacity = 1;
+        scrollTopButton.classList.add("active");
+        stickyRegisterButton.classList.add("active");
       } else {
-        scrollTopButton.style.pointerEvents = "none";
-        scrollTopButton.style.opacity = 0;
+        scrollTopButton.classList.remove("active");
+        stickyRegisterButton.classList.remove("active");
       }
     }
 
