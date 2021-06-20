@@ -1,0 +1,89 @@
+.main_div .outer {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 60px 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main_div .outer h1 {
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+
+.main_div .outer .hashtag {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.main_div .outer .hashtag > div {
+  color: #764582;
+  font-size: 16px;
+}
+
+.main_div .outer .hashtag > div:not(:last-child) {
+  margin-right: 8px;
+}
+
+.main_div .outer .banner {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.main_div .outer .banner > * {
+  width: 100%;
+}
+
+.main_div .outer .application {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.main_div .outer .application a {
+  width: 100%;
+  background-color: #764582;
+  color: white;
+}
+
+.main_div .outer .application a:nth-child(1) {
+  background-color: #764582;
+}
+
+.main_div .outer .application a:nth-child(2) {
+  background-color: #EA82AF;
+}
+
+.main_div .outer .application a.disabled {
+  cursor: default;
+}
+
+.main_div .outer .application a > div {
+  padding: 15px;
+  text-align: center;
+}
+
+.main_div .outer .application a > div > div {
+  margin-top: 4px;
+}
+
+.main_div .outer .detail > div:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.main_div .outer .detail h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.main_div .outer .detail p {
+  font-size: 16px;
+  white-space: pre-wrap;
+}

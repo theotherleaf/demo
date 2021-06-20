@@ -1,0 +1,73 @@
+.main_div .outer {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 60px 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main_div .outer h1 {
+  width: 100%;
+  margin-bottom: 32px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.main_div .outer h2 {
+  margin-bottom: 16px;
+}
+
+.main_div .outer table {
+  margin-bottom: 64px;
+  border: 1px solid #f2f2f2;
+}
+
+.main_div .outer table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.main_div .outer table tr th {
+  text-align: left;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.main_div .outer table tr td {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.main_div .outer table tr td .success {
+  color: #1ba207;
+}
+
+.main_div .outer table tr td .failed {
+  color: #EA82AF;
+}
+
+.main_div .outer .retry-btn {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 14px;
+  background-color: #EA82AF;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.main_div .outer .apply-btn {
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: #764582;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.main_div .outer .apply-btn.disabled {
+  opacity: 0.6;
+}

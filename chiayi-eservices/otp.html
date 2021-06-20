@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, viewport-fit=cover" />
+    <title>手機簡訊驗證 - 嘉義縣一站式便民服務</title>
+    <link type="image/x-icon" rel="shortcut icon" href="https://theotherleaf.com/demo/chiayi-eservices/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://theotherleaf.com/demo/chiayi-eservices/assets/css/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="https://theotherleaf.com/demo/chiayi-eservices/assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://theotherleaf.com/demo/chiayi-eservices/assets/css/otp.css"/>
+  </head>
+  <body>
+    <button class="toggle_btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="header_div">
+      <div class="outer">
+        <div class="col01">
+          <div class="brand">
+            <a href="https://theotherleaf.com/demo/chiayi-eservices/"><img src="https://theotherleaf.com/demo/chiayi-eservices/assets/images/header_logo.svg"></a>
+          </div>
+        </div>
+        <div class="col02">
+          <div class="navi_div">
+            <ul>
+              <li class="">
+                <a href="https://theotherleaf.com/demo/chiayi-eservices/">首頁</a>
+              </li>
+              <li class="">
+                <a href="javascript:;">關於本站</a>
+                <div class="sub_menu">
+                  <p>本站提供一站式線上申辦服務，透過整合My Data資訊，讓您申辦時可以減少相關應備證件，申辦過程輕鬆又easy</p>
+                </div>
+              </li>
+              <li class="faq ">
+                <a href="https://theotherleaf.com/demo/chiayi-eservices/faq.html">常見問題</a>
+                <div class="sub_menu">
+                  <div class="links_div">
+                    <div class="item">
+                      <h3>如何安裝讀卡機</h3>
+                      <a href="https://moeacaweb.nat.gov.tw/MoeaeeWeb/other/checker.aspx" target="_blank">如何安裝自然人憑證元件</a>
+                    </div>
+                    <div class="item">
+                      <h3>綁定TW-FidO</h3>
+                      <a href="https://fido.moi.gov.tw/" target="_blank">如何綁定TW-FidO</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="javascript:;"><img src="https://theotherleaf.com/demo/chiayi-eservices/assets/images/icon_logout.svg"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_div">
+      <div class="outer">
+        <!-- TODO: OTP -->
+        <h1>手機簡訊驗證</h1>
+        <div class="form">
+          <div class="form-group">
+            <input type="tel" class="form-control" id="phone" placeholder="請輸入手機號碼(格式：0912345678)">
+          </div>
+          <div class="form-group inline-group">
+            <img src="https://theotherleaf.com/demo/chiayi-eservices/assets/images/dummy-captcha.png" />
+            <button type="button" class="refresh-btn">
+              <img src="https://theotherleaf.com/demo/chiayi-eservices/assets/images/icon-refresh.svg" alt="refresh">
+            </button>
+            <input type="text" class="form-control" id="digit" placeholder="請輸入左圖數字">
+          </div>
+          <a href="javascript:void(0)" title="發送簡訊" class="send-btn">發送簡訊</a>
+          <div class="form-group">
+            <input type="text" class="form-control" id="code" placeholder="請輸入收到的簡訊驗證碼">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="id" placeholder="請輸入身分證字號(格式：Q123456789)">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="dob" placeholder="請輸入生日(格式：0700101)">
+          </div>
+          <div class="form-group flex-group">
+            <div class="agreement-group">
+              <input type="checkbox" id="agreement" name="agreement" value="true">
+              <label for="agreement">本人同意</label>
+            </div>
+            <a href="javascript:set_popup_active('#popupOTP');">線上申辦同意書</a>
+          </div>
+          <a href="javascript:void(0)" title="下一步" class="confirm-btn">下一步</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_div">
+      <div class="outer">
+        <div class="top"><a href="https://www.cyhg.gov.tw/cp.aspx?n=5F02B11AD7FC4A1B" target="_blank">【隱私權保護政策】</a><a href="https://eservice.cyhg.gov.tw/eservice/contactInfo2" target="_blank">【各公所聯絡方式】</a></div>
+        <div class="bottom">．業務問題專線：<a href="https://eservice.cyhg.gov.tw/eservice/contactInfo2" target="_blank">聯絡方式</a>．操作問題專線：04-22491316分機201 </div>
+      </div>
+    </div>
+    <div id="mobile-body-overly"></div>
+    <div id="mobile-nav" class="mobile_navi">
+      <div class="outer">
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <div class="popup_div" id="popup01">
+      <div class="box">
+        <div class="title">
+          <h2></h2>
+          <button class="btn_close" onclick="set_popup_hide('#popup01');"><i></i></button>
+        </div>
+        <div class="info">
+          <p>相關線上服務近期提供</p>
+        </div>
+        <div class="action">
+          <button  onclick="set_popup_hide('#popup01');"><i></i>關閉</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup_div" id="popupOTP">
+      <div class="box">
+        <div class="title">
+          <h2></h2>
+          <button class="btn_close" onclick="set_popup_hide('#popupOTP');"><i></i></button>
+        </div>
+        <div class="info">
+          <p>以下說明詳述在使用線上申辦服務時，您必須瞭解的相關事項，請您詳細閱讀！本作業係依循電子簽章法，建置安全及可信賴之網路環境，透過網際網路進行線上申辦。</p>
+          <p>依電子簽章法第四條第一項及第九條第一項規定，為維護使用者之契約自由原則， 本人同意以使用本系統產製具有電子簽章之電子文件作為通信及交易之基礎， 取代傳統公私領域之書面文件及簽名、蓋章確定之相關法律責任。</p>
+          <p>申請人於使用網路作業進行線上申辦前應先查閱本網站各項最新消息及案件說明。</p>
+          <p>申請人於步驟中資料檢視時，請詳細確認申請資料是否正確，一旦按下完成送出，本府立即受理您的案件，無法取消案件。</p>
+          <p>申請人於最後步驟受理完成，可將您的申辦案件資訊，進行列印或儲存申辦資訊。</p>
+          <p>本網站將保證您個人身分資料的私密性，在未徵求您同意前， 不會任意將您的個人資料作任何商業用途，或洩漏給第三者。但以下狀況除外：</p>
+          <p>基於法律規定。<br>司法機關基於法定程序要求。<br>您已於線上申辦使用免書證謄本服務，同意本府承辦同仁代為電子查調。<br>為保障本網站或其他使用者之權益。<br>申請人未遵守本同意書規定致生損害等，將自行負責。</p>
+          <p>為求慎重周詳，保障申請人權益，本府得保有修改本同意書及使用規定的權利。</p>
+          <p>本同意書未規定之事項，得依主管機關之相關法令規定及內部管理之相關規定辦理。</p>
+          <p>申請人勾選「我同意」，並按下「確定」鍵後，視同申請人已仔細審閱明白上述各條規定，並完全同意遵守各條款之約定。</p>
+        </div>
+        <div class="action">
+          <button  onclick="set_popup_hide('#popupOTP');"><i></i>關閉</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://theotherleaf.com/demo/chiayi-eservices/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://theotherleaf.com/demo/chiayi-eservices/assets/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="https://theotherleaf.com/demo/chiayi-eservices/assets/js/script.js"></script>
+  </body>
+</html>

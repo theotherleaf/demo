@@ -1,0 +1,102 @@
+.main_div .outer {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 60px 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main_div .outer h1 {
+  width: 100%;
+  margin-bottom: 32px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.main_div .outer .form {
+  margin: 0 auto;
+  max-width: 480px;
+  width: 100%;
+}
+
+.main_div .outer .form-group {
+  margin-bottom: 16px;
+}
+
+.main_div .outer .form-group.inline-group {
+  display: flex;
+  height: 40px;
+}
+
+.main_div .outer .form-group.inline-group > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.main_div .outer .form-group.flex-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.main_div .outer .agreement-group {
+  display: flex;
+}
+
+.main_div .outer .agreement-group label {
+  margin-left: 4px;
+}
+
+.main_div .outer .refresh-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.main_div .outer .refresh-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.main_div .outer .form-control {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #cbcbcb;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.main_div .outer .send-btn {
+  font-size: 16px;
+  background-color: #EA82AF;
+  color: white;
+  padding: 9px 0;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.main_div .outer .confirm-btn {
+  font-size: 16px;
+  background-color: #764582;
+  color: white;
+  padding: 9px 0;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.popup_div .box .info {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.popup_div p:not(:last-child) {
+  margin-bottom: 16px;
+}
