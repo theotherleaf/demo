@@ -33,10 +33,25 @@
 .main_div .outer .banner {
   margin-bottom: 16px;
   width: 100%;
+  position: relative;
 }
 
 .main_div .outer .banner > * {
   width: 100%;
+}
+
+.main_div .outer .banner .content {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.main_div .outer .banner .content h2 {
+  font-size: 30px !important;
+}
+
+.main_div .outer .banner .content p {
+  font-size: 22px;
 }
 
 .main_div .outer .application {
@@ -73,6 +88,10 @@
   margin-top: 4px;
 }
 
+.main_div .outer .detail {
+  margin: 0 auto;
+}
+
 .main_div .outer .detail > div:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -84,6 +103,6 @@
 }
 
 .main_div .outer .detail p {
-  font-size: 16px;
+  font-size: 18px;
   white-space: pre-wrap;
 }
