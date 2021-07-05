@@ -11,7 +11,7 @@
 .main_div .outer h1 {
   width: 100%;
   margin-bottom: 16px;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .main_div .outer .hashtag {
@@ -79,12 +79,12 @@
   cursor: default;
 }
 
-.main_div .outer .application a > h2 {
-  font-size: 24px;
+.main_div .outer .application a h2 {
+  font-size: 32px;
 }
 
 .main_div .outer .application a > div {
-  padding: 24px 16px;
+  padding: 16px;
   text-align: center;
   font-size: 20px;
 }
@@ -102,13 +102,13 @@
 }
 
 .main_div .outer .detail h2 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
   margin-bottom: 8px;
 }
 
 .main_div .outer .detail p {
-  font-size: 18px;
+  font-size: 20px;
   white-space: pre-wrap;
 }
 
