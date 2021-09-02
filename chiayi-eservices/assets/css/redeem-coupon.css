@@ -1,0 +1,274 @@
+/* Container */
+.redeem-coupon {
+  background-color: #fff3e5;
+}
+
+.redeem-coupon__inner {
+  padding: 40px 60px 40px;
+}
+
+/* Top */
+.redeem-coupon .redeem-coupon__top {
+  margin-bottom: 0px;
+}
+
+.redeem-coupon .redeem-coupon__top .redeem-coupon__heading img {
+  max-width: 100%;
+}
+
+.redeem-coupon .redeem-coupon__top .redeem-coupon__heading div:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+/* Middle */
+.redeem-coupon .redeem-coupon__middle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.redeem-coupon .redeem-coupon__announcement {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1c3b4a;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  left: -44px;
+}
+
+.redeem-coupon .img-announcement {
+  position: relative;
+  top: 32px;
+  left: -16px;
+}
+
+.redeem-coupon .redeem-coupon__announcement img {
+  max-width: 100%;
+}
+
+.redeem-coupon .redeem-coupon__step-list {
+  padding-top: 32px;
+}
+
+.redeem-coupon .redeem-coupon__step-list ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.redeem-coupon .redeem-coupon__step-list li {
+  position: relative;
+  padding-left: 48px;
+}
+
+.redeem-coupon .redeem-coupon__step-list li:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 36px;
+  width: 36px;
+  content: '';
+}
+
+.redeem-coupon .redeem-coupon__step-list li:nth-child(1):before {
+  background-image: url('https://theotherleaf.com/demo/chiayi-eservices/assets/images/redeem-coupon/step-1.png');
+}
+
+.redeem-coupon .redeem-coupon__step-list li:nth-child(2):before {
+  background-image: url('https://theotherleaf.com/demo/chiayi-eservices/assets/images/redeem-coupon/step-2.png');
+}
+
+.redeem-coupon .redeem-coupon__step-list li:nth-child(3):before {
+  background-image: url('https://theotherleaf.com/demo/chiayi-eservices/assets/images/redeem-coupon/step-3.png');
+}
+
+.redeem-coupon .redeem-coupon__step-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.redeem-coupon .redeem-coupon__step-list li div,
+.redeem-coupon .redeem-coupon__step-list li a {
+  font-weight: 400;
+  font-size: 28px;
+  color: #010101;
+  word-break: break-all;
+}
+
+/* Bottom */
+.redeem-coupon .redeem-coupon__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redeem-coupon .redeem-coupon__detail {
+  padding-top: 60px;
+}
+
+.redeem-coupon .redeem-coupon__detail > div {
+  display: flex;
+  align-items: center;
+}
+
+.redeem-coupon .redeem-coupon__detail > div:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.redeem-coupon .redeem-coupon__detail > div > div:last-child {
+  padding-left: 32px;
+  padding-right: 60px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1c3b4a;
+}
+
+.redeem-coupon .redeem-coupon__detail .img-detail-label {
+  width: 230px;
+  height: 60px;
+}
+
+.redeem-coupon .redeem-coupon__detail .img-detail-value {
+  max-width: 100%;
+}
+
+.redeem-coupon .redeem-coupon__site-list ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.redeem-coupon .redeem-coupon__site-list li {
+  position: relative;
+  padding-left: 48px;
+}
+
+.redeem-coupon .redeem-coupon__site-list li:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://theotherleaf.com/demo/chiayi-eservices/assets/images/redeem-coupon/check.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 36px;
+  width: 36px;
+  content: '';
+}
+
+.redeem-coupon .redeem-coupon__site-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.redeem-coupon .redeem-coupon__site-list li a {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1c3b4a;
+}
+
+.footer_div {
+  background-color: #fff3e5;
+}
+
+.desktop-only,
+.mobile-only {
+  display: none;
+}
+
+@media (min-width: 1315px) { 
+  .desktop-only {
+    display: block;    
+  }
+}
+
+/* Additional breakpoint */
+@media (min-width: 992px) and (max-width: 1314.98px) { 
+  /* Bottom */
+  .redeem-coupon .redeem-coupon__bottom {
+    display: flex !important;
+  }
+
+  .redeem-coupon .redeem-coupon__detail {
+    padding-right: 60px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 1314.98px) {
+  .mobile-only {
+    display: block;
+  }
+
+  /* Container */
+  .redeem-coupon__inner {
+    padding: 40px 16px 40px;
+  }
+
+  /* Top */
+  .redeem-coupon .redeem-coupon__top .redeem-coupon__heading img {
+    position: relative;
+    top: 30px
+  }
+
+  /* Middle */
+  .redeem-coupon .redeem-coupon__middle {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .redeem-coupon .redeem-coupon__announcement {
+    margin-bottom: 60px;
+    font-size: 18px;
+    left: 0;
+  }
+
+  .redeem-coupon .redeem-coupon__step-list {
+    padding-top: 0;
+  }
+
+  .redeem-coupon .redeem-coupon__step-list li div {
+    font-size: 24px;
+  }
+
+  /* Bottom */
+  .redeem-coupon .redeem-coupon__bottom {
+    display: block;
+  }
+
+  .redeem-coupon .redeem-coupon__detail {
+    padding-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .redeem-coupon .redeem-coupon__detail > div > div:last-child {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .redeem-coupon .redeem-coupon__detail > div {
+    display: block;
+  }
+
+  .redeem-coupon .redeem-coupon__detail .img-detail-label {
+    width: 184px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+  .redeem-coupon .redeem-coupon__detail .img-detail-value {
+    width: 343px;
+    height: auto;
+  }
+
+  .redeem-coupon .redeem-coupon__site-list li:before {
+    height: 30px;
+    width: 30px;
+  }
+
+  .redeem-coupon .redeem-coupon__site-list li a {
+    font-size: 24px;
+  }
+}
