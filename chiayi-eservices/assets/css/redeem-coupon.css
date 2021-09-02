@@ -119,7 +119,7 @@
 
 .redeem-coupon .redeem-coupon__detail > div > div:last-child {
   padding-left: 32px;
-  padding-right: 60px;
+  padding-right: 120px;
   font-weight: 700;
   font-size: 28px;
   color: #1c3b4a;
@@ -202,7 +202,7 @@
 
   /* Container */
   .redeem-coupon__inner {
-    padding: 40px 16px 40px;
+    padding: 20px 16px 20px;
   }
 
   /* Top */
@@ -227,7 +227,8 @@
     padding-top: 0;
   }
 
-  .redeem-coupon .redeem-coupon__step-list li div {
+  .redeem-coupon .redeem-coupon__step-list li div,
+  .redeem-coupon .redeem-coupon__step-list li a {
     font-size: 24px;
   }
 
@@ -270,5 +271,57 @@
 
   .redeem-coupon .redeem-coupon__site-list li a {
     font-size: 24px;
+  }
+}
+
+/* Additional breakpoint */
+@media (max-width: 479.98px) {
+  /* Middle */
+  .redeem-coupon .redeem-coupon__middle {
+    margin-bottom: 40px;
+  }
+
+  .redeem-coupon .redeem-coupon__step-list li {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 2px;
+  }
+
+  .redeem-coupon .redeem-coupon__step-list li:before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .redeem-coupon .redeem-coupon__step-list li div,
+  .redeem-coupon .redeem-coupon__step-list li a {
+    font-size: 18px;
+  }
+
+  .redeem-coupon .redeem-coupon__detail {
+    margin-bottom: 40px;
+  }
+
+  .redeem-coupon .redeem-coupon__detail > div > div:last-child {
+    font-size: 20px;
+  }
+
+  /* Bottom */
+  .redeem-coupon .redeem-coupon__detail .img-detail-value {
+    width: 274.4px;
+  }
+
+  .redeem-coupon .redeem-coupon__detail .img-detail-label {
+    width: 147.2px;
+    height: 38.4px;
+  }
+
+  .redeem-coupon .redeem-coupon__site-list li {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 2px;
+  }
+
+  .redeem-coupon .redeem-coupon__site-list li a {
+    font-size: 18px;
   }
 }
