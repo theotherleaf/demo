@@ -38,6 +38,14 @@
   left: -44px;
 }
 
+.redeem-coupon .redeem-coupon__announcement a img {
+  transition: 0.25s ease;
+}
+
+.redeem-coupon .redeem-coupon__announcement a:hover img {
+  transform: scale(1.05);
+}
+
 .redeem-coupon .img-announcement {
   position: relative;
   top: 32px;
@@ -96,6 +104,18 @@
   font-size: 28px;
   color: #010101;
   word-break: break-all;
+}
+
+.redeem-coupon .redeem-coupon__step-list li a {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1c3b4a;
+  opacity: 1;
+  transition: 0.25s ease;
+}
+
+.redeem-coupon .redeem-coupon__step-list li a:hover {
+  opacity: 0.75;
 }
 
 /* Bottom */
@@ -165,10 +185,35 @@
   font-weight: 700;
   font-size: 28px;
   color: #1c3b4a;
+  opacity: 1;
+  transition: 0.25s ease;
+}
+
+.redeem-coupon .redeem-coupon__site-list li a:hover {
+  opacity: 0.75;
 }
 
 .footer_div {
   background-color: #fff3e5;
+  min-height: 300px;
+}
+
+.footer_div .outer .bottom {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer_div {
+    min-height: 220px;
+  }
+
+  .footer_div .outer .bottom {
+    margin-bottom: 20px;
+  }
+}
+
+.footer_div .bottom > div:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .desktop-only,
@@ -276,6 +321,12 @@
 
 /* Additional breakpoint */
 @media (max-width: 479.98px) {
+  /* Top */
+  .redeem-coupon .redeem-coupon__top .redeem-coupon__heading img {
+    position: relative;
+    top: 16px
+  }
+
   /* Middle */
   .redeem-coupon .redeem-coupon__middle {
     margin-bottom: 40px;
