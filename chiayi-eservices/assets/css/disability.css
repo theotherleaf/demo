@@ -162,7 +162,7 @@ h2:before {
     content: '';
     width: 150px;
     height: 150px;
-    background: url("../assets/images/disability_bg_item_1.png") center bottom no-repeat;
+    background: url("../images/disability_bg_item_1.png") center bottom no-repeat;
     background-size: 100% auto;
     position: absolute;
     left: 15px;
@@ -172,7 +172,7 @@ h2:before {
     content: '';
     width: 170px;
     height: 190px;
-    background: url("../assets/images/disability_bg_item_2.png") center bottom no-repeat;
+    background: url("../images/disability_bg_item_2.png") center bottom no-repeat;
     background-size: 100% auto;
     position: absolute;
     right: 15px;
