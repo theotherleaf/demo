@@ -83,15 +83,15 @@
 }
 
 .redeem-coupon .redeem-coupon__step-list li:nth-child(1):before {
-  background-image: url('https://theotherleaf.com/demo/chiayi-eservices/assets/images/redeem-coupon/step-1.png');
+  background-image: url('/assets/images/redeem-coupon/step-1.png');
 }
 
 .redeem-coupon .redeem-coupon__step-list li:nth-child(2):before {
-  background-image: url('https://theotherleaf.com/demo/chiayi-eservices/assets/images/redeem-coupon/step-2.png');
+  background-image: url('/assets/images/redeem-coupon/step-2.png');
 }
 
 .redeem-coupon .redeem-coupon__step-list li:nth-child(3):before {
-  background-image: url('https://theotherleaf.com/demo/chiayi-eservices/assets/images/redeem-coupon/step-3.png');
+  background-image: url('/assets/images/redeem-coupon/step-3.png');
 }
 
 .redeem-coupon .redeem-coupon__step-list li:not(:last-child) {
@@ -169,7 +169,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('https://theotherleaf.com/demo/chiayi-eservices/assets/images/redeem-coupon/check.png');
+  background-image: url('/assets/images/redeem-coupon/check.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 36px;
@@ -200,6 +200,7 @@
 
 .footer_div .outer .bottom {
   margin-bottom: 30px;
+  text-align: left;
 }
 
 @media screen and (max-width: 700px) {
