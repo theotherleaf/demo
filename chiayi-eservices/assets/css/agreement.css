@@ -1,0 +1,75 @@
+.main_div {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.main_div .outer {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main_div .outer .title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.main_div .outer h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.main_div .outer .content-box {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main_div .outer .content-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main_div .outer .content-box ul li {
+  vertical-align: top;
+}
+
+.main_div .outer .content-box ul li .item-box span:nth-child(1):not(:last-child) {
+  width:  35px;
+}
+
+.main_div .outer .content-box ul li .item-box span:nth-child(2) {
+  width:  calc(100% - 35px);
+}
+
+.main_div .outer .content-box ul ul {
+  margin-left: 35px;
+}
+
+.main_div .outer .content-box ul ul li {
+  display: flex;
+}
+
+.main_div .outer h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.main_div .outer span.highlight {
+  color: #764582;
+}
+
+.main_div .outer .content-box p,
+.main_div .outer .content-box ul li:not(:last-child) {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.main_div .outer .content-box ul li.list-group-item {
+  margin-bottom: 16px;
+}
