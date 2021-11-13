@@ -13,9 +13,8 @@
 }
 
 .main_div .outer .title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
-  line-height: 24px;
   margin-bottom: 16px;
 }
 
@@ -25,8 +24,8 @@
 }
 
 .main_div .outer .content-box {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .main_div .outer .content-box ul {
