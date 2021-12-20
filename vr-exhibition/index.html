@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>The Other Leaf - VR Exhibition</title>
+  <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
+  <meta name="description" content="The Other Leaf is a creative web production studio. We provide responsive web design services and digital solutions to our clients for brand promotion. Our client projects include branding website, corporate website, e-commerce website, etc...">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.6.0/aframe-master.min.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.6/dist/aframe-extras.min.js"></script>
+  <script src="./aframe-text-geometry-component.min.js"></script> 
+  <script src="./aframe-area-light-component.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <!-- texture -->
+      <img id="floor" src="./img/texture/floor.jpeg">
+      <img id="wall" src="./img/texture/wall-concrete.jpg">
+      <img id="marble" src="./img/texture/marble.jpeg">
+
+      <!-- logo -->
+      <img id="logo" src="./img/logo/theotherleaf-white.png">
+
+      <!-- projects -->
+      <img id="andoly-1" src="./img/projects/andoly-1.jpeg">
+      <img id="andoly-2" src="./img/projects/andoly-2.jpeg">
+      <img id="shopping-cart" src="./img/projects/shopping-cart-sitemap.png">
+      <img id="tzungyuan-1" src="./img/projects/tzungyuan-1.jpeg">
+      <img id="tzungyuan-2" src="./img/projects/tzungyuan-2.jpeg">
+      <img id="corp1" src="./img/projects/corp1.jpeg">
+      <img id="corp2" src="./img/projects/corp2.jpeg">
+      <img id="gov-1" src="./img/projects/gov-1.jpeg">
+      <img id="gov-2" src="./img/projects/gov-2.jpeg">
+      <img id="gov-3" src="./img/projects/gov-3.jpeg">
+      <img id="gov-4" src="./img/projects/gov-4.jpeg">
+      <img id="gov-5" src="./img/projects/gov-5.jpeg">
+
+      <!-- nft -->
+      <img id="temple" src="./img/opensea/temple.jpeg">
+      <a-asset-item id="fox-obj" src="./img/metamask/model.obj"></a-asset-item>
+      <a-asset-item id="fox-mtl" src="./img/metamask/materials.mtl"></a-asset-item>
+
+      <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+
+    </a-assets>
+
+    <!-- User / Camera -->
+    <a-entity position="0 1.6 0">
+      <a-entity
+        id="player"
+        camera
+        universal-controls
+        kinematic-body
+        listener
+      >
+      </a-entity>
+    </a-entity>
+
+    <a-entity obj-model="obj: #fox-obj; mtl: #fox-mtl" position="-4.628 1.575 -4.847" rotation="0 -110 0"></a-entity>
+    <a-image position="-1.5 3 -8.890" src="#temple" height="4" width="4"></a-image>
+    <a-box position="-1.5 3 -8.943" color="#d3d3d3" depth=".1" height="4" width="4"></a-box>
+    <a-entity position="0 0 -8.5" text-geometry="value: NFT" material="color: #62a9b9"></a-entity>
+
+    <a-entity rotation="0 0 0">
+      <a-image position="-1.474 2.545 7.695" src="#logo" height="2.5" width="5"></a-image>
+      <a-entity position="-3.825 2.487 7.459" area-light="intensity: 4; width: 5; height: 2.5; color: #fff; showHelper: false"></a-entity>
+      <a-box position="-1.474 2.487 7.566" material="shader: flat;" color="#fff" depth=".25" height="5" width="8"></a-box>
+    </a-entity>
+    <a-entity rotation="0 0 0">
+      <a-box position="-11.791 0.985 0.803" rotation="-15 90 0" color="#d3d3d3" depth=".1" height="2" width="2.5"></a-box>
+      <a-image position="-11.742 0.998 0.803" rotation="-15 90 0" src="#shopping-cart" height="2" width="2.5"></a-image>
+      <a-image position="-12.091 2.545 3.252" rotation="0 90 0" src="#andoly-1" height="4" width="4"></a-image>
+      <a-image position="-12.091 2.545 -1.626" rotation="0 90 0" src="#andoly-2" height="4" width="4"></a-image>
+      <a-box position="-12.244 2.487 0.834" rotation="0 90 0" color="#ececec" depth=".25" height="5" width="10"></a-box>
+    </a-entity>
+    <a-entity rotation="0 0 0">
+      <a-image position="9.116 3.65 -2.763" rotation="0 -90 0" src="#gov-2" height="1.8" width="1.8"></a-image>
+      <a-image position="9.116 1.411 -2.763" rotation="0 -90 0" src="#gov-1" height="1.8" width="1.8"></a-image>
+      <a-image position="9.116 3.65 -0.522" rotation="0 -90 0" src="#gov-3" height="1.8" width="1.8"></a-image>
+      <a-image position="9.116 1.411 -0.522" rotation="0 -90 0" src="#gov-4" height="1.8" width="1.8"></a-image>
+      <a-image position="9.116 2.545 3.252" rotation="0 -90 0" src="#gov-5" height="4" width="4"></a-image>
+      <a-box position="9.249 2.487 0.834" rotation="0 -90 0" color="#ececec" depth=".25" height="5" width="10"></a-box>
+    </a-entity>
+    <a-entity rotation="0 0 0">
+      <a-image position="-12.091 2.545 17.084" rotation="0 90 0" src="#tzungyuan-2" height="4" width="4"></a-image>
+      <a-image position="-12.091 2.545 12.206" rotation="0 90 0" src="#tzungyuan-1" height="4" width="4"></a-image>
+      <a-box position="-12.244 2.487 14.660" rotation="0 90 0" color="#ececec" depth=".25" height="5" width="10"></a-box>
+    </a-entity>
+    <a-entity rotation="0 0 0">
+      <a-image position="9.116 2.545 17.084" rotation="0 -90 0" src="#corp2" height="4" width="4"></a-image>
+      <a-image position="9.116 2.545 12.206" rotation="0 -90 0" src="#corp1" height="4" width="4"></a-image>
+      <a-box position="9.249 2.487 14.660" rotation="0 90 0" color="#ececec" depth=".25" height="5" width="10"></a-box>
+    </a-entity>
+
+    <!-- Ground -->
+    <a-grid id="ground" static-body material="src: #floor; repeat: 15 15" rotation="0 -90 0"></a-grid>
+
+    <!-- Walls (used by map.js) -->
+    <a-entity id="walls"></a-entity>
+
+    <!-- Sky -->
+    <a-sky id="sky" color="#1f1e1b"></a-sky>
+  </a-scene>
+  <script src="./js/map.js"></script>
+</body>
+</html>
