@@ -8,6 +8,9 @@
   <meta name="theme-color" content="#31535D">
   <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/static/images/theotherleaf-square.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <title>The Other Leaf - VR Exhibition</title>
   <meta name="description" content="The Other Leaf is a creative web production studio. We provide responsive web design services and digital solutions to our clients for brand promotion. Our client projects include branding website, corporate website, e-commerce website, etc...">
   <meta name="generator" content="The Other Leaf | Art & Web Creative">
@@ -29,7 +32,7 @@
   <script src="./js/aframe-emissive-light.min.js"></script>
 </head>
 <body>
-  <a-scene>
+  <a-scene id="scene" vr-mode-ui="enabled: false;">
     <a-assets>
       <!-- texture -->
       <img id="floor" src="./img/texture/floor.jpeg">
@@ -64,7 +67,7 @@
     <!-- User / Camera -->
     <a-entity position="0 1.6 0">
       <a-entity
-        id="player"
+        id="camera"
         camera
         universal-controls
         kinematic-body
@@ -123,6 +126,8 @@
     <!-- Sky -->
     <a-sky id="sky" color="#1f1e1b"></a-sky>
   </a-scene>
+  <script src="./js/init.js"></script>
   <script src="./js/map.js"></script>
+  <script src="./js/joystick.min.js"></script>
 </body>
 </html>

@@ -96,5 +96,5 @@ document.querySelector('a-scene').addEventListener('render-target-loaded', () =>
       }
     }
 
-    document.querySelector('#player').setAttribute('position', playerPos);
+    document.querySelector('#camera').setAttribute('position', playerPos);
 });
