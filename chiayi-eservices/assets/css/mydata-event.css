@@ -1,0 +1,419 @@
+.mydata-event .outer {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mydata-event .top-section {
+  padding: 120px 0 80px;
+  background: url("../images/mydata-event/banner-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top -10px;
+}
+
+.mydata-event .top-section .top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.mydata-event .top-section .top-banner .top-slogan {
+  margin-bottom: 22px;
+}
+
+.mydata-event .top-section .top-banner .top-slogan-content {
+  display: flex;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #ff7368;
+}
+
+.mydata-event .top-section .top-banner .top-slogan-content:before {
+  display: block;
+  width: 70px;
+  height: 3px;
+  content: '';
+  background-color: #222;
+  transform: rotate(60deg);
+  position: relative;
+  top: 30px;
+  margin-right: 8px;
+}
+
+.mydata-event .top-section .top-banner .top-slogan-content:after {
+  display: block;
+  width: 50px;
+  height: 3px;
+  content: '';
+  background-color: #222;
+  transform: rotate(130deg);
+  position: relative;
+  top: 20px;
+  margin-left: 12px;
+}
+
+.mydata-event .top-section .top-banner h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.mydata-event .top-section .top-banner h1 img {
+  max-width: 100%;
+}
+
+.mydata-event .top-section .top-banner .top-mobile-image {
+  display: none;
+}
+
+.mydata-event .top-section .top-banner .top-description {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.67;
+  color: #222;
+  max-width: 527px;
+  margin-bottom: 45px;
+}
+
+.mydata-event .top-section .top-banner .top-cta {
+  width: 400px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #c64c5d;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  position: relative;
+}
+
+.mydata-event .top-section .top-banner .top-cta:after {
+  display: block;
+  content: '';
+  background: url("../images/mydata-event/chevron.png");
+  transform: rotate(60deg);
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.mydata-event .top-section .top-banner-section:first-child {
+  width: 60%;
+}
+
+.mydata-event .top-section .top-banner-section:last-child {
+  width: 40%;
+}
+
+.mydata-event .top-section .top-banner .top-image img {
+  max-width: 100%;
+}
+
+.mydata-event .top-section .top-event-fields {
+  margin: 160px auto 80px;
+}
+
+.mydata-event .top-section .top-event-field {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.mydata-event .top-section .top-event-field-label {
+  width: 215px;
+  height: 45px;
+  border-radius: 8px;
+  border: solid 3px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  position: relative;
+  background-color: #fff;
+}
+
+.mydata-event .top-section .top-event-field-value {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222;
+  max-width: 710px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mydata-event .top-section .top-event-field-label:after {
+  position: absolute;
+  top: 7px;
+  right: -7px;
+  display: block;
+  width: 215px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #d8d8d8;
+  content: '';
+  z-index: -1;
+}
+
+.mydata-event .top-section .top-card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.mydata-event .top-section .top-card-wrapper {
+  flex: 0 0 calc(25% - 30px);
+}
+
+.mydata-event .top-section .top-card {
+  width: 120px;
+  height: 120px;
+  background-color: #ececec;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mydata-event .bottom-section {
+  padding: 80px 0 60px;
+  background-color: #f3e8e8;
+}
+
+.mydata-event .bottom-section .bottom-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.mydata-event .bottom-section h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+
+.mydata-event .bottom-section h2:before {
+  display: block;
+  content: '';
+  width: 138px;
+  height: 2px;
+  background-color: #222;
+  position: absolute;
+  top: 50%;
+  left: -154px;
+  transform: translateY(-50%);
+}
+
+.mydata-event .bottom-section h2:after {
+  display: block;
+  content: '';
+  width: 138px;
+  height: 2px;
+  background-color: #222;
+  position: absolute;
+  top: 50%;
+  right: -154px;
+  transform: translateY(-50%);
+}
+
+.mydata-event .bottom-section .bottom-item-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 60px 0 0;
+}
+
+.mydata-event .bottom-section .bottom-item-list .item-wrapper {
+  flex: 0 0 calc(33.333333% - 30px);
+  border-radius: 8px;
+  border: solid 3px #5b638d;
+  background-color: #fff;
+  min-height: 130px;
+  position: relative;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.mydata-event .bottom-section .bottom-item-list .item-number {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  border: solid 3px #222;
+  border-radius: 50%;
+  background-color: #ff7368;
+  width: 28px;
+  height: 28px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mydata-event .bottom-section .bottom-item-list .item-content {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #222;
+  text-align: center;
+  max-width: 290px;
+}
+
+.mydata-event .bottom-section .bottom-description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.9;
+  color: #222;
+  max-width: 710px;
+  margin: 60px auto 30px;
+  text-align: center;
+}
+
+.mydata-event .bottom-section .bottom-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.mydata-event .bottom-section .bottom-logo img {
+  max-width: 100%;
+}
+
+.mydata-event + .footer_div {
+  background-color: #f3e8e8;
+}
+
+/* Mobile */
+@media screen and (max-width: 992px) {
+  .mydata-event .top-section {
+    padding: 60px 0;
+  }
+
+  .mydata-event .top-section .top-banner-section:first-child {
+    width: 100%;
+  }
+  
+  .mydata-event .top-section .top-banner-section:last-child {
+    display: none;
+  }
+
+  .mydata-event .top-section .top-banner .top-slogan-content {
+    font-size: 24px;
+  }
+  
+  .mydata-event .top-section .top-banner .top-slogan-content:before {
+    width: 40px;
+    top: 30px;
+  }
+  
+  .mydata-event .top-section .top-banner .top-slogan-content:after {
+    width: 30px;
+    top: 20px;
+  }
+
+  .mydata-event .top-section .top-banner .top-mobile-image {
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    margin: 30px 0;
+  }
+
+  .mydata-event .top-section .top-banner .top-description {
+    max-width: 80%;
+  }
+
+  .mydata-event .top-section .top-banner .top-cta {
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .mydata-event .top-section .top-event-fields {
+    margin: 80px auto 60px;
+  }
+
+  .mydata-event .top-section .top-event-field {
+    display: block;
+  }
+
+  .mydata-event .top-section .top-event-field-value {
+    margin-top: 20px;
+    font-size: 26px;
+  }
+
+  .mydata-event .bottom-section {
+    padding: 60px 0;
+  }
+
+  .mydata-event .bottom-section h2:before,
+  .mydata-event .bottom-section h2:after {
+    display: none;
+  }
+
+  .mydata-event .bottom-section .bottom-item-list .item-wrapper {
+    flex: 0 0 calc(50% - 30px);
+  }
+}
+
+/* Additional breakpoint */
+@media screen and (max-width: 700px) {
+  .mydata-event .top-section .top-banner .top-slogan {
+    margin-bottom: 22px;
+  }
+
+  .mydata-event .top-section .top-banner h1 {
+    font-size: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .mydata-event .top-section .top-banner .top-description {
+    max-width: 100%;
+  }
+
+  .mydata-event .top-section .top-card-list {
+    max-width: 270px;
+  }
+
+  .mydata-event .bottom-section {
+    padding: 60px 0 40px;
+  }
+
+  .mydata-event .bottom-section .bottom-item-list {
+    padding: 0 15px;
+  }
+
+  .mydata-event .bottom-section .bottom-item-list .item-wrapper {
+    flex: 0 0 100%;
+  }
+}
