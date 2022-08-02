@@ -1,20 +1,12 @@
 /*---元件---*/
-.test .btn-group {
-	display: flex;
-	justify-content: space-between;
-	margin-left: -7.5px !important;
-	margin-right: -7.5px !important;
-}
-.test .btn-group .btn {
-	margin: 0 7.5px !important;
-}
-.test .btn {
+.test .btn:not(.btn_bottom) {
   padding: 0 15px;
   border-radius: 25px !important;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+	white-space: nowrap;
 }
 .test .btn-primary {
   background: #18a5d9;
@@ -41,6 +33,15 @@
   max-width: 180px;
 	background: none !important;
 }
+.test .btn-group {
+	display: flex;
+	justify-content: space-between;
+	margin-left: -7.5px !important;
+	margin-right: -7.5px !important;
+}
+.test .btn-group .btn {
+	margin: 0 7.5px !important;
+}
 /*---進度條---*/
 .test .progress {
   height: 20px;
@@ -62,15 +63,16 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox
 	display: block;
 	overflow: hidden;
 }
-body.page main.test .contact_box .framebox .explain {
-	width: calc(100% - 73px);
+body.page main.test .contact_box .framebox .framebox_in {
+	position: relative;
 }
 body.page main.test .contact_box .framebox .evaluationbox {
 	border: 3px solid #8bbc9f;
 	background: #ffffff;
   padding: 20px 20px 10px;
 }
-body.page main.test .contact_box .framebox .numbertag {
+body.page main.test .contact_box .framebox .numbertag-left,
+body.page main.test .contact_box .framebox .numbertag-right {
 	width: 60px;
 	height: 45px;
 	line-height: 45px;
@@ -78,28 +80,50 @@ body.page main.test .contact_box .framebox .numbertag {
 	background: #8bbc9f;
 	color: white;
 	font-size: 20px;
-	text-align: center;
 	text-transform: uppercase;
 	font-weight: 600;
+	justify-content: center;
+}
+body.page main.test .contact_box .framebox .numbertag-left {
+	padding-right: 13px;
+	position: absolute;
+	left: 0;
+	top: 15px;
+}
+body.page main.test .contact_box .framebox .numbertag-right {
 	padding-left: 13px;
 	margin-top: 15px;
 	position: relative;
 }
-body.page main.test .contact_box .framebox .numbertag:after {
+body.page main.test .contact_box .framebox .numbertag-left:after,
+body.page main.test .contact_box .framebox .numbertag-right:after {
 	content: "";
 	position: absolute;
-	left: 0;
 	bottom: 0;
 	width: 0;
 	height: 0;
-	border-left: 13px solid #fbfffe;
   border-bottom: 22.5px solid transparent;
   border-top: 22.5px solid transparent;
+}
+body.page main.test .contact_box .framebox .numbertag-left:after {
+	right: 0;
+	border-right: 13px solid #fbfffe;
+}
+body.page main.test .contact_box .framebox .numbertag-right:after {
+	left: 0;
+	border-left: 13px solid #fbfffe;
 }
 body.page main.test .contact_box .framebox .evaluationbox .paragraph {
   line-height: 1.5;
   font-size: 14px;
   font-weight: 500;
+}
+body.page main.test .contact_box .framebox .evaluationbox .paragraph .media-wrapper {
+	display: flex;
+	justify-content: center;
+}
+body.page main.test .contact_box .framebox .evaluationbox .paragraph .media-wrapper * {
+	max-width: 100%;
 }
 body.page main.test .contact_box .framebox .evaluationbox h5 {
   background: #8bbc9f;
@@ -130,6 +154,7 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno {
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 10px;
   align-items: center;
 }
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li:nth-child(even) {background: #ffffff;}
@@ -142,10 +167,6 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbo
 	display: table-row;
 }
 /*---評量表---*/
-body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 40px;}
-body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-  padding-left: 15px;
-}
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 20%;}
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox .inbox {
 	line-height: 1.2;
@@ -339,6 +360,9 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 @media (min-width: 640px) {
 	/*---內容---*/
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox {padding-right: 15px;}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
+		text-align: left;
+	}
 }
 @media (min-width: 992px) {
 	/*---內容---*/
@@ -346,7 +370,9 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 	body.page main.test .contact_box .btn a {width: 33%;}
 	/*---評量表---*/
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 20%;}
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 2.2em;}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
+		font-size: 2.2em;
+	}
 	/*---級數---*/
 	body.page main.test .contact_box .framebox .recommend>h5,
 	body.page main.test .contact_box .framebox .recommend .paragraph {width: 68%;}
@@ -394,7 +420,7 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 }
 @media (max-width: 991px) {
 	/*---內容---*/
-	body.page main.test .contact_box .btn {margin-bottom: -130px;}
+	body.page main.test .contact_box .btn:not(.btn_bottom) {margin-bottom: -130px;}
 	/*---評量表---*/
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 20%;}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 2.2em;}
@@ -439,9 +465,38 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 	/*---級數---*/
 	body.page main.test .contact_box .framebox .recommend .explainlist .level {width: 20%;}
 	body.page main.test .contact_box .framebox .recommend .explainlist .subjectbox {width: 68%;}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
+		width: 15%;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: 58%;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
+		width: 27%;
+	}
 }
 @media (max-width: 639px) {
 	/*---評量表---*/
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
+		width: 22%;
+    padding-right: 10px;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: 78%;
+		line-height: initial;
+		min-height: 42px;
+		display: flex;
+    align-items: center;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
+		width: 100%;
+		display: flex;
+    justify-content: flex-start;
+		align-items: center;
+		height: 60px;
+		margin-left: -8px;
+		margin-right: -8px;
+	}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 1.6em;}
 	/*---級數---*/
 	body.page main.test .contact_box .framebox .recommend>h5,
@@ -456,33 +511,33 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 }
 @media (max-width: 412px) {
 	/*---評量表---*/
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li {
+		padding-right: 10px;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
+		width: 100%;
+		margin-left: -10px;
+	}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
 		font-size: 2.2em;
 		text-align: left;
 	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: 100%;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
+		width: 100%;
+	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li {
 		display: flex;
 	}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
 		width: calc(80% - 40px);
 	}
-}
-@media (max-width: 767.98px) {
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-		width: calc(100% - 40px);
-		line-height: initial;
-		min-height: 42px;
-		display: flex;
-    align-items: center;
-	}
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
-		width: 100%;
-		display: flex;
-    justify-content: flex-start;
-		align-items: center;
-		height: 60px;
+	body.page main.test .contact_box .framebox .explain {
+		width: calc(100% - 73px);
 	}
 }

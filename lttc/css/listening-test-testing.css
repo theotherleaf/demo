@@ -1,0 +1,95 @@
+body.page main.listening_test.test .titlebox .subtitle {
+  color: #f8ead9;
+}
+
+body.page main.listening_test.test .test_detail_box table tr th,
+body.page main.listening_test.test .test_detail_box table tr td {
+  width: 33.3333% !important;
+  padding: 1em 4px;
+}
+
+body.page main.listening_test.test .test_detail_box table tr th:nth-child(1),
+body.page main.listening_test.test .test_detail_box table tr th:nth-child(2) {
+  border-right: 2px solid #fff;
+}
+
+body.page main.listening_test.test .test_detail_box table tr td:nth-child(1),
+body.page main.listening_test.test .test_detail_box table tr td:nth-child(2) {
+  border-right: 2px solid #f7b364;
+}
+
+body.page main.listening_test.test table tr td {
+  line-height: 24px !important;
+}
+
+body.page main.listening_test.test .btn-dark {
+  background-color: #626262;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 25px;
+  padding: 0;
+  max-width: 140px;
+}
+
+body.page main.listening_test.test .progress {
+  background: #cfcfcf;
+}
+
+body.page main.listening_test.test .contact_box .framebox .numbertag-left,
+body.page main.listening_test.test .contact_box .framebox .numbertag-right {
+  background-color: #f7b364;
+}
+
+body.page main.listening_test.test .contact_box .framebox .numbertag-left {
+  top: 175px;
+}
+
+body.page main.listening_test.test .contact_box .framebox .evaluationbox {
+  border: 3px solid #f7b364;
+}
+
+body.page main.listening_test.test .contact_box .framebox .evaluationbox h5 {
+  background: #fdf0e0;
+  color: #f7b364;
+}
+
+body.page main.listening_test.test .contact_box .framebox .evaluationbox h5:before {
+  color: #f7b364;
+}
+
+body.page main.listening_test.test .contact_box .framebox .evaluationbox hr {
+  background: #999;
+}
+
+body.page main.listening_test.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
+  color: #696969;
+}
+
+body.page main.listening_test.test .btn-outline-primary {
+  border: 1px solid #ddd !important;
+  border-color: #ddd;
+  color: #ddd !important;
+}
+
+body.page main.listening_test.test .btn_bottom a {
+  background-color: #db5e5e;
+  border: 2px solid #db5e5e;
+  padding-left: 15px;
+}
+
+@media (max-width: 639px) {
+  body.page main.listening_test.test .contact_box .framebox .numbertag-left {
+    top: 157px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body.page main.listening_test.test .test_detail_box table tr th,
+  body.page main.listening_test.test .test_detail_box table tr td {
+    font-size: 14px;
+  }
+
+  body.page main.listening_test.test .contact_box .framebox .numbertag-left {
+    top: 142px;
+  }
+}
