@@ -363,6 +363,12 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
 		text-align: left;
 	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
+		width: 11%;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: 69%;
+	}
 }
 @media (min-width: 992px) {
 	/*---內容---*/
@@ -533,9 +539,6 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 @media (min-width: 992px) {
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li {
 		display: flex;
-	}
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-		width: calc(80% - 40px);
 	}
 	body.page main.test .contact_box .framebox .explain {
 		width: calc(100% - 73px);

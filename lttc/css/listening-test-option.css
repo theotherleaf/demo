@@ -1,0 +1,51 @@
+body.page .listening_test_option .contact_box .framebox table tr td:first-child:not([colspan]) {
+  white-space: nowrap;
+}
+body.page .listening_test_option .contact_box .framebox .optionbox label {
+  border: 1px solid #f7b364;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.listening li:nth-child(1) label:before {
+  content: '聽力';
+}
+body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.listening li:nth-child(2) label:before {
+  content: '閱讀';
+}
+body.page .listening_test_option ul.labelauty input.labelauty:checked + label {
+  border: 1px solid #db5e5e;
+}
+body.page main.listening_test_option .contact_box .framebox ul.labelauty input.labelauty:checked + label {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.time li {
+    width: 25%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.listening li {
+    width: 25%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 991px) {
+  body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.listening li {
+    width: 50%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 639px) {
+  body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.listening li {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}

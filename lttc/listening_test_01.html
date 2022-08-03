@@ -43,10 +43,12 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap" />
   <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript">new WOW().init();</script>
+  <link rel="stylesheet" type="text/css" media="all" href="css/listening-test-option.css" />
 </head>
 
 <body class="page">
@@ -125,7 +127,7 @@
   <!--***===============頭部，結束===============***-->
 
   <!--***===============內容，開始===============***-->
-  <main class="listening_test">
+  <main class="listening_test listening_test_option">
     <div class="container">
       <div class="row2">
         <!--標題，開始-->
@@ -156,62 +158,42 @@
                         <th colspan="2" scope="col">選擇級數和測驗</th>
                       </tr>
                       <tr>
-                        <td>測驗級數</td>
-                        <td>
-                          <div class="optionbox">
-                            <ul class="labelauty level">
-                              <li>
-                                <input type="radio" name="level" id="level1" class="labelauty" title="初級(CEFR A2)"
-                                  data-labelauty="初級(CEFR A2)" style="display: none;">
-                                <label for="level1">
-                                  <span class="labelauty-unchecked">初級(CEFR A2)</span><span
-                                    class="labelauty-checked">初級(CEFR A2)</span>
-                                </label>
-                              </li>
-                              <li>
-                                <input type="radio" name="level" id="level2" class="labelauty" title="中級(CEFR B1)"
-                                  data-labelauty="中級(CEFR B1)" style="display: none;">
-                                <label for="level2">
-                                  <span class="labelauty-unchecked">中級(CEFR B1)</span><span
-                                    class="labelauty-checked">中級(CEFR B1)</span>
-                                </label>
-                              </li>
-                              <li>
-                                <input type="radio" name="level" id="level3" class="labelauty" title="中高級(CEFR B2)"
-                                  data-labelauty="中高級(CEFR B2)" style="display: none;">
-                                <label for="level3">
-                                  <span class="labelauty-unchecked">中高級(CEFR B2)</span><span
-                                    class="labelauty-checked">中高級(CEFR B2)</span>
-                                </label>
-                              </li>
-                              <li>
-                                <input type="radio" name="level" id="level4" class="labelauty" title="高級(CEFR C1)"
-                                  data-labelauty="高級(CEFR C1)" style="display: none;">
-                                <label for="level4">
-                                  <span class="labelauty-unchecked">高級(CEFR C1)</span><span
-                                    class="labelauty-checked">高級(CEFR C1)</span>
-                                </label>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
                         <td>是否計時</td>
                         <td>
                           <div class="optionbox">
                             <ul class="labelauty time">
                               <li>
                                 <input type="radio" name="timing" id="yes" title="是" class="labelauty"
-                                  style="display: none;">
+                                  style="display: none;" data-bs-toggle="collapse" data-bs-target="#collapseListening:not(.show)">
                                 <label for="yes"><span class="labelauty-unchecked">是</span><span
                                     class="labelauty-checked">是</span></label>
                               </li>
                               <li>
                                 <input type="radio" name="timing" id="no" title="否" class="labelauty"
-                                  style="display: none;">
+                                  style="display: none;" data-bs-toggle="collapse" data-bs-target="#collapseListening">
                                 <label for="no"><span class="labelauty-unchecked">否</span><span
                                     class="labelauty-checked">否</span></label>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr id="collapseListening" class="collapse">
+                        <td>測試項目</td>
+                        <td>
+                          <div class="optionbox">
+                            <ul class="labelauty listening">
+                              <li>
+                                <input type="radio" name="listening" id="option1" title="聽力" class="labelauty"
+                                  style="display: none;">
+                                <label for="option1"><span class="labelauty-unchecked">聽力</span><span
+                                    class="labelauty-checked">聽力</span></label>
+                              </li>
+                              <li>
+                                <input type="radio" name="listening" id="option2" title="閱讀" class="labelauty"
+                                  style="display: none;">
+                                <label for="option2"><span class="labelauty-unchecked">閱讀</span><span
+                                    class="labelauty-checked">閱讀</span></label>
                               </li>
                             </ul>
                           </div>
@@ -246,6 +228,7 @@
       </div>
     </div>
   </main>
+
   <!--***===============內容，結束===============***-->
 
   <!--***===============底部，結束===============***-->
@@ -289,6 +272,7 @@
     </div>
   </footer>
   <!--***===============底部，結束===============***-->
+
 </body>
 
 </html>
