@@ -1,0 +1,845 @@
+/*---內容---*/
+body.page main.test_recommend .contact_box .framebox,
+body.page main.test .contact_box .framebox,
+body.page main.listening_test .contact_box .framebox {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+	margin-bottom: 80px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+body.page main.test_recommend .contact_box .framebox_in,
+body.page main.test .contact_box .framebox_in,
+body.page main.listening_test .contact_box .framebox_in {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+	margin-bottom: -60px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+body.page main.test_recommend table,
+body.page main.test table {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+body.page main.test_recommend table tr th,
+body.page main.test table tr th {
+	color: #ffffff;
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: 500;
+	padding: 0.5em;
+}
+body.page main.test_recommend table tr td,
+body.page main.test_recommend table tr td div,
+body.page main.test table tr td,
+body.page main.test table tr td div {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+body.page main.test_recommend table tr th,
+body.page main.test table tr th {
+	line-height: 1;
+	letter-spacing: 2px;
+	padding: 1em;
+}
+body.page main.test_recommend table tr td,
+body.page main.test table tr td {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background: #ffffff;
+}
+body.page main.test_recommend table tr td .tit,
+body.page main.test table tr td .tit {
+	font-weight: 500;
+	margin-top: 0.8em;
+}
+body.page main.test_recommend table tr .btn,
+body.page main.test table tr .btn {
+	width: 100%;
+	margin-top: 1em;
+}
+body.page main.test_recommend table tr .btn a,
+body.page main.test table tr .btn a {
+	font-size: 1em;
+    height: 38px;
+    line-height: 35px;
+	background: #ffffff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+body.page main.test_recommend table tr .btn a:hover,
+body.page main.test_recommend table tr .btn a:active,
+body.page main.test_recommend table tr .btn a:focus,
+body.page main.test table tr .btn a:hover,
+body.page main.test table tr .btn a:active,
+body.page main.test table tr .btn a:focus {color: #ffffff;}
+body.page main.test_recommend table tr td .tit,
+body.page main.test table tr td .tit {font-size: 1.15em;}
+body.page main.test_recommend .contact_box .framebox .remark,
+body.page main.test .contact_box .framebox .remark {
+	font-size: 0.9em;
+	margin-top: 1.5em;
+}
+
+@media (min-width: 640px) {
+	/*---介紹---*/
+	body.page main.test_recommend .contact_box .framebox_in,
+	body.page main.test .contact_box .framebox_in,
+	body.page main.listening_test .contact_box .framebox_in {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	body.page main.test_recommend table tr td,
+	body.page main.test table tr td {width: 50%;}
+	body.page main.test_recommend .contact_box .framebox .remark,
+	body.page main.test .contact_box .framebox .remark {text-align: right;}
+}
+@media (min-width: 992px) {
+	/*---共用---*/
+	body.page main {
+		background-position: 100% 100%,/*right bottom*/
+							0% 100%,/*left bottom*/
+							0% 0%,/*left top*/
+							100% 0%;/*right top*/
+		background-size: 30% auto,
+							100% 70%,
+							40% auto,
+							40% auto;
+	}
+	
+	/*---介紹---*/
+	body.page main.test_recommend table tr td img:nth-child(1),
+	body.page main.test table tr td img:nth-child(1) {width: 60px;}
+	body.page main.test_recommend table tr td img:nth-child(2),
+	body.page main.test table tr td img:nth-child(2) {
+		width: 56px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	body.page main.test_recommend table tr .btn a,
+	body.page main.test table tr .btn a {width: 50%;}
+}
+
+@media (min-width: 1200px) {
+	/*---介紹---*/
+	body.page main.test_recommend table,
+	body.page main.test table {width: 70%;}
+}
+@media (min-width: 1300px) {
+	/*---介紹---*/
+	body.page main.test_recommend table,
+	body.page main.test table {width: 60%;}
+	body.page main.test_recommend table tr td:nth-child(1) img,
+	body.page main.test table tr td:nth-child(1) img {width: 70px;}
+	body.page main.test_recommend table tr td:nth-child(2) img,
+	body.page main.test table tr td:nth-child(2) img {
+		width: 64px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+	body.page main.test_recommend table tr .btn a,
+	body.page main.test table tr .btn a {width: 55%;}
+}
+@media (max-width: 1199px) {
+	/*---共用---*/
+	body.page main {
+		margin-top: 150px;
+		padding-bottom: 70px;
+	}
+	body.page .titlebox .subtitle {font-size: 3em;}
+	body.page .titlebox .title {font-size: 2em;}
+	
+	/*---介紹---*/
+	body.page main.test_recommend table,
+	body.page main.test table {width: 75%;}
+}
+@media (max-width: 991px) {
+	/*---共用---*/
+	body.page main {
+		background-position: 100% 100%,/*right bottom*/
+							0% 100%,/*left bottom*/
+							0% 0%,/*left top*/
+							100% 0%;/*right top*/
+		background-size: 40% auto,
+							100% 70%,
+							60% auto,
+							60% auto;
+	}
+	
+	/*---介紹---*/
+	body.page main.test_recommend table,
+	body.page main.test table {width: 80%;}
+	body.page main.test_recommend table tr td,
+	body.page main.test table tr td {width: 50%;}
+	body.page main.test_recommend table tr td img:nth-child(1),
+	body.page main.test table tr td img:nth-child(1) {width: 54px;}
+	body.page main.test_recommend table tr td img:nth-child(2),
+	body.page main.test table tr td img:nth-child(2) {
+		width: 50px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	body.page main.test_recommend table tr .btn a,
+	body.page main.test table tr .btn a {width: 80%;}
+}
+
+@media (max-width: 639px) {
+	/*---共用---*/
+	body.page main {margin-top: 250px;}
+	body.page main {
+		background-position: 360% 106%,/*right bottom*/
+							0% 100%,/*left bottom*/
+							0% 10%,/*left top*/
+							100% 10%;/*right top*/
+		background-size: 90% auto,
+							100% 70%,
+							80% auto,
+							80% auto;
+	}
+	body.page .titlebox .subtitle {font-size: 2.6em;}
+	
+	/*---介紹---*/
+	body.page main.test_recommend .contact_box .framebox_in,
+	body.page main.test .contact_box .framebox_in,
+	body.page main.listening_test .contact_box .framebox_in {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 20px;
+		padding-right: 15px;
+	}
+	body.page main.test_recommend table,
+	body.page main.test table {width: 100%;}
+	body.page main.test_recommend table tr,
+	body.page main.test_recommend table tr th,
+	body.page main.test_recommend table tr td,
+	body.page main.test table tr,
+	body.page main.test table tr th,
+	body.page main.test table tr td {
+		width: 100%;
+		float: left;
+	}
+	body.page main.test_recommend .contact_box .framebox .remark,
+	body.page main.test .contact_box .framebox .remark {text-align: left;}
+}
+/* =======[自我診斷test_recommend]======= */
+/*---標題---*/
+body.page main.test_recommend .titlebox .subtitle {color: #e6eee2;}
+/*---內容---*/
+body.page main.test_recommend .contact_box .framebox {background: #d7ebdf;}
+body.page main.test_recommend .contact_box .framebox_in {
+	border: 8px solid #8bbc9f;
+	background: #fafeff;
+}
+body.page main.test_recommend table {border: 2px solid #8bbc9f;}
+body.page main.test_recommend table tr th {background: #8bbc9f;}
+body.page main.test_recommend table tr .btn a {
+	color: #8bbc9f;
+    border: 2px solid #8bbc9f;
+}
+body.page main.test_recommend table tr .btn a:hover,
+body.page main.test_recommend table tr .btn a:active,
+body.page main.test_recommend table tr .btn a:focus {
+	background: #8bbc9f;
+    border: 2px solid #8bbc9f;
+}
+/*---評量表---*/
+body.page main.test_recommend .contact_box .framebox .evaluationbox,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox .inbox,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
+	display: block;
+	overflow: hidden;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox {
+	border: 2px solid #8bbc9f;
+	background: #ffffff;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(odd) {background: #ffffff;}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(even) {background: #f8f8f8;}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {float: left;}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+	vertical-align: middle;
+	display: table-row;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox .inbox {
+	line-height: 1.2;
+	display: inline-block;
+	vertical-align: middle;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {text-align: center;}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
+	color: #cfeffb;
+	font-weight: 600;
+	text-align: right;
+	line-height: 42px;
+	display: block;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(1) .numberbox:before {content: '1.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(2) .numberbox:before {content: '2.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(3) .numberbox:before {content: '3.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(4) .numberbox:before {content: '4.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(5) .numberbox:before {content: '5.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(6) .numberbox:before {content: '6.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(7) .numberbox:before {content: '7.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(8) .numberbox:before {content: '8.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(9) .numberbox:before {content: '9.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(10) .numberbox:before {content: '10.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(11) .numberbox:before {content: '11.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(12) .numberbox:before {content: '12.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(13) .numberbox:before {content: '13.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(14) .numberbox:before {content: '14.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(15) .numberbox:before {content: '15.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(16) .numberbox:before {content: '16.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(17) .numberbox:before {content: '17.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(18) .numberbox:before {content: '18.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(19) .numberbox:before {content: '19.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(20) .numberbox:before {content: '20.';}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno .optionbox label,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .obox label:before,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .xbox label:before {
+	width: 42px;
+	height: 42px;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox .obox,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox .xbox {
+	height: 42px;
+	vertical-align: middle;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno input + label {
+	padding: 0;
+	background-color: inherit;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li label {
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno .optionbox label span {margin-top: 0px;}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .obox label:hover,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .obox label:active,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .xbox label:hover,
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .xbox label:active {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .obox label:before {
+	content: '';
+	background-image: url(../images/img_white_o.png);
+	background-repeat: no-repeat;
+	background-size: 42px auto;
+	display: block;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .obox input.yesno:checked + label:before {
+	content: '';
+    color: inherit;
+    background-color: inherit;
+	background-image: url(../images/img_white_o-ch.png);
+	background-repeat: no-repeat;
+	background-size: 42px auto;
+	display: block;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .xbox label:before {
+	content: '';
+	background-image: url(../images/img_white_x.png);
+	background-repeat: no-repeat;
+	background-size: 42px auto;
+	display: block;
+}
+body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .xbox input.yesno:checked + label:before {
+	content: '';
+    color: inherit;
+    background-color: inherit;
+	background-image: url(../images/img_white_x-ch.png);
+	background-repeat: no-repeat;
+	background-size: 42px auto;
+	display: block;
+}
+body.page main.test_recommend .contact_box .btn {width: 100%;}
+body.page main.test_recommend .contact_box .btn.send a {
+	font-size: 1.2em;
+    color: #ffffff;
+    border: 2px solid #f7b364;
+    height: 50px;
+    line-height: 48px;
+    background: #f7b364;
+	padding-left: 35px;
+	padding-right: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+body.page main.test_recommend .contact_box .btn.send a:hover,
+body.page main.test_recommend .contact_box .btn.send a:active,
+body.page main.test_recommend .contact_box .btn.send a:focus {
+	background-color: #db5e5e;
+    border: 2px solid #f7b364;
+}
+body.page main.test_recommend .contact_box .btn.send a span.lnr {
+    line-height: 46px;
+	float: right;
+}
+/*---級數---*/
+body.page main.test_recommend .contact_box .framebox .recommend {display: block;}
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox,
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist {
+	display: block;
+	overflow: hidden;
+}
+body.page main.test_recommend .contact_box .framebox .recommend>h5,
+body.page main.test_recommend .contact_box .framebox .recommend .paragraph {float: left;}
+body.page main.test_recommend .contact_box .framebox .recommend .advice {
+	color: #c20e2e;
+	text-align: center;
+	background-image: url(../images/back_redcircle.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	float: right;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table {width: 100%;}
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table th,
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table td {padding: 0.6em;}
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead {
+	color: #ffffff;
+	text-align: center;
+	font-weight: 600;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead td {
+	color: #8bbc9f;
+	text-align: center;
+	font-weight: 500;
+	background-color: #fff9e1;
+}
+
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(1) {line-height: 1.2;}
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody th {
+	color: #ffffff;
+	text-align: center;
+	font-weight: 600;
+	background-color: #a3a3a3;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td span {
+	color: #a3a3a3;
+	font-weight: 500;
+	letter-spacing: 0px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td .subtit {font-size: small;}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist {
+	margin-top: 2em;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 2px solid #a3a3a3;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist ol {margin: 0;}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist ol li {
+	list-style: decimal-leading-zero;
+	counter-increment: decimal-leading-zero;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist li {
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: left;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox,
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level,
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .subjectbox {
+	height: 32px;
+	float: left;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox .obox,
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox .xbox {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox {
+	text-align: center;
+	padding-right: 15px;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox .obox {
+	background-image: url(../images/img_white_o-ch.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox .xbox {
+	background-image: url(../images/img_white_x-ch.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% auto;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level {
+	color: #ffffff;
+	height: 26px;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 26px;
+	letter-spacing: 0px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level.a2 {background-color: #1cb8f1;}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level.b1 {background-color: #0098d0;}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level.b2 {background-color: #007eac;}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level.c1 {background-color: #006f98;}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist li .subjectbox {padding-left: 15px;}
+body.page main.test_recommend .contact_box .framebox .recommend .explainlist li .subjectbox .inbox {
+	line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (min-width: 640px) {
+	/*---內容---*/
+	body.page main.test_recommend table tr td:nth-child(1) {border-right: 2px solid #8bbc9f;}
+	body.page main.test_recommend table tr td:nth-child(2) {border-left: 2px solid #8bbc9f;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {padding-right: 15px;}
+	
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr th:nth-child(1),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr th:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr th:nth-child(3),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr td:nth-child(1),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr td:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr th,
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr td:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr td:nth-child(3),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr td:nth-child(4),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(3) {border-right: 2px solid #9DDED6;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead {border-bottom: 2px solid #9DDED6;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr {border-bottom: 1px solid #c8c8c8;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr:last-child {border-bottom: none;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist li {
+		height: 32px;
+		line-height: 32px;
+	}
+}
+@media (min-width: 800px) {
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(1),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr:nth-child(1) th:nth-child(1) {width: 12%;}
+	
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(1) {width: 26%;}
+	
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(3),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3) {width: 24%;}
+	
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(4) {width: 38%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(5),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(3),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(4) {width: 19%;}
+}
+@media (min-width: 992px) {
+	/*---內容---*/
+	body.page main.test_recommend .contact_box .btn.send {margin-bottom: -130px;}
+	body.page main.test_recommend .contact_box .btn a {width: 33%;}
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 11%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: 69%;
+		line-height: 42px;
+	}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 20%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 2.2em;}
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend>h5,
+	body.page main.test_recommend .contact_box .framebox .recommend .paragraph {width: 68%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .advice {
+		width: 30%;
+		font-size: 1.4em;
+		margin-top: -5em;
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+		margin-left: 2%;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox {width: 12%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level {width: 15%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .subjectbox {width: 73%;}
+}
+@media (min-width: 769px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {height: 42px;}
+}
+@media (min-width: 1024px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 11%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 69%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 20%;}
+}
+@media (min-width: 1200px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 10%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 70%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 20%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 2.6em;}
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist ol {padding-left: 3em;}
+}
+@media (min-width: 1300px) {
+	/*---內容---*/
+	body.page main.test_recommend .contact_box .btn a {width: 40%;}
+	body.page main.test_recommend .contact_box .btn.send a {width: 25%;}
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox {width: 8%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level {width: 12%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .subjectbox {width: 80%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .advice {padding-top: 4em;}
+}
+@media (min-width: 1480px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 9%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 71%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 20%;}
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend>h5,
+	body.page main.test_recommend .contact_box .framebox .recommend .paragraph {width: 74%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .advice {
+		width: 25%;
+		margin-top: -8em;
+		padding-top: 4em;
+		padding-bottom: 3em;
+		margin-left: 1%;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox {width: 5%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level {width: 10%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .subjectbox {width: 85%;}
+}
+@media (min-width: 1680px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 77%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 14%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 3em;}
+}
+@media (max-width: 991px) {
+	/*---內容---*/
+	body.page main.test_recommend .contact_box .btn {margin-bottom: -130px;}
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 11%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: 69%;
+		line-height: 42px;
+	}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 20%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 2.2em;}
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend>h5,
+	body.page main.test_recommend .contact_box .framebox .recommend .paragraph {width: 65%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .advice {
+		width: 33%;
+		font-size: 1.4em;
+		margin-top: -5em;
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+		margin-left: 2%;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox {width: 12%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level {width: 15%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .subjectbox {width: 73%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .advice {font-size: 1.2em;}
+}
+@media (max-width: 880px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 12%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 65%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 23%;}
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level {width: 18%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .subjectbox {width: 70%;}
+}
+@media (max-width: 799px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 15%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 59%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 26%;}
+	
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table {font-size: 80%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(1),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr:nth-child(1) th:nth-child(1) {width: 12%;}
+	
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(1) {width: 30%;}
+	
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(3),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3) {width: 22%;}
+	
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(4) {width: 36%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(5),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(3),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(2) td:nth-child(4) {width: 18%;}
+}
+@media (max-width: 768px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {line-height: 60px;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {line-height: 60px;}
+	
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend>h5,
+	body.page main.test_recommend .contact_box .framebox .recommend .paragraph {width: 60%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .advice {
+		width: 38%;
+		margin-top: -4em;
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+		margin-left: 2%;
+	}
+}
+@media (max-width: 739px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 15%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 58%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 27%;}
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level {width: 20%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .subjectbox {width: 68%;}
+}
+@media (max-width: 639px) {
+	/*---內容---*/
+	body.page main.test_recommend table tr td {border-top: 2px solid #8bbc9f;}
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
+		width: 22%;
+		padding-right: 10px;
+	}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: 78%;
+		line-height: inherit;
+	}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
+		width: 100%;
+		text-align: left;
+	}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 1.6em;}
+	/*---級數---*/
+	body.page main.test_recommend .contact_box .framebox .recommend>h5,
+	body.page main.test_recommend .contact_box .framebox .recommend .paragraph {width: 100%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .advice {
+		width: 100%;
+		margin-top: -2em;
+		margin-left: 0%;
+		padding-top: 4em;
+		padding-bottom: 1em;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead,
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr th:nth-child(1) {
+		display: none;
+		visibility: hidden;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(5) {text-align: left;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td {border-top: none;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td div {
+		text-align: left;
+		display: inline-block;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td .subtit {
+		text-align: left;
+		display: inline-block;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4),
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(5) {width: 100%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2):before,
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3):before,
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4):before,
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(5):before {
+		width: 100%;
+		color: #1cb8f1;
+		text-align: left;
+		float: left;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2):before {content: '全民英檢(GEPT)：';}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3):before {content: '外語能力測驗(FLPT)，三項筆試總分：';}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4):before {content: '大學校院英語能力(CSEPT)，第一級：';}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(5):before {content: '大學校院英語能力(CSEPT)，第二級：';}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr {border-bottom: 1px solid #8bbc9f;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr:last-child {border-bottom: none}
+
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .optionbox {width: 40%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .level {width: 60%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .explainlist .subjectbox {
+		width: 100%;
+		height: auto;
+		margin-top: 5px;
+	}
+}
+@media (max-width: 412px) {
+	/*---評量表---*/
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 100%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
+		font-size: 2.2em;
+		text-align: left;
+	}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 100%;}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox .inbox {
+		padding-left: 15px;
+		padding-right: 5px;
+	}
+}
+
+body.page main.explain .tabs-wrapper .nav-tabs .nav-item .nav-link {
+  color: #d7ebdf !important;
+  border-color: #8bbc9f;
+}
+
+body.page main.explain .numbertag-group .numbertag-right:not(.active) {
+  background-color: #e6eee2;
+}
+
+body.page main.explain .tabs-wrapper .nav-tabs .nav-item .nav-link.active {
+  color: #8bbc9f !important;
+}
+
+body.page main.explain .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
+	color: #d7ebdf;
+}
+
+@media (max-width: 991px) {
+  body.page main.explain .numbertag-group .numbertag-right:after {
+    border-left: 13px solid #d7ebdf !important;
+  }
+}
