@@ -161,16 +161,16 @@
                         <td>是否計時</td>
                         <td>
                           <div class="optionbox">
-                            <ul class="labelauty time">
+                            <ul class="nav labelauty time">
                               <li>
                                 <input type="radio" name="timing" id="yes" title="是" class="labelauty"
-                                  style="display: none;" data-bs-toggle="collapse" data-bs-target="#collapseListening:not(.show)">
+                                  style="display: none;" data-bs-toggle="tab" data-bs-target=".panetime">
                                 <label for="yes"><span class="labelauty-unchecked">是</span><span
                                     class="labelauty-checked">是</span></label>
                               </li>
                               <li>
                                 <input type="radio" name="timing" id="no" title="否" class="labelauty"
-                                  style="display: none;" data-bs-toggle="collapse" data-bs-target="#collapseListening">
+                                  style="display: none;" data-bs-toggle="tab" data-bs-target=".panetime">
                                 <label for="no"><span class="labelauty-unchecked">否</span><span
                                     class="labelauty-checked">否</span></label>
                               </li>
@@ -178,7 +178,7 @@
                           </div>
                         </td>
                       </tr>
-                      <tr id="collapseListening" class="collapse">
+                      <tr class="">
                         <td>測試項目</td>
                         <td>
                           <div class="optionbox">
@@ -202,13 +202,23 @@
                       <tr>
                         <td colspan="2">
                           <!--備註，開始-->
-                          <div class="remark2">
-                            <h6 class="font_red2">注意！</h6>
-                            <ol>
-                              <li>若測驗中斷（例如「重新整理頁面」或點選「上一頁」...等），本次體驗作答記錄則會消失。</li>
-                              <li>若選擇計時測驗，離開測驗後將不會留存作答；若選擇非計時測驗，離開測驗後作答將暫存放在會員專區。</li>
-                              <li>測驗時間範圍：聽力10分鐘；閱讀15分鐘。</li>
-                            </ol>
+                          <div class="remark2 tab-content">
+                            <div class="tab-pane panetime active">
+                              <h6 class="font_red2">注意！</h6>
+                              <ol>
+                                <li>時限內完成聽力、閱讀測驗。（如未完成跳出，則重新計時）。</li>
+                                <li>可查看解答、試題詳解。</li>
+                                <li>可獲得個人化診斷回饋，包括：達成率、強弱項分析、字彙句型及學習指引。</li>
+                              </ol>
+                            </div>
+                            <div class="tab-pane pabenotime">
+                              <h6 class="font_red2">注意！</h6>
+                              <ol>
+                                <li>不限作答時間，可暫存前次作答。</li>
+                                <li>可查看解答、試題詳解。</li>
+                                <li>如想獲得個人化診斷回饋，請至計時模式區作答。</li>
+                              </ol>
+                            </div>
                           </div>
                           <!--備註，結束-->
                         </td>

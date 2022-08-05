@@ -766,6 +766,7 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 		display: none;
 		visibility: hidden;
 	}
+  body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4),
@@ -779,10 +780,12 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 		text-align: left;
 		display: inline-block;
 	}
+  body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(5) {width: 100%;}
+  body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1):before,
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2):before,
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3):before,
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4):before,
@@ -792,6 +795,7 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 		text-align: left;
 		float: left;
 	}
+  body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1):before {content: '歐洲共同語言能力參考指標(CEFR)：';}
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2):before {content: '全民英檢(GEPT)：';}
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3):before {content: '外語能力測驗(FLPT)，三項筆試總分：';}
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4):before {content: '大學校院英語能力(CSEPT)，第一級：';}

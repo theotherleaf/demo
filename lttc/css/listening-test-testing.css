@@ -1,3 +1,6 @@
+body.page main.listening_test.test .titlebox .btn-audio {
+	background: #db5e5e;
+}
 body.page main.listening_test.test .titlebox .subtitle {
   color: #f8ead9;
 }
@@ -48,12 +51,12 @@ body.page main.listening_test.test .contact_box .framebox .evaluationbox {
   border: 2px solid #f7b364;
 }
 
-body.page main.listening_test.test .contact_box .framebox .evaluationbox h5 {
+body.page main.listening_test.test .contact_box .framebox .evaluationbox .titlebox {
   background: #fdf0e0;
   color: #f7b364;
 }
 
-body.page main.listening_test.test .contact_box .framebox .evaluationbox h5:before {
+body.page main.listening_test.test .contact_box .framebox .evaluationbox .titlebox:before {
   color: #f7b364;
 }
 
@@ -66,14 +69,14 @@ body.page main.listening_test.test .contact_box .framebox .evaluationbox ul.yesn
 }
 
 body.page main.listening_test.test .btn-outline-primary {
-  border: 1px solid #ddd !important;
-  border-color: #ddd;
-  color: #ddd !important;
+  border: 1px solid #999 !important;
+  border-color: #999;
+  color: #999 !important;
 }
 
 body.page main.listening_test.test .btn_bottom a {
-  background-color: #db5e5e;
-  border: 2px solid #db5e5e;
+  background-color: #db5e5e !important;
+  border: 2px solid #db5e5e !important;
   padding-left: 15px;
 }
 

@@ -1,3 +1,7 @@
+.collapse,
+.collapsing {
+  transition: none !important;
+}
 body.page .listening_test_option .contact_box .framebox table tr td:first-child:not([colspan]) {
   white-space: nowrap;
 }
