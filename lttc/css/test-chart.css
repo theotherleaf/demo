@@ -1,0 +1,94 @@
+body.page main.test_report .progress-container {
+  
+} 
+body.page main.test_report .reading-progress .progress-item .progress-bar {
+  background-color: #d7ebdf;
+}
+
+body.page main.test_report .listening-progress .progress-item .progress-bar {
+  background-color: #c7e7f2;
+}
+body.page main.test_report .progress-container .progress-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+body.page main.test_report .progress-container .progress-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+body.page main.test_report .progress-container .progress-item .progress-label {
+  font-size: 14px;
+  flex: 0 0 300px;
+}
+
+body.page main.test_report .progress-container .progress-item .progress {
+  width: calc(100% - 300px);
+  height: 1.5rem;
+  background-color: transparent;
+  border-radius: 0;
+  position: relative;
+  overflow: unset;
+}
+body.page main.test_report .progress-container .progress-item .progress:before {
+  content: '';
+  width: 2px;
+  background: #999;
+  position: absolute;
+  left: 0;
+}
+
+body.page main.test_report .progress-container .progress-item .progress-value {
+  font-size: 14px;
+}
+body.page main.test_report .test_circle {
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 50%;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 15px -15px;
+}
+body.page main.test_report .test_circle.bg-green {
+  color: #fff;
+  background: #83b871;
+}
+body.page main.test_report .test_circle.bg-blue {
+  color: #fff;
+  background: #18a5d9;
+}
+@media (min-width: 768px) {
+  body.page main.test_report .progress-container .progress-item .progress:before {
+    height: calc(100% + 36px);
+    top: -18px;
+  }
+}
+@media (max-width: 991px) {
+  body.page main.test_report .progress-container .progress-item .progress-label {
+    flex: 0 0 200px;
+  }
+  
+  body.page main.test_report .progress-container .progress-item .progress {
+    width: calc(100% -200px);
+  }
+}
+@media (max-width: 767.98px) {
+  body.page main.test_report .progress-container .progress-item {
+    display: block;
+  }
+
+  body.page main.test_report .progress-container .progress-item .progress-label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  body.page main.test_report .progress-container .progress-item .progress {
+    width: 100%;
+  }
+  body.page main.test_report .progress-container .progress-item .progress:before {
+    display: none;
+  }
+}

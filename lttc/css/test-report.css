@@ -1,0 +1,257 @@
+.tag {
+  border: 1px solid #B3B3B3;
+  display: inline-flex;
+  padding: 0 10px;
+  line-height: 28px;
+  height: 28px;
+  margin: 10px 0 2px;
+}
+
+.tag-blue {
+  color: #6480C2;
+}
+
+.tag-red {
+  color: #E37F81;
+}
+
+.tag-green {
+  color: #94B78D;
+}
+
+body.page main.test_report .titlebox .subtitle {
+  color: #f8ead9;
+}
+
+body.page main.test_report .contact_box .framebox {
+  background: #f8ead9;
+}
+
+body.page main.test_report .contact_box .framebox_in {
+  border: 8px solid #f7b364;
+}
+
+body.page main.test_report .framebox_in.outer_container {
+	padding: 30px;
+}
+
+body.page main.test_report .inner_container {
+	padding: 30px;
+  border: 2px solid #f7b364;
+}
+
+body.page main.test_report .correctness_container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+body.page main.test_report .correctness_container .correctness {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+body.page main.test_report .correctness_container .test_circle {
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 50%;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-left: -15px;
+}
+
+body.page main.test_report .correctness_container .test_circle.bg-green {
+  color: #fff;
+  background: #83b871;
+}
+
+body.page main.test_report .correctness_container .test_circle.bg-blue {
+  color: #fff;
+  background: #18a5d9;
+}
+
+body.page main.test_report .question_number_list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  width: 320px;
+}
+
+body.page main.test_report .question_number {
+  background-color: #f7f7f7;
+  height: 60px;
+  width: 60px;
+}
+
+body.page main.test_report .question_number a {
+  font-size: 22px;
+  color: #d2d2d2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.page main.test_report .question_number {
+  position: relative;
+}
+
+body.page main.test_report .question_number.is-correct a,
+body.page main.test_report .question_number.is-incorrect a {
+  color: #5b5b5b;
+}
+
+body.page main.test_report .question_number.is-correct:before {
+	content: '';
+  position: absolute;
+  width: 85%;
+  height: 85%;
+	background-image: url(../images/img_white_o-green.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	display: block;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+body.page main.test_report .question_number.is-incorrect:before {
+	content: '';
+  position: absolute;
+  width: 85%;
+  height: 85%;
+	background-image: url(../images/img_white_x-red.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	display: block;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+body.page main.test_report .bottom-table {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #b3b3b3;
+}
+
+body.page main.test_report .bottom-table tr td {
+  border-color: #b3b3b3 !important;
+}
+
+body.page main.test_report .bottom-table tr:not(:last-child) td {
+  border-bottom: 1px solid #b3b3b3;
+}
+
+body.page main.test_report .bottom-table tr td:nth-child(2) div {
+  text-align: left;
+}
+
+body.page main.test_report .bottom-table .tag-vocabs {
+  gap: 4px;
+}
+
+body.page main.test_report .bottom-table .tag-vocab {
+  background-color: #feefd6;
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-size: 14px;
+  margin-right: 2px;
+  color: #454545;
+}
+
+body.page main.test_report .bottom-table .subtitle {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+body.page main.test_report .bottom-table .tag-border {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #454545;
+  margin: 4px 0;
+}
+
+body.page main.test_report .bottom-table ol {
+  margin-bottom: 0;
+}
+
+body.page main.test_report .bottom-table ol li {
+  list-style: auto;
+}
+
+@media (min-width: 640px) {
+  body.page main.test_report .bottom-table tr td:nth-child(1) {
+    border-right: 1px solid #b3b3b3;
+    background-color: #f8f8f8;
+    font-weight: 500;
+    max-width: 15%;
+  }
+
+  body.page main.test_report .bottom-table tr td:nth-child(2) {
+    border-left: 1px solid #b3b3b3;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  body.page main.test_report .correctness_container {
+    display: block;
+  }
+
+  body.page main.test_report .correctness_container .correctness:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  body.page main.test_report .correctness_container .test_circle {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 639px) {
+  body.page main.test_report .bottom-table {
+    border-top: none;
+  }
+
+  body.page main.test_report .bottom-table tr:not(:last-child) td {
+    border-bottom: none;
+  }
+
+  body.page main.test_report .bottom-table tr td {
+    border-top: 1px solid #b3b3b3;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  body.page main.test_report .correctness_container .correctness {
+    display: block;
+  }
+
+  body.page main.test_report .correctness_container .test_circle {
+    margin-left: 0;
+  }
+
+  body.page main.test_report .correctness_container .question_number_list {
+    margin: 0 auto;
+  }
+
+  body.page main.test_report .question_number_list {
+    grid-template-columns: repeat(4, 1fr);
+    width: 255px;
+  }
+}
+
+@media (max-width: 455.98px) {
+  body.page main.test_report .question_number_list {
+    grid-template-columns: repeat(3, 1fr);
+    width: 190px;
+  }
+}

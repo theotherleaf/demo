@@ -1,0 +1,124 @@
+.btn-print {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: url("../images/icon-printing.png") center center no-repeat #1cb8f1;
+  background-size: 32px 32px;
+  border: 3px solid #18a5d9;
+}
+.text-green {
+  color: #83b871;
+}
+.text-blue {
+  color: #18a5d9;
+}
+.text-red {
+  color: #E37F81;
+}
+body.page main.test .titlebox {
+  position: relative;
+}
+body.page main.test .btn-print {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  padding: 0;
+  margin-top: -0.6em
+}
+body.page main.test .test_result_box {
+  display: flex;
+  background: #fff;
+}
+body.page main.test .test_result_box .col:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 1rem;
+}
+body.page main.test .test_result_box .col [class^="col-"] {
+  padding: 0 15px;
+}
+body.page main.test .test_result_box .table {
+  border: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body.page main.test .test_result_box .table tr {
+  float: none;
+}
+body.page main.test .test_result_box .table tr td  {
+  vertical-align: middle;
+  border: none;
+  float: none;
+}
+body.page main.test .test_result_box .table tr td:nth-child(1) {
+  background: #f9f9f9;
+}
+body.page main.test .test_result_box .table tr td:nth-child(2) {
+  text-align: left;
+}
+body.page main.test .test_result_box .test_circle {
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 50%;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-left: -15px;
+}
+body.page main.test .test_result_box .test_circle.bg-green {
+  color: #fff;
+  background: #83b871;
+}
+body.page main.test .test_result_box .test_circle.bg-blue {
+  color: #fff;
+  background: #18a5d9;
+}
+body.page main.test .test_result_box .test_circle_text {
+  font-size: 63px;
+  font-weight: 500;
+  display: flex;
+}
+@media (min-width: 992px) {
+  body.page main.test .test_result_box .col:nth-child(1) {
+    flex: 0 0 280px;
+  }
+  body.page main.test .test_result_box .table tr td:nth-child(1) {
+    width: 120px;
+  }
+  body.page main.test .test_result_box .table tr td:nth-child(2) {
+    width: calc(100% - 120px);
+  }
+  body.page main.test .test_result_box .table tr td {
+    border-left: 1px solid #999;
+  }
+  body.page main.test .test_result_box .table tr:not(:last-child) td {
+    border-bottom: 1px solid #999;
+  }
+}
+@media (max-width: 991px) {
+  body.page main.test .test_result_box {
+    flex-direction: column;
+  }
+  body.page main.test .test_result_box .col:nth-child(1) {
+    flex: 0 0 220px;
+  }
+  body.page main.test .test_result_box .table tr td:nth-child(1) {
+    width: 100px;
+  }
+  body.page main.test .test_result_box .table tr td:nth-child(2) {
+    width: calc(100% - 100px);
+  }
+  body.page main.test .test_result_box .table tr td {
+    border-top: 1px solid #999;
+  }
+  body.page main.test .test_result_box .table tr td:not(:first-child) {
+    border-left: 1px solid #999;
+  }
+  body.page main.test .test_result_box .table tr td:nth-child(2){
+    border-right: none;
+  }
+}
