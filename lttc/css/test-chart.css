@@ -51,7 +51,7 @@ body.page main.test_report .test_circle {
   font-weight: 500;
   display: flex;
   justify-content: center;
-  margin: 0 0 15px -15px;
+  margin: 0 0 15px 0;
 }
 body.page main.test_report .test_circle.bg-green {
   color: #fff;

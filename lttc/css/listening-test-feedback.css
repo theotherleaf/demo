@@ -153,16 +153,9 @@ body.page main.listening_test_feedback .question_number.is-incorrect:before {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 455.98px) {
   body.page main.listening_test_feedback .question_number_list {
     grid-template-columns: repeat(4, 1fr);
     width: 255px;
-  }
-}
-
-@media (max-width: 455.98px) {
-  body.page main.listening_test_feedback .question_number_list {
-    grid-template-columns: repeat(3, 1fr);
-    width: 190px;
   }
 }

@@ -1628,9 +1628,11 @@ body.page .contact_box .framebox .optionbox ul.labelauty li label span {
 	body.page main.diagnose .contact_box .framebox_in,
 	body.page main.test .contact_box .framebox_in,
 	body.page main.listening_test .contact_box .framebox_in {
+		margin-left: 15px;
+		margin-right: 15px;
 		padding-top: 30px;
 		padding-bottom: 30px;
-		padding-left: 20px;
+		padding-left: 15px;
 		padding-right: 15px;
 	}
 	body.page main.diagnose table,
@@ -1655,6 +1657,13 @@ body.page .contact_box .framebox .optionbox ul.labelauty li label span {
 @media (max-width: 639px) {
 	/*---測驗選項---*/
 	body.page .contact_box .framebox .optionbox ul.labelauty.time li {width: 100%;}
+}
+@media (max-width: 575.98px) {
+	body.page main.diagnose .contact_box .framebox_in,
+	body.page main.test .contact_box .framebox_in,
+	body.page main.listening_test .contact_box .framebox_in {
+		margin: 0;
+	}
 }
 @media (max-width: 359px) {
 	/*---測驗選項---*/
