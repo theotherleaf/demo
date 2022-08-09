@@ -231,6 +231,10 @@ body.page main.test_report .bottom-table ol li {
 
 
 @media (max-width: 575.98px) {
+  body.page main.test_report .framebox_in.outer_container {
+    padding: 15px;
+  }
+
   body.page main.test_report .correctness_container .correctness {
     display: block;
   }
