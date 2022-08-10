@@ -481,7 +481,7 @@ body header .navbar .nav-more .nav-more-link:hover {
     text-align: center;
   }
 
-  body header .navbar .nav-more {
+  body header .navbar .nav-more.is-auth {
     padding-top: 15px;
   }
 
