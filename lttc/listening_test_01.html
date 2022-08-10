@@ -54,74 +54,62 @@
 <body class="page">
   <!--***===============頭部，開始===============***-->
   <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="navbar-container">
+        <a class="navbar-brand" href="index.html" target="_top" title="英語能力數位診斷回饋系統">
+          <img src="images/logo.png" alt="英語能力數位診斷回饋系統" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <div class="navbar-nav-wrapper">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div>關於我們</div>
+                  <div>About Us</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div>我要考哪一級？</div>
+                  <div>Self-assessment</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div>我來挑戰！</div>
+                  <div>Practice Tests</div>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div>相關連結</div>
+                  <div>Links</div>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">全民英檢官網</a></li>
+                  <li><a class="dropdown-item" href="#">全民英檢年度日程表</a></li>
+                  <li><a class="dropdown-item" href="#">全民英檢報名網</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav-more">
+              <div class="info">
+                <div>您好，<span>王大明</span>同學</div>
+              </div>
+              <a class="nav-more-link" href="#">會員專區</a>
+              <a class="nav-more-link" href="#">考生登出</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
     <!--***===BANNER區，開始===***-->
     <div class="banner_main">
       <img src="images/banner_index.png" alt="英語能力數位診斷回饋系統">
     </div>
-    <!--***===BANNER區，結束===***-->
-    <!--***===選單區，開始===***-->
-    <div class="mainmenu">
-      <div class="container">
-        <div class="row2">
-          <!--會員登入前，開始-->
-          <!--
-                    <div class="login_in">
-                        <div class="logobox wow jello">
-                            <a href="index.html" target="_top" title="英語能力數位診斷回饋系統"><img src="images/logo.png" alt="英語能力數位診斷回饋系統" /></a>
-                        </div>
-                        <div class="menu wow bounceIn">
-                            <ul>
-                                <li class="experience">
-                                    <a href="#" title="歡迎體驗" target="_top">
-                                        <div class="icon"><img src="images/img_login_mouse.png" alt="歡迎體驗"></div>
-                                        <div>歡迎體驗</div>
-                                    </a>
-                                </li>
-                                <li class="login">
-                                    <a href="#" title="考生登入" target="_top">
-                                        <div class="icon"><img src="images/img_login_user.png" alt="考生登入"></div>
-                                        <div>考生登入</div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-                    -->
-          <!--會員登入前，結束-->
-          <!--會員登入後，開始-->
-          <div class="login_out">
-            <div class="logobox wow jello">
-              <a href="index.html" target="_top" title="英語能力數位診斷回饋系統"><img src="images/logo.png"
-                  alt="英語能力數位診斷回饋系統" /></a>
-            </div>
-            <div class="menu wow bounceIn">
-              <div class="info">
-                <div>嗨，<span>王大明</span></div>
-                <div>同學 / 會員 您好</div>
-              </div>
-              <ul>
-                <li class="member">
-                  <a href="#" title="會員專區" target="_top">
-                    <div class="icon"><img src="images/img_login_id.png" alt="會員專區"></div>
-                    <div>會員專區</div>
-                  </a>
-                </li>
-                <li class="logout">
-                  <a href="#" title="考生登出" target="_top">
-                    <div class="icon"><img src="images/img_login_user.png" alt="考生登出"></div>
-                    <div>考生登出</div>
-                  </a>
-                </li>
-              </ul>
-              <div class="clearfix"> </div>
-            </div>
-          </div>
-          <!--會員登入後，結束-->
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="js/mainmenu.js"></script>
     <!--***===選單區，結束===***-->
   </header>
   <!--***===============頭部，結束===============***-->
@@ -253,21 +241,28 @@
             <div class="txt">電話：(02)2369-7127</div>
           </li>
           <li>
-            <div class="txt">傳真：(02)2364-6367</div>
+            <div class="txt">信箱：gept@lttc.ntu.edu.tw</div>
           </li>
           <li>
             <div class="txt">辦公時間：週一至週五 上午8點至下午5點</div>
           </li>
-          <li>
-            <div class="txt">詢問出版品：(02)2362-6385轉232[出納科]</div>
-          </li>
         </ul>
         <ul class="bottom">
           <li>
-            <div class="txt">地址：(106032) 台北市辛亥路二段170號[台灣大學校總區內]</div>
+            <div class="txt">地址：（106032）臺北市辛亥路2段170號〔臺灣大學校總區內〕</div>
+          </li>
+        </ul>
+        <ul class="credit">
+          <li>
+            <div class="txt">本平台服務係由財團法人語言訓練測驗中心及國家發展委員會合作提供</div>
+          </li>
+        </ul>
+        <ul class="logo">
+          <li>
+            <div class="img"><img src="images/logo_lttc.png"></div>
           </li>
           <li>
-            <div class="txt">全民英檢電子信箱：gept@lttc.ntu.edu.tw</div>
+            <div class="img"><img src="images/logo_ndc.png"></div>
           </li>
         </ul>
       </div>
@@ -275,8 +270,8 @@
     <div class="copyright">
       <div class="container">
         <div class="info">
-          <div>Copyright &copy 2022 財團法人語言訓練測驗中心</div>
-          <div>建議使用瀏覽器：Google Chrome或IE11以上，且瀏覽器畫面縮放須維持100%，以獲得最佳瀏覽效果</div>
+          <div>Copyright © 2022 財團法人語言訓練測驗中心｜隱私權聲明</div>
+          <div>建議使用最新版本瀏覽器：Google Chrome或Microsoft Edge，且瀏覽器畫面縮放須維持100%，以獲得最佳瀏覽效果</div>
         </div>
       </div>
     </div>
