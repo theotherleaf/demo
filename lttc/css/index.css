@@ -7,6 +7,7 @@ body.index main .formaltestbox {
 body.index main .evaluatebox .contact_box .item_btn,
 body.index main .formaltestbox .contact_box .item_btn {
   display: flex;
+  background-color: #fff;
 }
 body.index main .formaltestbox .contact_box .item_btn:nth-child(1) .iconbox {
   background: #f7b364;

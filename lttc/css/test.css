@@ -141,6 +141,14 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox
 body.page main.test .contact_box .framebox .framebox_in {
 	position: relative;
 }
+body.page main.test .contact_box .framebox .framebox_in .btn-dark {
+	background-color: #626262;
+	height: 38px;
+	line-height: 38px;
+	border-radius: 25px;
+	padding: 0;
+	max-width: 140px;
+}
 body.page main.test .contact_box .framebox .evaluationbox {
 	border: 3px solid #8bbc9f;
 	background: #ffffff;

@@ -1,13 +1,19 @@
-body.page main.test_report .progress-container {
-  
-} 
-body.page main.test_report .reading-progress .progress-item .progress-bar {
+body.page main.test_report .listening-progress .progress-item .progress-bar {
   background-color: #d7ebdf;
 }
 
-body.page main.test_report .listening-progress .progress-item .progress-bar {
+body.page main.test_report .listening-progress .progress-item .progress-label button {
+  background-color: #83b871;
+}
+
+body.page main.test_report .reading-progress .progress-item .progress-bar {
   background-color: #c7e7f2;
 }
+
+body.page main.test_report .reading-progress .progress-item .progress-label button {
+  background-color: #18a5d9;
+}
+
 body.page main.test_report .progress-container .progress-item {
   display: flex;
   align-items: center;
@@ -22,6 +28,17 @@ body.page main.test_report .progress-container .progress-item:not(:last-child) {
 body.page main.test_report .progress-container .progress-item .progress-label {
   font-size: 14px;
   flex: 0 0 300px;
+  display: flex;
+  align-items: center;
+}
+
+body.page main.test_report .progress-container .progress-item .progress-label button {
+  width: 72px;
+  min-width: 72px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  margin-left: auto;
 }
 
 body.page main.test_report .progress-container .progress-item .progress {
@@ -84,6 +101,9 @@ body.page main.test_report .test_circle.bg-blue {
   body.page main.test_report .progress-container .progress-item .progress-label {
     width: 100%;
     margin-bottom: 5px;
+  }
+  body.page main.test_report .progress-container .progress-item .progress-label button {
+    margin-left: 15px;
   }
   body.page main.test_report .progress-container .progress-item .progress {
     width: 100%;

@@ -49,6 +49,21 @@
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript">new WOW().init();</script>
   <link rel="stylesheet" type="text/css" media="all" href="css/listening-test-option.css" />
+  <script>
+    $(document).ready(function(){
+      $('input[type=radio][name=timing]').on('change', function() {
+        $('.row3').removeClass('d-none');
+        $('.row4').removeClass('d-none');
+        if (this.value === 'yes') {
+          $('.panetime').addClass('active');
+          $('.pabenotime').removeClass('active');
+        } else {
+          $('.panetime').removeClass('active');
+          $('.pabenotime').addClass('active');
+        }
+      });
+    });
+  </script>
 </head>
 
 <body class="page">
@@ -99,16 +114,15 @@
               <div class="info">
                 <div>您好，<span>王大明</span>同學</div>
               </div>
-              <a class="nav-more-link" href="#">會員專區</a>
-              <a class="nav-more-link" href="#">考生登出</a>
+              <a class="nav-more-link" href="member_center_profile.html">會員專區</a>
+              <a class="nav-more-link" href="index.html">考生登出</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
     <!--***===BANNER區，開始===***-->
-    <div class="banner_main">
-      <img src="images/banner_index.png" alt="英語能力數位診斷回饋系統">
+    <div class="banner_main no-banner">
     </div>
     <!--***===選單區，結束===***-->
   </header>
@@ -120,8 +134,8 @@
       <div class="row2">
         <!--標題，開始-->
         <div class="titlebox wow fadeInUp">
-          <div class="subtitle">LISTENING TEST</div>
-          <div class="title">聽力測驗</div>
+          <div class="subtitle">PRACTICE TESTS</div>
+          <div class="title"><span>初級</span>模擬測驗</div>
         </div>
         <div class="clearfix"> </div>
         <!--標題，結束-->
@@ -130,11 +144,11 @@
           <div class="framebox">
             <div class="framebox_in">
               <div class="explain">
-                <h5>網路版全真考題試用</h5>
+                <h5>全民英檢模擬試題</h5>
                 <br>
                 <!--介紹文，開始-->
                 <div class="paragraph">
-                  <div>試題內容與平面紙本版《全民英檢學習指南》相同，但線上版僅包含試題，未含試題解析與學習策略等。練習題依照全民英檢正式測驗規格編寫，難易度、長度等都與正式測驗相同。</div>
+                  <div>本試題內容取自「全民英檢」官方題庫，並提供解答、試題詳解。</div>
                 </div>
                 <!--介紹文，結束-->
 
@@ -142,43 +156,43 @@
                 <div class="entrancebox">
                   <table>
                     <tbody>
-                      <tr>
+                      <tr class="row1">
                         <th colspan="2" scope="col">選擇級數和測驗</th>
                       </tr>
-                      <tr>
+                      <tr class="row2">
                         <td>是否計時</td>
                         <td>
                           <div class="optionbox">
                             <ul class="nav labelauty time">
                               <li>
-                                <input type="radio" name="timing" id="yes" title="是" class="labelauty"
+                                <input type="radio" name="timing" id="timing-yes" value="yes" title="計時模式" class="labelauty"
                                   style="display: none;" data-bs-toggle="tab" data-bs-target=".panetime">
-                                <label for="yes"><span class="labelauty-unchecked">是</span><span
-                                    class="labelauty-checked">是</span></label>
+                                <label for="timing-yes"><span class="labelauty-unchecked">計時模式</span><span
+                                    class="labelauty-checked">計時模式</span></label>
                               </li>
                               <li>
-                                <input type="radio" name="timing" id="no" title="否" class="labelauty"
+                                <input type="radio" name="timing" id="timing-no" value="no" title="練習模式" class="labelauty"
                                   style="display: none;" data-bs-toggle="tab" data-bs-target=".panetime">
-                                <label for="no"><span class="labelauty-unchecked">否</span><span
-                                    class="labelauty-checked">否</span></label>
+                                <label for="timing-no"><span class="labelauty-unchecked">練習模式</span><span
+                                    class="labelauty-checked">練習模式</span></label>
                               </li>
                             </ul>
                           </div>
                         </td>
                       </tr>
-                      <tr class="">
+                      <tr class="row3 d-none">
                         <td>測試項目</td>
                         <td>
                           <div class="optionbox">
-                            <ul class="labelauty listening">
+                            <ul class="labelauty test_type">
                               <li>
-                                <input type="radio" name="listening" id="option1" title="聽力" class="labelauty"
+                                <input type="radio" name="test_type" id="option1" title="聽力" class="labelauty"
                                   style="display: none;">
                                 <label for="option1"><span class="labelauty-unchecked">聽力</span><span
                                     class="labelauty-checked">聽力</span></label>
                               </li>
                               <li>
-                                <input type="radio" name="listening" id="option2" title="閱讀" class="labelauty"
+                                <input type="radio" name="test_type" id="option2" title="閱讀" class="labelauty"
                                   style="display: none;">
                                 <label for="option2"><span class="labelauty-unchecked">閱讀</span><span
                                     class="labelauty-checked">閱讀</span></label>
@@ -187,12 +201,12 @@
                           </div>
                         </td>
                       </tr>
-                      <tr>
+                      <tr class="row4 d-none">
                         <td colspan="2">
                           <!--備註，開始-->
                           <div class="remark2 tab-content">
-                            <div class="tab-pane panetime active">
-                              <h6 class="font_red2">注意！</h6>
+                            <div class="tab-pane panetime">
+                              <h6 class="font_red2">計時模式說明</h6>
                               <ol>
                                 <li>時限內完成聽力、閱讀測驗。（如未完成跳出，則重新計時）。</li>
                                 <li>可查看解答、試題詳解。</li>
@@ -200,7 +214,7 @@
                               </ol>
                             </div>
                             <div class="tab-pane pabenotime">
-                              <h6 class="font_red2">注意！</h6>
+                              <h6 class="font_red2">練習模式說明</h6>
                               <ol>
                                 <li>不限作答時間，可暫存前次作答。</li>
                                 <li>可查看解答、試題詳解。</li>

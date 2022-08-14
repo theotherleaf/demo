@@ -1,0 +1,116 @@
+body.page main {
+  background: #fff;
+}
+body.page footer {
+  width: 100%;
+  margin-top: -1px;
+  background-image: url(../images/back_footer.png) !important;
+  background-repeat: no-repeat;
+}
+body.page .titlebox .subtitle {
+  color: #dadada;
+}
+
+/* social */
+.custom-social-group {
+  text-align: center;
+}
+.custom-social-group .list-item {
+  margin: 0 7.5px;
+}
+.custom-social-group .icon-google {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: #DE4A38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-social-group .icon-facebook {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: #3972B7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-social-group .icon-line {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: #4CAF50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* form */
+.custom-form-group .form-group {
+  display: flex;
+  margin-top: 25px;
+}
+.custom-form-group .form-label {
+  margin: 0;
+  font-size: 16px !important;
+}
+.custom-form-group .form-input {
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #B3B3B3;
+  padding: 0 5px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.custom-form-group .btn {
+  padding: 0 15px;
+}
+.custom-form-group .btn-link {
+  color: #454545;
+  text-decoration: underline;
+}
+.custom-form-group .btn-primary {
+  border-radius: 25px;
+  background: #18A5D9;
+  border-color: #18A5D9;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+}
+.custom-form-group .text-blue {
+  color: #18A5D9;
+}
+.custom-form-group .form-cache .img-cache {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 45px;
+}
+
+/* member */
+.member {
+  margin-top: 80px;
+  padding-top: 60px;
+}
+.member .custom-form-group {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.member .custom-form-group .form-group {
+  position: relative;
+}
+.member .custom-form-group .form-label {
+  position: absolute;
+  left: 15px;
+  height: 45px !important;
+  line-height: 45px !important;
+}
+.member .custom-form-group .form-input {
+  padding-left: 100px;
+}
+.member .custom-form-group .form-text {
+  font-size: 16px;
+  color: #454545;
+}

@@ -457,7 +457,7 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {width: 26%;}
 	
 	/*---級數---*/
-	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table {font-size: 80%;}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table {font-size: 90%;}
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead tr:nth-child(1) th:nth-child(1),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr:nth-child(1) th:nth-child(1) {width: 12%;}
 	
