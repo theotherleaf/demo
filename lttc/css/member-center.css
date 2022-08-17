@@ -154,7 +154,7 @@ body.page footer {
 
 /* member center */
 .member-center {
-  margin-top: 0px !important;
+  margin-top: 30px !important;
   padding-top: 30px !important;
   min-height: calc(100vh - 560px);
 }
@@ -317,7 +317,7 @@ body.page footer {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: url(../images/icon-line.png) center center no-repeat #4CAF50;
+  background: url(../images/icon-line.png) center center no-repeat #4CC764;
   background-size: 40% auto;
   position: absolute;
   left: 0;
@@ -401,6 +401,9 @@ body.page footer {
 
 
 @media (max-width: 991px) {
+  .member-center {
+    margin-top: 0 !important;
+  }
   .member-center .framebox_in {
     flex-direction: column;
   }

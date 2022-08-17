@@ -66,26 +66,6 @@ body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li 
 	line-height: 42px;
 	display: block;
 }
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(1) .numberbox:before {content: '1.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(2) .numberbox:before {content: '2.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(3) .numberbox:before {content: '3.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(4) .numberbox:before {content: '4.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(5) .numberbox:before {content: '5.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(6) .numberbox:before {content: '6.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(7) .numberbox:before {content: '7.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(8) .numberbox:before {content: '8.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(9) .numberbox:before {content: '9.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(10) .numberbox:before {content: '10.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(11) .numberbox:before {content: '11.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(12) .numberbox:before {content: '12.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(13) .numberbox:before {content: '13.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(14) .numberbox:before {content: '14.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(15) .numberbox:before {content: '15.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(16) .numberbox:before {content: '16.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(17) .numberbox:before {content: '17.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(18) .numberbox:before {content: '18.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(19) .numberbox:before {content: '19.';}
-body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li:nth-child(20) .numberbox:before {content: '20.';}
 body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno .optionbox label,
 body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .obox label:before,
 body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .xbox label:before {
@@ -577,6 +557,10 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 		height: auto;
 		margin-top: 5px;
 	}
+	body.page main.listening_test .tabs-wrapper .nav-tabs .nav-item,
+	body.page main.test_recommend .tabs-wrapper .nav-tabs .nav-item {
+		width: 25%;
+	}
 }
 @media (max-width: 412px) {
 	/*---評量表---*/
@@ -595,6 +579,7 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 body.page main.explain .tabs-wrapper .nav-tabs .nav-item .nav-link {
   color: #d7ebdf !important;
   border-color: #8bbc9f;
+	z-index: 1;
 }
 
 body.page main.explain .numbertag-group .numbertag-right:not(.active) {

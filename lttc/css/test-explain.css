@@ -7,7 +7,8 @@ body.page main.explain .tabs-wrapper .nav-tabs .nav-item .nav-link {
   border-top-right-radius: 8px;
   border: 2px solid #f6b264;
   border-bottom: none;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.9em;
+  z-index: 1;
 }
 
 body.page main.explain .tabs-wrapper .nav-tabs .nav-item:not(:last-child) .nav-link {
@@ -52,6 +53,10 @@ body.page main.listening_test.test .contact_box .framebox .numbertag-right:not(.
 
 body.page main.test .contact_box .framebox .numbertag-right:after {
   border-left: 13px solid #f8ead9;
+}
+body.page main.test .contact_box .framebox .explain {
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 body.page main.explain .evaluationbox {
@@ -128,6 +133,10 @@ body.page main.explain .correct-answer-box > div:nth-child(2) {
   body.page main.explain .numbertag-group .numbertag-right:after {
     display: none;
   }
+  body.page main.listening_test .tabs-wrapper .nav-tabs .nav-item,
+	body.page main.test_recommend .tabs-wrapper .nav-tabs .nav-item {
+		width: 25%;
+	}
 }
 
 @media (max-width: 575.98px) {
