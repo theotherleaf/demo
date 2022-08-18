@@ -5538,3 +5538,71 @@ input[type="submit"].color_white:focus {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
+footer .infobox .btn-line {
+  height: 25px;
+  line-height: 25px;
+  color: rgba(255,255,255,0.1);
+  font-size: 14px;
+  padding: 0 10px 0 30px;
+  border-radius: 5px;
+  background: url(../images/icon-line.png) left 10px center no-repeat #4CC764;
+  background-size: 14px 14px;
+}
+footer .infobox ul {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+footer .infobox ul.bottom {
+  margin-top: 0 !important;
+}
+footer .infobox ul li {
+  width: auto !important;
+  position: relative;
+  border-right: none;
+  vertical-align: middle;
+  margin: 8px 0;
+}
+footer .infobox ul li:not(:last-child):before,
+footer .infobox ul li:not(:last-child):after {
+  content: '';
+}
+footer .infobox ul li:before,
+footer .infobox ul li:after {
+  width: 1px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+}
+footer .infobox ul li:before {
+  background: #006d93;
+  right: 1px;
+}
+footer .infobox ul li:after {
+  background: #fff;
+  right: 0;
+}
+footer .infobox ul li .txt {
+  padding: 0 15px;
+  border-right: none;
+  line-height: 1.5;
+}
+@media (min-width: 992px) { 
+  footer .infobox ul {
+    display: flex;
+  }
+ }
+@media (max-width: 991.98px) {
+  footer .infobox ul li {
+    margin: 5px 0;
+  }
+}
+@media (max-width: 575.98px) {
+  footer .infobox ul li:before,
+  footer .infobox ul li:after {
+    display: none;
+  }
+}
+
+

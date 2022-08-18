@@ -1,5 +1,6 @@
 body.page main {
   background: #fff;
+  margin-bottom: 30px;
 }
 body.page footer {
   width: 100%;
@@ -220,6 +221,7 @@ body.page footer {
 .member-center .nav-tabs {
   flex-direction: row;
   margin: 15px 0;
+  padding: 2px 0;
   border: none;
   white-space: nowrap;
   width: 100%;
