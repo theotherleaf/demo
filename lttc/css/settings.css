@@ -367,7 +367,6 @@ h5 {
 /* =================[頭部]================= */
 header {
   display: block;
-  overflow: hidden;
 }
 
 body header {
@@ -523,19 +522,32 @@ header .banner_main {
   position: relative;
   display: flex;
   justify-content: center;
-  overflow: hidden;
   padding-top: 85px;
+}
+header .banner_main .logobox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+header .banner_main .logobox img {
+  max-width: 450px;
+  display: flex;
 }
 
 header .banner_main:not(.no-banner):after {
   content: '';
   display: block;
   position: absolute;
-  left: 0;
+  left: -15px;
   bottom: 0;
   background-color: #fff;
-  width: 100%;
-  height: 6%;
+  width: calc(100% + 30px);
+  height: 16.5%;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
 }
 
 header .banner_main img {
@@ -721,8 +733,6 @@ header .mainmenu.scrolled .menu ul li.login a {
   }
 }
 
-@media (min-width: 1024px) {}
-
 @media (min-width: 1200px) {
   header .mainmenu {
     top: 42%;
@@ -891,6 +901,9 @@ header .mainmenu.scrolled .menu ul li.login a {
 }
 
 @media (max-width: 1199px) {
+  header .banner_main:not(.no-banner):after {
+    height: 15%;
+  }
   header .mainmenu {
     top: 42%;
   }
@@ -977,6 +990,9 @@ header .mainmenu.scrolled .menu ul li.login a {
 }
 
 @media (max-width: 991px) {
+  header .banner_main:not(.no-banner):after {
+    height: 14%;
+  }
   header .mainmenu {
     top: 30%;
   }
@@ -1088,6 +1104,9 @@ header .mainmenu.scrolled .menu ul li.login a {
 }
 
 @media (max-width: 540px) {
+  header .banner_main:not(.no-banner):after {
+    height: 12%;
+  }
   header .mainmenu .menu {
     margin-top: 160px;
   }
@@ -1490,7 +1509,7 @@ body.index main {
     100% 0%;
   /*right top*/
   background-size: 30% auto,
-    100% 70%,
+    100% 43%,
     40% auto,
     40% auto;
 }
@@ -3346,7 +3365,12 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 }
 
 @media (min-width: 769px) {
-
+  header .banner_main .logobox {
+    bottom: -5%;
+  }
+  header .banner_main .logobox img {
+    width: 40%;
+  }
   /*---評量表---*/
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
     height: 42px;
@@ -3602,7 +3626,12 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 }
 
 @media (max-width: 768px) {
-
+  header .banner_main .logobox {
+    top: 100%;
+  }
+  header .banner_main .logobox img {
+    width: 300px;
+  }
   /*---評量表---*/
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
     line-height: 60px;

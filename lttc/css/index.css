@@ -1,3 +1,6 @@
+body.index main .introbox {
+  background: #fff;
+}
 body.index main .introbox .introbox_bg {
   background: #f3f3f3;
   padding: 55px 45px;
@@ -67,7 +70,7 @@ body.index main .introbox .btn-link {
 }
 body.index main .introbox .introbox_content {
   display: flex; 
-  padding: 55px 0 0;
+  padding: 55px 25px;
 }
 body.index main .introbox .introbox_content .row {
   width: calc(100% + 26px);
@@ -196,6 +199,13 @@ body.index main .introbox .introbox_content .bg-gray ul li:before {
   left: 0;
 }
 
+@media (min-width: 1200px) {
+  body.index main .formaltestbox .contact_box .item_btn .iconbox img {
+    width: 170px !important;
+    max-width: 80%;
+  }
+}
+
 @media (max-width: 1199.98px) {
   body.index main .introbox .introbox_content .list-group-item {
     padding: 0;
@@ -211,6 +221,10 @@ body.index main .introbox .introbox_content .bg-gray ul li:before {
   }
   body.index main .introbox .introbox_content .list-group-item .shapebox {
     width: 230px;
+  }
+  body.index main .formaltestbox .contact_box .item_btn .iconbox img {
+    width: 130px !important;
+    max-width: 80%;
   }
 }
 @media (max-width: 991.98px) {
@@ -240,6 +254,9 @@ body.index main .introbox .introbox_content .bg-gray ul li:before {
   }
 }
 @media (max-width: 767.98px) {
+  body.index main .introbox .introbox_bg {
+    padding: 65px 25px  55px;
+  }
   body.index main .introbox .list-group .list-group-item {
     margin: 0 0 25px;
   }
@@ -294,10 +311,6 @@ body.index main .formaltestbox .contact_box .item_btn:nth-child(3) .infobox a:ho
   background: #fff;
 }
 
-body.index main .formaltestbox .contact_box .item_btn .iconbox img {
-  width: 70% !important;
-}
-
 @media (min-width: 992px) {
   body.index main .evaluatebox .contact_box .item_btn .iconbox,
   body.index main .evaluatebox .contact_box .item_btn .infobox {
@@ -316,9 +329,13 @@ body.index main .formaltestbox .contact_box .item_btn .iconbox img {
     margin-right: -15px;
     justify-content: space-evenly;
   }
-  body.index main .evaluatebox .contact_box .item_btn,
-  body.index main .formaltestbox .contact_box .item_btn {
+  body.index main .evaluatebox .contact_box .item_btn {
     width: calc(33.3333% - 30px) !important;
+    flex-direction: column;
+    margin: 0 15px !important;
+  }
+  body.index main .formaltestbox .contact_box .item_btn {
+    width: calc(28% - 30px) !important;
     flex-direction: column;
     margin: 0 15px !important;
   }
@@ -330,6 +347,13 @@ body.index main .formaltestbox .contact_box .item_btn .iconbox img {
   }
   body.index main .formaltestbox .contact_box .item_btn .iconbox {
     width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  body.index main .formaltestbox .contact_box .item_btn {
+    width: calc(25% - 30px) !important;
+    flex-direction: column;
+    margin: 0 15px !important;
   }
 }
 @media (max-width: 991px) {
