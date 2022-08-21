@@ -49,6 +49,12 @@
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript">new WOW().init();</script>
   <link rel="stylesheet" type="text/css" media="all" href="css/member.css" />
+  <script>
+    $(document).ready(function(){
+      $("#comfirm-modal").modal("show");
+      $("#comfirm-input-modal").modal("show");
+    });
+  </script>
 </head>
 
 <body class="page">
@@ -57,7 +63,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="navbar-container">
         <a class="navbar-brand" href="index.html" target="_top" title="英語能力數位診斷回饋系統">
-          <img src="images/logo.png" alt="英語能力數位診斷回饋系統" />
+          <img src="images/logo.svg" alt="英語能力數位診斷回饋系統" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
@@ -176,7 +182,7 @@
   <!--***===============底部，結束===============***-->
   <footer>
     <div class="logobox">
-      <div class="img"><img src="images/logo_footer.png" alt="" /></div>
+      <div class="img"><img src="images/logo.svg" alt="" /></div>
     </div>
     <div class="infobox">
       <div class="container">
@@ -224,6 +230,39 @@
     </div>
   </footer>
   <!--***===============底部，結束===============***-->
+  <!-- modal -->
+  <div id="comfirm-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">前往收信</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="custom-form-group modal-body text-center">
+          <p class="mb-4">系統已發送驗證信件，請速至下列信箱點選連結，即可完成註冊！</p>
+          <p class="text-blue fw-bold">sam@lttc.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="comfirm-input-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">信箱驗證</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="custom-form-group modal-body text-center">
+          <p class="mb-4">請輸入您的電子信箱，以進行帳戶驗證！</p>
+          <input type="text" class="form-input" placeholder="請輸入電子信箱">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">送出</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

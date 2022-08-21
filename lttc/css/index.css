@@ -34,9 +34,11 @@ body.index main .introbox .list-group .list-group-item:before {
 }
 body.index main .introbox .list-group [class^="col"]:nth-child(odd) .list-group-item {
   background: #1cb8f1;
+  border-color: #1cb8f1;
 }
 body.index main .introbox .list-group [class^="col"]:nth-child(even) .list-group-item {
   background: #93c782;
+  border-color: #93c782;
 }
 body.index main .introbox .list-group [class^="col"]:nth-child(1) .list-group-item:before {
   border-width: 0 35px 30px 0;
@@ -177,6 +179,7 @@ body.index main .introbox .introbox_content .bg-gray {
   border-radius: 7px;
   background: #ececec;
   font-size: 18px;
+  position: relative;
 }
 body.index main .introbox .introbox_content .bg-gray ul {
   margin: 0;
@@ -198,6 +201,30 @@ body.index main .introbox .introbox_content .bg-gray ul li:before {
   position: absolute;
   left: 0;
 }
+body.index main .introbox .introbox_content .floatbox {
+  position: absolute;
+  background: #f3828d;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 25px;
+  right: 0;
+  top: 15px;
+  margin-right: -50px;
+}
+body.index main .introbox .introbox_content .floatbox:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 1;
+  border-width: 20px 30px 0 0;
+  border-color: #f3828d transparent transparent transparent;
+}
 
 @media (min-width: 1200px) {
   body.index main .formaltestbox .contact_box .item_btn .iconbox img {
@@ -212,8 +239,8 @@ body.index main .introbox .introbox_content .bg-gray ul li:before {
   }
   body.index main .introbox .introbox_content .list-group-icon {
     padding: 0 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   body.index main .introbox .introbox_content .list-group-right {
     width: calc(100% - 40px);
@@ -239,8 +266,11 @@ body.index main .introbox .introbox_content .bg-gray ul li:before {
   body.index main .introbox .list-group .list-group-item:before {
     display: none;
   }
+  body.index main .introbox .introbox_content .list-group-icon.icon-rotate {
+    transform: rotate(90deg);
+  }
   body.index main .introbox .introbox_in {
-    margin-top: 0;
+    margin-top: 15px;
   }
   body.index main .introbox .list-group [class^="col"]:nth-child(1) .list-group-item:before,
   body.index main .introbox .list-group [class^="col"]:nth-child(3) .list-group-item:before {
@@ -255,10 +285,10 @@ body.index main .introbox .introbox_content .bg-gray ul li:before {
 }
 @media (max-width: 767.98px) {
   body.index main .introbox .introbox_bg {
-    padding: 65px 25px  55px;
+    padding: 75px 25px 25px;
   }
   body.index main .introbox .list-group .list-group-item {
-    margin: 0 0 25px;
+    margin: 0 0 15px;
   }
   body.index main .introbox .introbox_content .list-group-icon {
     margin: 25px 0;

@@ -57,7 +57,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="navbar-container">
         <a class="navbar-brand" href="index.html" target="_top" title="英語能力數位診斷回饋系統">
-          <img src="images/logo.png" alt="英語能力數位診斷回饋系統" />
+          <img src="images/logo.svg" alt="英語能力數位診斷回饋系統" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
@@ -157,7 +157,7 @@
                   <input type="text" class="form-input" placeholder="請輸入驗證碼">
                   <img src="images/img-cache.png" alt="" class="img-cache">
                 </div>
-                <a href="" class="btn-link mt-3 float-end">忘記密碼</a>
+                <button type="button" class="btn-link mt-3 float-end" data-bs-toggle="modal" data-bs-target="#forgot-password-modal">忘記密碼</ㄖ>
                 <button class="btn btn-primary mt-4">登入</button>
                 <div class="form-text text-center mt-5">還未加入會員者，請<a href="member_register.html" class="btn-link text-blue">申請加入會員</a></div>
               </form>
@@ -173,7 +173,7 @@
   <!--***===============底部，結束===============***-->
   <footer>
     <div class="logobox">
-      <div class="img"><img src="images/logo_footer.png" alt="" /></div>
+      <div class="img"><img src="images/logo.svg" alt="" /></div>
     </div>
     <div class="infobox">
       <div class="container">
@@ -221,6 +221,24 @@
     </div>
   </footer>
   <!--***===============底部，結束===============***-->
+  <!-- modal -->
+  <div id="forgot-password-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">重設密碼</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="custom-form-group modal-body text-center">
+          <p class="mb-4">請輸入您的會員帳號(電子信箱)，系統將會發送一組重設密碼的連結給您！</p>
+          <input type="text" class="form-input" placeholder="請輸入電子信箱">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">送出</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

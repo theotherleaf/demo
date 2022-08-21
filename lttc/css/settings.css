@@ -1192,6 +1192,8 @@ footer .logobox .img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  max-width: 400px;
 }
 
 footer img {
@@ -1267,9 +1269,6 @@ footer .copyright {
 }
 
 @media (min-width: 1024px) {
-  footer .logobox .img {
-    width: 450px;
-  }
 
   footer .infobox ul.top li:nth-child(1) {
     width: 49%;
@@ -1289,9 +1288,6 @@ footer .copyright {
 }
 
 @media (min-width: 1200px) {
-  footer .logobox .img {
-    width: 450px;
-  }
 
   footer .infobox ul.top li:nth-child(1) {
     width: 49%;
@@ -1315,9 +1311,6 @@ footer .copyright {
 }
 
 @media (min-width: 1366px) {
-  footer .logobox .img {
-    width: 480px;
-  }
 
   footer .infobox ul.top li:nth-child(1) {
     width: 29%;
@@ -1333,18 +1326,6 @@ footer .copyright {
 
   footer .infobox ul.top li:nth-child(4) {
     width: 29%;
-  }
-}
-
-@media (min-width: 1440px) {
-  footer .logobox .img {
-    width: 520px;
-  }
-}
-
-@media (min-width: 1680px) {
-  footer .logobox .img {
-    width: 580px;
   }
 }
 
@@ -1371,7 +1352,7 @@ footer .copyright {
   }
 
   footer .logobox .img {
-    width: 450px;
+    width: 400px;
   }
 
   footer .infobox ul.top li:nth-child(1) {
@@ -2870,7 +2851,7 @@ body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subje
 }
 
 body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subjectbox .inbox {
-  line-height: 1.2;
+  line-height: 1.5;
   display: inline-block;
   vertical-align: middle;
 }
@@ -3094,7 +3075,7 @@ body.page main.diagnose .contact_box .framebox .recommend .advice {
   text-align: center;
   background-image: url(../images/back_redcircle.png);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   float: right;
 }
 
@@ -3394,7 +3375,9 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 }
 
 @media (min-width: 1200px) {
-
+  header .banner_main .logobox {
+    bottom: 0;
+  }
   /*---評量表---*/
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
     width: 10%;
@@ -3442,7 +3425,9 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 }
 
 @media (min-width: 1480px) {
-
+  header .banner_main .logobox {
+    bottom: 5%;
+  }
   /*---評量表---*/
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
     width: 9%;
@@ -3697,6 +3682,9 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
     width: 78%;
     line-height: inherit;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
   }
 
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
@@ -3720,6 +3708,8 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
     margin-left: 0%;
     padding-top: 4em;
     padding-bottom: 1em;
+    background-image: url(../images/back_redcircle.png);
+    background-size: cover;
   }
 
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table thead,
@@ -3747,6 +3737,14 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td .subtit {
     text-align: left;
     display: inline-block;
+  }
+
+  body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td {
+    font-size: 16px;
+  }
+
+  body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:before {
+    font-size: 1.1rem;
   }
 
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
@@ -3809,21 +3807,15 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 
   /*---評量表---*/
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
-    width: 100%;
+    width: 14%;
   }
 
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
-    font-size: 2.2em;
     text-align: left;
   }
 
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-    width: 100%;
-  }
-
-  body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subjectbox .inbox {
-    padding-left: 15px;
-    padding-right: 5px;
+    width: 86%;
   }
 }
 
@@ -5634,4 +5626,54 @@ footer .infobox ul li .txt {
   }
 }
 
+/* modal */
+.modal .modal-content {
+  padding: 0 0 15px;
+}
+.modal .modal-header {
+  border-bottom: none;
+  text-align: center;
+  justify-content: center;
+}
+.modal .modal-title {
+  font-size: 24px;
+  color: #101010;
+  display: flex;
+}
+.modal .btn-close {
+  position: absolute;
+  right: 15px;
+  top: 26px;
+}
+.modal .modal-body .form-label {
+  margin-bottom: 5px;
+}
+.modal .modal-body .form-input {
+  max-width: 300px;
+}
+.modal .modal-footer {
+  border: none;
+  justify-content: center;
+}
+.modal .modal-footer .btn {
+  display: flex;
+  font-size: 16px;
+}
+.modal .btn-primary {
+  border-radius: 25px;
+  max-width: 280px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  background: #18A5D9;
+  border-color: #18A5D9;
+}
+
+body.page main.diagnose .contact_box .framebox .recommend .statementbox {
+	font-size: 12px;
+	color: #454545;
+  margin-top: 1em;
+}
 

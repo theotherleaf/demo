@@ -9,6 +9,7 @@ body.page main.explain .tabs-wrapper .nav-tabs .nav-item .nav-link {
   border-bottom: none;
   padding: 0.5em 0.9em;
   z-index: 1;
+  height: 100%;
 }
 
 body.page main.explain .tabs-wrapper .nav-tabs .nav-item:not(:last-child) .nav-link {

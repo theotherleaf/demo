@@ -36,8 +36,12 @@ body.page main.test .test_result_box .col:nth-child(1) {
   flex-flow: column;
   padding: 1rem;
 }
+body.page main.test .test_result_box .col .row {
+  min-width: 100%;
+}
 body.page main.test .test_result_box .col [class^="col-"] {
   padding: 0 15px;
+  max-width: 150px;
 }
 body.page main.test .test_result_box .table {
   border: none;
@@ -67,7 +71,7 @@ body.page main.test .test_result_box .test_circle {
   font-weight: 500;
   display: flex;
   justify-content: center;
-  margin-left: -15px;
+  margin-left: -75%;
 }
 body.page main.test .test_result_box .test_circle.bg-green {
   color: #fff;

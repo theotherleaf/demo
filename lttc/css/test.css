@@ -149,6 +149,25 @@ body.page main.test .contact_box .framebox .framebox_in .btn-dark {
 	padding: 0;
 	max-width: 140px;
 }
+body.page main.test .contact_box .framebox_in .btn-group {
+  width: 100%;
+  margin-bottom: -80px;
+  justify-content: center;
+}
+body.page main.test .contact_box .framebox_in .btn-group a {
+  font-size: 1.2em;
+  color: #ffffff;
+  border: 2px solid #f7b364;
+  height: 50px;
+  line-height: 48px;
+  background: #f7b364;
+  padding-left: 35px;
+  padding-right: 15px;
+  border-radius: 25px;
+  width: 250px;
+  text-align: center;
+  padding: 0 15px;
+}
 body.page main.test .contact_box .framebox .evaluationbox {
 	border: 3px solid #8bbc9f;
 	background: #ffffff;
@@ -378,7 +397,7 @@ body.page main.test .contact_box .framebox .recommend .advice {
 	text-align: center;
 	background-image: url(../images/back_redcircle.png);
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	float: right;
 }
 body.page main.test .contact_box .framebox .recommend .explainlist {
@@ -635,6 +654,9 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 	}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
 		text-align: left;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: 86%;
 	}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
 		width: 100%;

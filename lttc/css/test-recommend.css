@@ -168,7 +168,7 @@ body.page main.test_recommend .contact_box .framebox .recommend .advice {
 	text-align: center;
 	background-image: url(../images/back_redcircle.png);
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	float: right;
 }
 body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table {width: 100%;}
@@ -507,11 +507,16 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 		margin-left: 0%;
 		padding-top: 4em;
 		padding-bottom: 1em;
+		background-image: url(../images/back_redcircle.png);
+    background-size: cover;
 	}
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table thead,
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody tr th:nth-child(1) {
 		display: none;
 		visibility: hidden;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td {
+		font-size: 16px;
 	}
   body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1),
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
@@ -538,9 +543,12 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4):before,
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(5):before {
 		width: 100%;
-		color: #1cb8f1;
+		color: #8bbc9f;
 		text-align: left;
 		float: left;
+	}
+	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:before {
+		font-size: 1.1rem;
 	}
   body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1):before {content: '歐洲共同語言能力參考指標(CEFR)：';}
 	body.page main.test_recommend .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2):before {content: '全民英檢(GEPT)：';}
@@ -580,6 +588,7 @@ body.page main.explain .tabs-wrapper .nav-tabs .nav-item .nav-link {
   color: #d7ebdf !important;
   border-color: #8bbc9f;
 	z-index: 1;
+	height: 100%;
 }
 
 body.page main.explain .numbertag-group .numbertag-right:not(.active) {
