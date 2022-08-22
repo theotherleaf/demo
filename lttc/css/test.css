@@ -149,24 +149,39 @@ body.page main.test .contact_box .framebox .framebox_in .btn-dark {
 	padding: 0;
 	max-width: 140px;
 }
-body.page main.test .contact_box .framebox_in .btn-group {
+body.page main.explain .contact_box .framebox_in .btn-group {
   width: 100%;
   margin-bottom: -80px;
   justify-content: center;
 }
-body.page main.test .contact_box .framebox_in .btn-group a {
+body.page main.explain .contact_box .framebox_in .btn-group a {
   font-size: 1.2em;
   color: #ffffff;
   border: 2px solid #f7b364;
   height: 50px;
   line-height: 48px;
   background: #f7b364;
-  padding-left: 35px;
-  padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 35px;
   border-radius: 25px;
   width: 250px;
   text-align: center;
-  padding: 0 15px;
+}
+
+body.page main.explain .contact_box .framebox_in .btn-group a:hover {
+  background-color: #db5e5e;
+  border: 2px solid #db5e5e;
+}
+
+body.page main.explain .contact_box .framebox_in .btn-group a .lnr {
+  float: left;
+  line-height: 50px;
+}
+
+@media (max-width: 639px) {
+	body.page main.explain .contact_box .framebox_in .btn-group {
+		margin-bottom: -60px;
+	}
 }
 body.page main.test .contact_box .framebox .evaluationbox {
 	border: 3px solid #8bbc9f;
@@ -352,12 +367,20 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .xbox labe
 }
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .xbox input.yesno:checked + label:before {
 	content: '';
-    color: inherit;
-    background-color: inherit;
+  color: inherit;
+  background-color: inherit;
 	background-image: url(../images/img_white_x-ch.png);
 	background-repeat: no-repeat;
 	background-size: 42px auto;
 	display: block;
+}
+body.page main.test .contact_box .framebox .explain .bg-pink {
+	background: #feeff0;
+	padding: 15px;
+	margin-top: 10px;
+}
+body.page main.test .contact_box .framebox .explain .bg-pink strong {
+	line-height: 1.5;
 }
 body.page main.test .contact_box .btn {width: 100%;}
 body.page main.test .contact_box .btn.send a {

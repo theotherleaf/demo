@@ -3028,6 +3028,16 @@ body.page main.diagnose .contact_box .btn {
   width: 100%;
 }
 
+body.page main.diagnose .contact_box .btn.send {
+  margin-bottom: -130px;
+}
+
+@media (max-width: 639px) {
+	body.page main.diagnose .contact_box .btn.send {
+		margin-bottom: -90px;
+	}
+}
+
 body.page main.diagnose .contact_box .btn.send a {
   font-size: 1.2em;
   color: #ffffff;
@@ -3035,18 +3045,19 @@ body.page main.diagnose .contact_box .btn.send a {
   height: 50px;
   line-height: 48px;
   background: #f7b364;
-  padding-left: 35px;
+  padding-left: 15px;
   padding-right: 15px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
+  width: 250px;
 }
 
 body.page main.diagnose .contact_box .btn.send a:hover,
 body.page main.diagnose .contact_box .btn.send a:active,
 body.page main.diagnose .contact_box .btn.send a:focus {
   background-color: #db5e5e;
-  border: 2px solid #f7b364;
+  border: 2px solid #db5e5e;
 }
 
 body.page main.diagnose .contact_box .btn.send a span.lnr {
@@ -3718,6 +3729,7 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
     visibility: hidden;
   }
 
+  body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1),
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3),
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4),
@@ -3747,6 +3759,7 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
     font-size: 1.1rem;
   }
 
+  body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1),
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2),
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3),
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4),
@@ -3754,6 +3767,7 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
     width: 100%;
   }
 
+  body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1):before,
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2):before,
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(3):before,
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(4):before,
@@ -3762,6 +3776,10 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
     color: #1cb8f1;
     text-align: left;
     float: left;
+  }
+
+  body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(1):before {
+    content: '歐洲共同語言能力參考指標(CEFR)：';
   }
 
   body.page main.diagnose .contact_box .framebox .recommend .ceerbox table tbody td:nth-child(2):before {
@@ -3989,13 +4007,14 @@ body.page main.listening_test .contact_box .btn a {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
+  width: 250px;
 }
 
 body.page main.listening_test .contact_box .btn a:hover,
 body.page main.listening_test .contact_box .btn a:active,
 body.page main.listening_test .contact_box .btn a:focus {
   background-color: #db5e5e;
-  border: 2px solid #f7b364;
+  border: 2px solid #db5e5e;
 }
 
 body.page main.listening_test .contact_box .btn a span.lnr {

@@ -47,12 +47,27 @@ body.page main.test_report .framebox_in.outer_container .btn-group a {
   height: 50px;
   line-height: 48px;
   background: #f7b364;
-  padding-left: 35px;
-  padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 35px;
   border-radius: 25px;
   width: 250px;
   text-align: center;
-  padding: 0 15px;
+}
+
+body.page main.test_report .framebox_in.outer_container .btn-group a:hover {
+  background-color: #db5e5e;
+  border: 2px solid #db5e5e;
+}
+
+body.page main.test_report .framebox_in.outer_container .btn-group a .lnr {
+  float: left;
+  line-height: 50px;
+}
+
+@media (max-width: 639px) {
+	body.page main.test_report .framebox_in.outer_container .btn-group {
+		margin-bottom: -60px;
+	}
 }
 
 body.page main.test_report .inner_container {

@@ -26,13 +26,9 @@ body.page main.listening_test_option .contact_box .framebox ul.labelauty input.l
 }
 
 @media (min-width: 992px) {
-  body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.time li {
-    width: 25%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
+  body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.time li,
   body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.test_type li {
-    width: 25%;
+    width: 50%;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
