@@ -3050,7 +3050,8 @@ body.page main.diagnose .contact_box .btn.send a {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 body.page main.diagnose .contact_box .btn.send a:hover,
@@ -3413,9 +3414,6 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 }
 
 @media (min-width: 1300px) {
-  body.page main.diagnose .contact_box .btn.send a {
-    width: 25%;
-  }
 
   /*---級數---*/
   body.page main.diagnose .contact_box .framebox .recommend .explainlist .optionbox {
@@ -3496,6 +3494,7 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 }
 
 @media (max-width: 991px) {
+
   /*---評量表---*/
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
     width: 11%;
@@ -4007,7 +4006,8 @@ body.page main.listening_test .contact_box .btn a {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 body.page main.listening_test .contact_box .btn a:hover,
@@ -4047,9 +4047,6 @@ body.page main.listening_test .contact_box .btn a span.lnr {
     margin-bottom: -130px;
   }
 
-  body.page main.listening_test .contact_box .btn a {
-    width: 33%;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -4077,9 +4074,6 @@ body.page main.listening_test .contact_box .btn a span.lnr {
     width: 80%;
   }
 
-  body.page main.listening_test .contact_box .btn a {
-    width: 20%;
-  }
 }
 
 @media (min-width: 640px) {

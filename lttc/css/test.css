@@ -164,7 +164,8 @@ body.page main.explain .contact_box .framebox_in .btn-group a {
   padding-left: 15px;
   padding-right: 35px;
   border-radius: 25px;
-  width: 250px;
+	width: 100%;
+  max-width: 250px;
   text-align: center;
 }
 
