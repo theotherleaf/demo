@@ -256,7 +256,7 @@ body.index main .introbox .introbox_content .floatbox:before {
 }
 @media (max-width: 991.98px) {
   body.index main .introbox .introbox_bg {
-    padding: 55px 25px;
+    padding: 25px;
   }
   body.index main .introbox .list-group .list-group-item {
     margin: 0 15px 25px;
@@ -285,7 +285,7 @@ body.index main .introbox .introbox_content .floatbox:before {
 }
 @media (max-width: 767.98px) {
   body.index main .introbox .introbox_bg {
-    padding: 75px 25px 25px;
+    margin-top: 2%;
   }
   body.index main .introbox .list-group .list-group-item {
     margin: 0 0 15px;

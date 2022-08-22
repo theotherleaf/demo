@@ -3623,6 +3623,7 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 @media (max-width: 768px) {
   header .banner_main .logobox {
     top: 100%;
+    margin-top: -12%;
   }
   header .banner_main .logobox img {
     width: 300px;

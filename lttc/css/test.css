@@ -375,14 +375,6 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .xbox inpu
 	background-size: 42px auto;
 	display: block;
 }
-body.page main.test .contact_box .framebox .explain .bg-pink {
-	background: #feeff0;
-	padding: 15px;
-	margin-top: 10px;
-}
-body.page main.test .contact_box .framebox .explain .bg-pink strong {
-	line-height: 1.5;
-}
 body.page main.test .contact_box .btn {width: 100%;}
 body.page main.test .contact_box .btn.send a {
 	font-size: 1.2em;

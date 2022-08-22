@@ -80,6 +80,15 @@ body.page main.explain .correct-answer-explain {
   width: calc(100% - 120px);
 }
 
+body.page main.explain .correct-answer-explain .bg-pink {
+	background: #feeff0;
+	padding: 15px;
+	margin-top: 10px;
+}
+body.page main.explain .correct-answer-explain .bg-pink strong {
+	line-height: 1.5;
+}
+
 body.page main.explain .correct-answer-keywords {
   padding: 8px 12px;
   margin-top: 8px;
