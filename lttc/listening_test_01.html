@@ -52,14 +52,16 @@
   <script>
     $(document).ready(function(){
       $('input[type=radio][name=timing]').on('change', function() {
-        $('.row3').removeClass('d-none');
-        $('.row4').removeClass('d-none');
         if (this.value === 'yes') {
-          $('.panetime').addClass('active');
-          $('.pabenotime').removeClass('active');
+          $('#option1, #option2').attr({
+            checked: true,
+            disabled: true,
+          });
         } else {
-          $('.panetime').removeClass('active');
-          $('.pabenotime').addClass('active');
+          $('#option1, #option2').attr({
+            checked: false,
+            disabled: false,
+          });
         }
       });
     });
@@ -165,14 +167,12 @@
                           <div class="optionbox">
                             <ul class="nav labelauty time">
                               <li>
-                                <input type="radio" name="timing" id="timing-yes" value="yes" title="計時模式" class="labelauty"
-                                  style="display: none;" data-bs-toggle="tab" data-bs-target=".panetime">
+                                <input type="radio" name="timing" id="timing-yes" value="yes" title="計時模式" class="labelauty" data-bs-toggle="tab" data-bs-target=".pane-time">
                                 <label for="timing-yes"><span class="labelauty-unchecked">計時模式</span><span
                                     class="labelauty-checked">計時模式</span></label>
                               </li>
                               <li>
-                                <input type="radio" name="timing" id="timing-no" value="no" title="練習模式" class="labelauty"
-                                  style="display: none;" data-bs-toggle="tab" data-bs-target=".panetime">
+                                <input type="radio" name="timing" id="timing-no" value="no" title="練習模式" class="labelauty" data-bs-toggle="tab" data-bs-target=".pane-notime">
                                 <label for="timing-no"><span class="labelauty-unchecked">練習模式</span><span
                                     class="labelauty-checked">練習模式</span></label>
                               </li>
@@ -180,20 +180,18 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="row3 d-none">
+                      <tr class="row3">
                         <td>測試項目</td>
                         <td>
                           <div class="optionbox">
                             <ul class="labelauty test_type">
                               <li>
-                                <input type="radio" name="test_type" id="option1" title="聽力" class="labelauty"
-                                  style="display: none;">
+                                <input type="checkbox" name="test_type" id="option1" title="聽力" class="labelauty">
                                 <label for="option1"><span class="labelauty-unchecked">聽力</span><span
                                     class="labelauty-checked">聽力</span></label>
                               </li>
                               <li>
-                                <input type="radio" name="test_type" id="option2" title="閱讀" class="labelauty"
-                                  style="display: none;">
+                                <input type="checkbox" name="test_type" id="option2" title="閱讀" class="labelauty">
                                 <label for="option2"><span class="labelauty-unchecked">閱讀</span><span
                                     class="labelauty-checked">閱讀</span></label>
                               </li>
@@ -201,11 +199,11 @@
                           </div>
                         </td>
                       </tr>
-                      <tr class="row4 d-none">
+                      <tr class="row4">
                         <td colspan="2">
                           <!--備註，開始-->
                           <div class="remark2 tab-content">
-                            <div class="tab-pane panetime">
+                            <div class="tab-pane pane-time show active">
                               <h6 class="font_red2">計時模式說明</h6>
                               <ol>
                                 <li>時限內完成聽力、閱讀測驗。（如未完成跳出，則重新計時）。</li>
@@ -213,7 +211,7 @@
                                 <li>可獲得個人化診斷回饋，包括：達成率、強弱項分析、字彙句型及學習指引。</li>
                               </ol>
                             </div>
-                            <div class="tab-pane pabenotime">
+                            <div class="tab-pane pane-notime">
                               <h6 class="font_red2">練習模式說明</h6>
                               <ol>
                                 <li>不限作答時間，可暫存前次作答。</li>

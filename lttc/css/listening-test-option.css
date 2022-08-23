@@ -18,10 +18,12 @@ body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.
 body.page .listening_test_option .contact_box .framebox .optionbox ul.labelauty.test_type li:nth-child(2) label:before {
   content: '閱讀';
 }
-body.page .listening_test_option ul.labelauty input.labelauty:checked + label {
+body.page .listening_test_option ul.labelauty input.labelauty:checked + label,
+body.page .listening_test_option ul.labelauty input.labelauty:disabled + label {
   border: 1px solid #db5e5e;
 }
-body.page main.listening_test_option .contact_box .framebox ul.labelauty input.labelauty:checked + label {
+body.page main.listening_test_option .contact_box .framebox ul.labelauty input.labelauty:checked + label,
+body.page main.listening_test_option .contact_box .framebox ul.labelauty input.labelauty:disabled + label {
   color: #fff;
 }
 

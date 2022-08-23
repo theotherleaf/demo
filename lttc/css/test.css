@@ -168,6 +168,10 @@ body.page main.explain .contact_box .framebox_in .btn-group a {
   max-width: 250px;
   text-align: center;
 }
+body.page main.test_recommend .contact_box .framebox_in .btn-group a {
+	background-color: #8bbc9f;
+  border: 2px solid #8bbc9f;
+}
 
 body.page main.explain .contact_box .framebox_in .btn-group a:hover {
   background-color: #db5e5e;

@@ -3065,6 +3065,38 @@ body.page main.diagnose .contact_box .btn.send a span.lnr {
   line-height: 46px;
   float: right;
 }
+body.page main.diagnose .contact_box .btn-group {
+  width: 100%;
+  margin-bottom: -130px;
+  justify-content: center;
+}
+body.page main.diagnose .contact_box .btn-group a {
+  font-size: 1.2em;
+  color: #ffffff;
+  border: 2px solid #1db8f1;
+  height: 50px;
+  line-height: 48px;
+  background: #1db8f1;
+  padding-left: 15px;
+  padding-right: 35px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+body.page main.diagnose .contact_box .btn-group a .lnr {
+  float: left;
+  line-height: 50px;
+}
+body.page main.diagnose .contact_box .btn-group a:hover {
+  background-color: #db5e5e;
+  border: 2px solid #db5e5e;
+}
+@media (max-width: 639px) {
+  body.page main.diagnose .contact_box .btn-group {
+    margin-bottom: -90px;
+  }
+}
 
 /*---級數---*/
 body.page main.diagnose .contact_box .framebox .recommend {
@@ -4596,7 +4628,8 @@ ul.labelauty input.labelauty:not(:checked):not([disabled])+label:hover {
   background-color: #f68b35;
 }
 
-ul.labelauty input.labelauty:checked+label {
+ul.labelauty input.labelauty:checked+label,
+ul.labelauty input.labelauty:disabled+label  {
   color: #ffffff;
   background-color: #db5e5e;
 }
