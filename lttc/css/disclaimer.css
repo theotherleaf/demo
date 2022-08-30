@@ -1,0 +1,15 @@
+body.page .disclaimer .paragraph {
+  width: 100% !important;
+}
+body.page .disclaimer table {
+  width: 100% !important;
+}
+body.page .disclaimer table tbody tr td {
+  text-align: left !important;
+}
+body.page .disclaimer table tbody tr:not(:first-child) {
+  border-top: 1px solid #b3b3b3 !important;
+}
+body.page .disclaimer table ul li {
+  list-style-type: disc;
+}

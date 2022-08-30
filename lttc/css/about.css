@@ -1,0 +1,97 @@
+body.page footer {
+  background-image: url(../images/back_footer.png) !important;
+  background-repeat: no-repeat !important;
+}
+body.page main.about {
+  position: relative;
+  background: none !important;
+}
+body.page main.about:before {
+  content: '';
+  width: 100%;
+  height: calc(100% + 250px);
+  background: url(../images/img_about.jpg) center center no-repeat !important;
+  background-size: cover !important;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  z-index: -1;
+}
+body.page main.about .titlebox .subtitle {
+  color: #e2f3fa;
+}
+body.page main.about .contact_box .framebox_in {
+  padding: 0 15px;
+}
+body.page main.about .contact_box .list-group-item {
+  background: #F7F7F7;
+  position: relative;
+  border-radius: 7px;
+  border: none;
+}
+body.page main.about .contact_box .list-group-item:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #E7E7E7;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  border-radius: 7px;
+}
+body.page main.about .contact_box .list-group-item:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  pointer-events: none;
+}
+body.page main.about .contact_box .list-group-item:nth-child(2):before {
+  left: 0;
+  background: url(../images/img_about_1.png) center bottom no-repeat !important;
+  background-size: 100% !important;
+}
+body.page main.about .contact_box .list-group-item:nth-child(3):before {
+  right: 0;
+  background: url(../images/img_about_2.png) center bottom no-repeat !important;
+  background-size: 100% !important;
+}
+body.page main.about .contact_box .list-group-item:not(:first-child) {
+  margin-top: 120px;
+}
+body.page main.about .contact_box .video-group {
+  max-width: 850px;
+  margin: 120px auto 0;
+}
+
+@media (min-width: 992px) {
+  body.page main.about .contact_box .list-group-item {
+    width: 70%;
+    padding: 25px;
+  }
+  body.page main.about .contact_box .list-group-item:before {
+    width: 40%;
+    height: 500px;
+  }
+  body.page main.about .contact_box .list-group-item:nth-child(odd) {
+    align-self: flex-end;
+  }
+  body.page main.about .contact_box .list-group-item:nth-child(even) {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 991.98px) {
+  body.page main.about .contact_box .list-group-item {
+    align-self: center;
+    max-width: 680px;
+    padding: 15px;
+  }
+  body.page main.about .contact_box .list-group-item:before {
+    width: 200px;
+    height: 500px;
+  }
+  body.page main.about .contact_box .list-group-item:last-child,
+  body.page main.about .contact_box .video-group {
+    margin-top: 45px;
+  }
+}

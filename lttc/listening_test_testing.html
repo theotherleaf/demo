@@ -67,6 +67,10 @@
       $('.test-countdown').html(minutes + ':' + seconds);
       timerContent = minutes + ':' + seconds;
     }, 1000);
+
+    $(document).ready(function(){
+      $("#feedback-modal").modal("show");
+    });
   </script>
 </head>
 
@@ -318,13 +322,62 @@
     <div class="copyright">
       <div class="container">
         <div class="info">
-          <div>Copyright © 2022 財團法人語言訓練測驗中心｜隱私權聲明</div>
+          <div>Copyright © 2022 財團法人語言訓練測驗中心｜<a href="disclaimer.html" title="隱私權聲明">隱私權聲明</a></div>
           <div>Hosted by National Development Council and The Language Training & Testing Center</div>
         </div>
       </div>
     </div>
   </footer>
   <!--***===============底部，結束===============***-->
+  <!-- modal -->
+  <div id="feedback-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+
+      <!-- 發送1 -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">請問您對我們的服務是否滿意</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="custom-form-group modal-body text-center justify-content-center pt-0">
+          <div class="star-group clearfix">
+            <fieldset class="rating-fieldset">
+              <input type="radio" id="star5" name="rating" value="1" />
+              <label class = "full" for="star5" title=""></label>
+              <input type="radio" id="star4" name="rating" value="1" />
+              <label class = "full" for="star4" title=""></label>
+              <input type="radio" id="star3" name="rating" value="1" />
+              <label class = "full" for="star3" title=""></label>
+              <input type="radio" id="star2" name="rating" value="1" />
+              <label class = "full" for="star2" title=""></label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label class = "full" for="star1" title=""></label>
+            </fieldset>
+          </div> 
+          <p class="mb-4">歡迎留下您寶貴的意見！</p>
+          <textarea type="text" class="form-textarea" cols="30" rows="5"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">送出</button>
+        </div>
+      </div>
+
+      <!-- 發送2 -->
+      <div class="result-group modal-content d-none">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="icon-box">
+            <img src="images/icon_shooting_stars.png" alt="" class="img-fluid">
+          </div>
+          <strong class="mt-4">感謝您的回饋!</strong>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">返回</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>

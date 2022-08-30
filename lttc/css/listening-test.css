@@ -21,3 +21,49 @@ body.page main.listening_test .inner_container {
 	padding: 30px 15px;
   border: 2px solid #f7b364;
 }
+
+body.page main.listening_test .btn-audio {
+	width: 120px;
+  height: 36px;
+  line-height: 36px;
+	display: inline-flex;
+	border: none;
+	border-radius: 25px;
+	background: #db5e5e;
+	padding: 0;
+	justify-content: center;
+  align-items: center;
+	margin-right: 15px;
+}
+body.page main.listening_test .btn-audio:after {
+	content: "";
+	width: 20px;
+	height: 18px;
+	background: url("../images/icon-volume.png") center center no-repeat;
+	background-size: 100% auto;
+	display: inline-flex;
+	margin-left: 5px;
+	opacity: 0.7;
+}
+body.page main.listening_test .btn-audio.active:after {
+	opacity: 1;
+}
+
+/*---進度條---*/
+body.page main.listening_test .progress {
+  height: 17px;
+  background: #EAEAEA;
+	border-radius: 25px;
+	width: 100%;
+	border: 2px solid #EAEAEA;
+}
+body.page main.listening_test .progress .progress-bar {
+  background:#f7b364;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+	body.page main.listening_test .progress {
+		max-width: 250px;
+	}
+}

@@ -54,11 +54,13 @@
       $('input[type=radio][name=timing]').on('change', function() {
         if (this.value === 'yes') {
           $('#option1, #option2').attr({
+            type: "checkbox",
             checked: true,
             disabled: true,
           });
         } else {
           $('#option1, #option2').attr({
+            type: "radio",
             checked: false,
             disabled: false,
           });
@@ -285,7 +287,7 @@
     <div class="copyright">
       <div class="container">
         <div class="info">
-          <div>Copyright © 2022 財團法人語言訓練測驗中心｜隱私權聲明</div>
+          <div>Copyright © 2022 財團法人語言訓練測驗中心｜<a href="disclaimer.html" title="隱私權聲明">隱私權聲明</a></div>
           <div>Hosted by National Development Council and The Language Training & Testing Center</div>
         </div>
       </div>

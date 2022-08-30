@@ -27,7 +27,7 @@ body.page main.test_report .progress-container .progress-item:not(:last-child) {
 
 body.page main.test_report .progress-container .progress-item .progress-label {
   font-size: 14px;
-  flex: 0 0 300px;
+  flex: 0 0 50%;
   display: flex;
   align-items: center;
 }
@@ -42,7 +42,7 @@ body.page main.test_report .progress-container .progress-item .progress-label bu
 }
 
 body.page main.test_report .progress-container .progress-item .progress {
-  width: calc(100% - 300px);
+  width: 50%;
   height: 1.5rem;
   background-color: transparent;
   border-radius: 0;
@@ -86,11 +86,11 @@ body.page main.test_report .test_circle.bg-blue {
 }
 @media (max-width: 991px) {
   body.page main.test_report .progress-container .progress-item .progress-label {
-    flex: 0 0 200px;
+    flex: 0 0 50%;
   }
   
   body.page main.test_report .progress-container .progress-item .progress {
-    width: calc(100% -200px);
+    width: 50%;
   }
 }
 @media (max-width: 767.98px) {
