@@ -51,6 +51,14 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/test.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/listening-test-testing.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/test-explain.css" />
+  <script>
+    $(document).ready(function(){
+      $(".evaluationbox ul.yesno li").on("click", function() {
+        var checkBoxes = $(this).find("input");
+        checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+      });
+    });
+  </script>
 </head>
 
 <body class="page">

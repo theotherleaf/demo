@@ -49,6 +49,14 @@
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript">new WOW().init();</script>
   <link rel="stylesheet" type="text/css" media="all" href="css/test.css" />
+  <script>
+    $(document).ready(function(){
+      $(".evaluationbox ul.yesno li").on("click", function() {
+        var checkBoxes = $(this).find("input");
+        checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+      });
+    });
+  </script>
 </head>
 
 <body class="page">

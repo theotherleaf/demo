@@ -70,6 +70,10 @@
 
     $(document).ready(function(){
       $("#feedback-modal").modal("show");
+      $(".evaluationbox ul.yesno li").on("click", function() {
+        var checkBoxes = $(this).find("input");
+        checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+      });
     });
   </script>
 </head>
