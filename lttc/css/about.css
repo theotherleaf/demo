@@ -29,6 +29,9 @@ body.page main.about .contact_box .list-group-item {
   border-radius: 7px;
   border: none;
 }
+body.page main.about .contact_box .list-group-item ul li {
+  list-style: auto;
+}
 body.page main.about .contact_box .list-group-item:after {
   content: '';
   width: 100%;

@@ -92,6 +92,9 @@ body.page .titlebox .subtitle {
   width: 100px;
   height: 45px;
 }
+.custom-form-group .form-cache .form-input {
+  padding-right: 115px;
+}
 
 /* member */
 .member {

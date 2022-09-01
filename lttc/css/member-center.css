@@ -194,7 +194,7 @@ body.page footer {
 .member-center .sidebar .nav-item {
   color: #454545;
   position: relative;
-  padding: 10px 0;
+  padding: 10px 0 10px 25px;
 }
 .member-center .sidebar .nav-item.active,
 .member-center .sidebar .nav-item:hover {
@@ -358,6 +358,10 @@ body.page footer {
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
+    position: absolute;
+    left: 5px;
+    top: 22.5px;
+    margin-top: -0.5px;
   }
 }
 @media (min-width: 768px) {
@@ -382,13 +386,20 @@ body.page footer {
     padding: 10px;
   }
   .custom-list-group .row:not(:first-child) > [class^="col"] {
-    padding: 15px 10px;
+    padding: 15px 0;
+  }
+  .custom-list-group .row:not(:first-child) > [class^="col"]:first-child {
+    padding-left: 15px;
+  }
+  .custom-list-group .row:not(:first-child) > [class^="col"]:last-child {
+    padding-right: 15px;
   }
   .custom-list-group .item-num {
     width: 70px;
   }
   .custom-list-group .item-title {
-    width: calc(100% - 70px);
+    text-align: left;
+    width: 100%;
   }
   .custom-list-group .item-coupon-price {
     width: 100px;
@@ -454,5 +465,8 @@ body.page footer {
   }
   .custom-list-group .row > [class^="col"]:first-child {
     align-items: flex-start;
+  }
+  .custom-list-group .item-title {
+    font-weight: 700;
   }
 }

@@ -33,9 +33,16 @@ body.page main.listening_test.test .btn-dark {
   padding: 0;
   max-width: 140px;
 }
-
+body.page main.listening_test.test .progress-group {
+  align-items: center;
+}
+body.page main.listening_test.test .progress-group p {
+  width: 90px;
+}
 body.page main.listening_test.test .progress {
   background: #cfcfcf;
+  width: calc(100% - 90px);
+  height: 20px;
 }
 
 body.page main.listening_test.test .contact_box .framebox .numbertag-left,

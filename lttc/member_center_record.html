@@ -74,7 +74,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <div>我要考哪一級？</div>
-                  <div>Self-assessment</div>
+                  <div>Self-Assessment</div>
                 </a>
               </li>
               <li class="nav-item">
@@ -100,7 +100,7 @@
                 <div>您好，<span>王大明</span>同學</div>
               </div>
               <a class="nav-more-link" href="member_center_profile.html">會員專區</a>
-              <a class="nav-more-link" href="index.html">考生登出</a>
+              <a class="nav-more-link" href="index.html">登出</a>
             </div>
           </div>
         </div>
@@ -123,12 +123,12 @@
             <div class="framebox_in">
               <div class="sidebar">
                 <div class="title">
-                  會員中心
+                  會員專區
                 </div>
                 <div class="dropdown">
                   <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">學習歷程</button>
                   <div class="navbar-nav dropdown-menu">
-                    <a href="member_center_record.html" class="nav-item active">學習歷程</a>
+                    <a href="member_center_record.html" class="nav-item active">學習歷程<br>(您還有練習題等待完成)</a>
                     <a href="member_center_profile.html" class="nav-item">修改基本資料</a>
                     <a href="member_center_password.html" class="nav-item">修改密碼</a>
                     <a href="member_center_coupon.html" class="nav-item d-none">優惠券</a>
@@ -141,7 +141,7 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-tab-1" type="button" role="tab">自我診斷結果</button>
                   <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-tab-2" type="button" role="tab">自我測試結果</button>
-                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-tab-3" type="button" role="tab">歷次聽讀測驗</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-tab-3" type="button" role="tab">計時模式</button>
                   <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-tab-4" type="button" role="tab">練習模式(含未完成)</button>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
@@ -150,30 +150,34 @@
                     <div class="custom-list-group">
                       <div class="list-item">
                         <div class="row">
-                          <div class="col-12 col-md-6">
-                            <div class="item-num">編號</div>
-                            <div class="item-title">測驗項目</div>
+                          <div class="col-12 col-md-4">
+                            <div class="item-title text-center">測驗項目</div>
                           </div>
-                          <div class="col-12 col-md-3">日期</div>
-                          <div class="col-12 col-md-3"></div>
+                          <div class="col-12 col-md-3">使用日期</div>
+                          <div class="col-12 col-md-3">保留日期</div>
+                          <div class="col-12 col-md-2"></div>
                         </div>
                         <div class="row">
-                          <div class="col-12 col-md-6 flex-column flex-md-row">
-                            <div class="item-num">1</div>
+                          <div class="col-12 col-md-4 flex-column flex-md-row">
                             <div class="item-title">聽解能力自我診斷</div>
                           </div>
-                          <div class="col-12 col-md-3">2022/08/10</div>
-                          <div class="col-12 col-md-3 justify-content-end py-0">
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">使用日期: </div>2022/08/10</div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">保留日期: </div>2022/09/10</div>
+                          <div class="col-12 col-md-2 justify-content-end py-0">
                             <a href="" class="btn btn-primary">查看</a>
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-12 col-md-6 flex-column flex-md-row">
-                            <div class="item-num">2</div>
+                          <div class="col-12 col-md-4 flex-column flex-md-row">
                             <div class="item-title">聽解能力自我診斷</div>
                           </div>
-                          <div class="col-12 col-md-3">2022/08/10</div>
-                          <div class="col-12 col-md-3 justify-content-end py-0">
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">使用日期: </div>2022/08/10</div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">保留日期: </div>2022/09/10</div>
+                          <div class="col-12 col-md-2 justify-content-end py-0">
                             <a href="" class="btn btn-primary">查看</a>
                           </div>
                         </div>
@@ -183,32 +187,38 @@
                   <!-- tab-2 -->
                   <div class="tab-pane fade" id="nav-tab-2">
                     <div class="custom-list-group">
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-                          <div class="item-num">編號</div>
-                          <div class="item-title">測驗項目</div>
+                      <div class="list-item">
+                        <div class="row">
+                          <div class="col-12 col-md-4">
+                            <div class="item-title text-center">測驗項目</div>
+                          </div>
+                          <div class="col-12 col-md-3">使用日期</div>
+                          <div class="col-12 col-md-3">保留日期</div>
+                          <div class="col-12 col-md-2"></div>
                         </div>
-                        <div class="col-12 col-md-3">日期</div>
-                        <div class="col-12 col-md-3"></div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-md-6 flex-column flex-md-row">
-                          <div class="item-num">1</div>
-                          <div class="item-title">聽解能力自我診斷</div>
+                        <div class="row">
+                          <div class="col-12 col-md-4 flex-column flex-md-row">
+                            <div class="item-title">聽解能力自我診斷</div>
+                          </div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">使用日期: </div>2022/08/10</div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">保留日期: </div>2022/09/10</div>
+                          <div class="col-12 col-md-2 justify-content-end py-0">
+                            <a href="" class="btn btn-primary">查看</a>
+                          </div>
                         </div>
-                        <div class="col-12 col-md-3">2022/08/10</div>
-                        <div class="col-12 col-md-3 justify-content-end py-0">
-                          <a href="" class="btn btn-primary">查看</a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-md-6 flex-column flex-md-row">
-                          <div class="item-num">2</div>
-                          <div class="item-title">聽解能力自我診斷</div>
-                        </div>
-                        <div class="col-12 col-md-3">2022/08/10</div>
-                        <div class="col-12 col-md-3 justify-content-end py-0">
-                          <a href="" class="btn btn-primary">查看</a>
+                        <div class="row">
+                          <div class="col-12 col-md-4 flex-column flex-md-row">
+                            <div class="item-title">聽解能力自我診斷</div>
+                          </div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">使用日期: </div>2022/08/10</div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">保留日期: </div>2022/09/10</div>
+                          <div class="col-12 col-md-2 justify-content-end py-0">
+                            <a href="" class="btn btn-primary">查看</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -216,49 +226,42 @@
                   <!-- tab-3 -->
                   <div class="tab-pane fade" id="nav-tab-3">
                     <div class="custom-list-group">
-
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-                          <div class="item-num">編號</div>
-                          <div class="item-title">測驗項目</div>
+                      <div class="list-item">
+                        <div class="row">
+                          <div class="col-12 col-md-3">
+                            <div class="item-title text-center">測驗項目</div>
+                          </div>
+                          <div class="col-12 col-md-3">使用日期</div>
+                          <div class="col-12 col-md-3">保留日期</div>
+                          <div class="col-12 col-md-3"></div>
                         </div>
-                        <div class="col-12 col-md-3">日期</div>
-                        <div class="col-12 col-md-3"></div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-md-6 flex-column flex-md-row">
-                          <div class="item-num">1</div>
-                          <div class="item-title">初級聽讀測驗</div>
+                        <div class="row">
+                          <div class="col-12 col-md-3 flex-column flex-md-row">
+                            <div class="item-title">聽解能力自我診斷</div>
+                          </div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">使用日期: </div>2022/08/10</div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">保留日期: </div>2022/09/10</div>
+                          <div class="col-12 col-md-3 justify-content-end py-0">
+                            <a href="" class="btn btn-primary">查看</a>
+                            <a href="" class="btn btn-gray">下載</a>
+                          </div>
                         </div>
-                        <div class="col-12 col-md-3">2022/08/10</div>
-                        <div class="col-12 col-md-3 justify-content-end py-0">
-                          <a href="" class="btn btn-primary">查看</a>
-                          <a href="" class="btn btn-gray">下載</a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-md-6 flex-column flex-md-row">
-                          <div class="item-num">2</div>
-                          <div class="item-title">中級聽讀測驗</div>
-                        </div>
-                        <div class="col-12 col-md-3">2022/08/10</div>
-                        <div class="col-12 col-md-3 justify-content-end py-0">
-                          <a href="" class="btn btn-primary">查看</a>
-                          <a href="" class="btn btn-gray">下載</a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-md-6 flex-column flex-md-row">
-                          <div class="item-num">3</div>
-                          <div class="item-title">高級聽讀測驗</div>
-                        </div>
-                        <div class="col-12 col-md-3">2022/08/10</div>
-                        <div class="col-12 col-md-3 justify-content-end py-0">
-                          <a href="" class="btn btn-primary">查看</a>
-                          <a href="" class="btn btn-gray">下載</a>
+                        <div class="row">
+                          <div class="col-12 col-md-3 flex-column flex-md-row">
+                            <div class="item-title">聽解能力自我診斷</div>
+                          </div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">使用日期: </div>2022/08/10</div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">保留日期: </div>2022/09/10</div>
+                          <div class="col-12 col-md-3 justify-content-end py-0">
+                            <a href="" class="btn btn-primary">查看</a>
+                            <a href="" class="btn btn-gray">下載</a>
+                          </div>
                         </div>
                       </div>
-                 
                     </div>
                   </div>
                   <!-- tab-4 -->
@@ -266,46 +269,41 @@
                     <div class="custom-list-group">
                       <div class="list-item">
                         <div class="row">
-                          <div class="col-12 col-md-6">
-                            <div class="item-num">編號</div>
-                            <div class="item-title">測驗項目</div>
+                          <div class="col-12 col-md-4">
+                            <div class="item-title text-center">測驗項目</div>
                           </div>
-                          <div class="col-12 col-md-3">日期</div>
-                          <div class="col-12 col-md-3"></div>
+                          <div class="col-12 col-md-3">使用日期</div>
+                          <div class="col-12 col-md-3">保留日期</div>
+                          <div class="col-12 col-md-2"></div>
                         </div>
                         <div class="row">
-                          <div class="col-12 col-md-6 flex-column flex-md-row">
-                            <div class="item-num">1</div>
+                          <div class="col-12 col-md-4 flex-column flex-md-row">
                             <div class="item-title">初級聽讀測驗</div>
                           </div>
-                          <div class="col-12 col-md-3">2022/08/10</div>
-                          <div class="col-12 col-md-3 justify-content-end py-0">
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">使用日期: </div>2022/08/10</div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">保留日期: </div>2022/09/10</div>
+                          <div class="col-12 col-md-2 justify-content-end py-0">
                             <a href="" class="btn btn-secondary">繼續作答</a>
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-12 col-md-6 flex-column flex-md-row">
-                            <div class="item-num">2</div>
+                          <div class="col-12 col-md-4 flex-column flex-md-row">
                             <div class="item-title">中級聽讀測驗</div>
                           </div>
-                          <div class="col-12 col-md-3">2022/08/10</div>
-                          <div class="col-12 col-md-3 justify-content-end py-0">
-                            <a href="" class="btn btn-primary">查看</a>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 col-md-6 flex-column flex-md-row">
-                            <div class="item-num">3</div>
-                            <div class="item-title">高級聽讀測驗</div>
-                          </div>
-                          <div class="col-12 col-md-3">2022/08/10</div>
-                          <div class="col-12 col-md-3 justify-content-end py-0">
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">使用日期: </div>2022/08/10</div>
+                          <div class="col-12 col-md-3">
+                            <div class="d-md-none d-flex me-2">保留日期: </div>2022/09/10</div>
+                          <div class="col-12 col-md-2 justify-content-end py-0">
                             <a href="" class="btn btn-primary">查看</a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
               </form>
             </div>
@@ -345,7 +343,7 @@
         </ul>
         <ul class="credit">
           <li>
-            <div class="txt">本平台服務係由國家發展委員會合作提供及財團法人語言訓練測驗中心</div>
+            <div class="txt">本平台服務係由國家發展委員會及財團法人語言訓練測驗中心合作提供</div>
           </li>
         </ul>
         <ul class="logo">
