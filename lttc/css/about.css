@@ -2,6 +2,42 @@ body.page footer {
   background-image: url(../images/back_footer.png) !important;
   background-repeat: no-repeat !important;
 }
+body.page main.about .nav-pills {
+  justify-content: center;
+}
+body.page main.about .nav-pills .nav-item {
+  margin: 0 10px;
+  width: calc(50% - 20px);
+  max-width: 250px;
+}
+body.page main.about .nav-pills .nav-item .nav-link {
+  border: 2px solid #f7b364;
+  color: #f7b364 !important;
+  font-weight: 500;
+  font-size: 20px;
+  background: #fff;
+  border-radius: 7px;
+}
+body.page main.about .nav-pills .nav-item .nav-link.active {
+  background: #f7b364;
+  color: #fff !important;
+}
+body.page main.about .tab-pane.fade:not(.show) {
+  display: none;
+}
+body.page main.about .tab-pane.fade.active {
+  animation: fadeIn 0.15s linear;
+}
+
+@keyframes fadeIn {
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  }
+}
+
 body.page main.about {
   position: relative;
   background: none !important;
@@ -30,7 +66,7 @@ body.page main.about .contact_box .list-group-item {
   border: none;
 }
 body.page main.about .contact_box .list-group-item ul li {
-  list-style: auto;
+  list-style: decimal;
 }
 body.page main.about .contact_box .list-group-item:after {
   content: '';

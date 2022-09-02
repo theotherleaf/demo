@@ -52,7 +52,10 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/about.css" />
   <script>
     $(document).ready(function(){
-      
+      $(".nav-pills .nav-link").on("click", function() {
+        tab = $(this).attr("data-bs-target");
+        $(tab).tab('show').siblings().removeClass("active show");
+      });
     });
   </script>
 </head>
@@ -134,48 +137,69 @@
         <div class="contact_box wow fadeInUp">
           <div class="framebox">
             <div class="framebox_in">
-              <div class="list-group">
+              <ul class="nav nav-pills mb-5">
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target=".tab-CH" type="button">中文</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target=".tab-EN" type="button">English</button>
+                </li>
+              </ul>
+              <div class="list-group tab-content">
                 <div class="list-group-item">
-                  「全民英檢i學網」由國家發展委員會以及財團法人語言訓練測驗中心(LTTC)合作推出，係運用LTTC專利技術 (GEPT聽診室)之個人化英語聽讀能力診斷回饋系統，且為免費開放給學習者使用之數位學習平台。<br>
-                  The GEPT iPrep was jointly launched by the National Development Commission and the Language Training & Testing Center (LTTC). It is a system that provides personalized diagnostic feedback on learners’ listening and reading abilities in English, using LTTC-patented technology (Dr. GEPT). This digital learning platform is free and open to all learners.
+                  <div class="tab-pane tab-CH fade show active">
+                    「全民英檢i學網」由國家發展委員會以及財團法人語言訓練測驗中心(LTTC)合作推出，係運用LTTC專利技術 (GEPT聽診室)之個人化英語聽讀能力診斷回饋系統，且為免費開放給學習者使用之數位學習平台。
+                  </div>
+                  <div class="tab-pane tab-EN fade">
+                    The GEPT iPrep was jointly launched by the National Development Commission and the Language Training & Testing Center (LTTC). It is a system that provides personalized diagnostic feedback on learners’ listening and reading abilities in English, using LTTC-patented technology (Dr. GEPT). This digital learning platform is free and open to all learners.
+                  </div>
                 </div>
                 <div class="list-group-item">
-                  本平台便利大眾彈性規劃自身英語學習，且供使用者在參加正式「全民英檢」聽讀測驗前無負擔地進行模擬練習。平台名稱中的字母「i」有數位學習、行動學習、智慧學習等之聯想，同時也有學習操之在「我」之意，希望透過此服務，使用者能夠愛(i)上英語學習。<br>
-                  With this platform, learners can flexibly plan their own progress in English. They can also complete pressure-free practice tests before sitting down to complete the actual listening and reading tests of the General English Proficiency Test (GEPT). The letter "i" in the name of the platform has associations with digital learning, action learning, and smart learning, and it also reflects the Internet-based nature of the platform and its user-centered focus.
+                  <div class="tab-pane tab-CH fade show active">
+                    本平台便利大眾彈性規劃自身英語學習，且供使用者在參加正式「全民英檢」聽讀測驗前無負擔地進行模擬練習。平台名稱中的字母「i」有數位學習、行動學習、智慧學習等之聯想，同時也有學習操之在「我」之意，希望透過此服務，使用者能夠愛(i)上英語學習。
+                  </div>
+                  <div class="tab-pane tab-EN fade">
+                    With this platform, learners can flexibly plan their own progress in English. They can also complete pressure-free practice tests before sitting down to complete the actual listening and reading tests of the General English Proficiency Test (GEPT). The letter "i" in the name of the platform has associations with digital learning, action learning, and smart learning, and it also reflects the Internet-based nature of the platform and its user-centered focus.
+                  </div>
                 </div>
                 <div class="list-group-item">
-                  <p class="mb-2">「全民英檢i學網」特色包括：</p>
-                  <ul>
-                    <li>
-                      <strong>官方全真題庫：</strong>提供出自「全民英檢」官方題庫之初級、中級、中高級(相當於CEFR A2、B1、B2級)聽力、閱讀測驗試題。
-                    </li>
-                    <li>
-                      <strong>即時能力預測：</strong>學習者可先利用平台中的自我診斷、自我測試功能，快速獲得英語能力落點預測。
-                    </li>
-                    <li>
-                      <strong>專屬個人回饋：</strong>在完整作答模擬測驗後，即時獲得「個人化」的診斷回饋，包括：聽讀能力指標達成率、強弱項分析、尚未精熟之單字與句型、後續學習建議等。
-                    </li>
-                    <li>
-                      <strong>行動化自主學習：</strong>可從手機、平板電腦等行動裝置輕鬆登入使用，另具備學習歷程功能，可記錄學習軌跡。
-                    </li>
-                  </ul>
-                  <p>「全民英檢i學網」，陪你一起愛學英文！</p><br>
-                  <p class="mb-2">On the GEPT iPrep, learners can enjoy these features:</p>
-                  <ul>
-                    <li>
-                      <strong>Official Test Bank：</strong>Learners will have access to a wealth of listening and reading test questions from the official test bank of the GEPT at the elementary, intermediate, and high-intermediate levels (equivalent to CEFR A2, B1, and B2).
-                    </li>
-                    <li>
-                      <strong>Instant Ability Assessments:</strong>Learners can first use the self-assessment scales and self-assessment tests to quickly assess their own English abilities.
-                    </li>
-                    <li>
-                      <strong>Exclusive personal feedback:</strong>Immediately upon completion of the practice test, learners will receive personalized diagnostic feedback. This feedback will include indicators of their listening and reading abilities, analysis of their strengths and weaknesses, unfamiliar words and sentence patterns, and follow-up study suggestions.
-                    </li>
-                    <li>
-                      <strong>Mobile self-learning:</strong>Learners can easily log in on a mobile device such as a mobile phone or tablet computer, and the system will keep track of their progress.
-                    </li>
-                  </ul>
-                  <p>The GEPT iPrep will guide learners on the path to better English!</p>
+                  <div class="tab-pane tab-CH fade show active">
+                    <p class="mb-2">「全民英檢i學網」特色包括：</p>
+                    <ul>
+                      <li>
+                        <strong>官方全真題庫：</strong>提供出自「全民英檢」官方題庫之初級、中級、中高級(相當於CEFR A2、B1、B2級)聽力、閱讀測驗試題。
+                      </li>
+                      <li>
+                        <strong>即時能力預測：</strong>學習者可先利用平台中的自我診斷、自我測試功能，快速獲得英語能力落點預測。
+                      </li>
+                      <li>
+                        <strong>專屬個人回饋：</strong>在完整作答模擬測驗後，即時獲得「個人化」的診斷回饋，包括：聽讀能力指標達成率、強弱項分析、尚未精熟之單字與句型、後續學習建議等。
+                      </li>
+                      <li>
+                        <strong>行動化自主學習：</strong>可從手機、平板電腦等行動裝置輕鬆登入使用，另具備學習歷程功能，可記錄學習軌跡。
+                      </li>
+                    </ul>
+                    <p>「全民英檢i學網」，陪你一起愛學英文！</p>
+                  </div>
+                  <div class="tab-pane tab-EN fade">
+                    <p class="mb-2">On the GEPT iPrep, learners can enjoy these features:</p>
+                    <ul>
+                      <li>
+                        <strong>Official Test Bank：</strong>Learners will have access to a wealth of listening and reading test questions from the official test bank of the GEPT at the elementary, intermediate, and high-intermediate levels (equivalent to CEFR A2, B1, and B2).
+                      </li>
+                      <li>
+                        <strong>Instant Ability Assessments:</strong>Learners can first use the self-assessment scales and self-assessment tests to quickly assess their own English abilities.
+                      </li>
+                      <li>
+                        <strong>Exclusive personal feedback:</strong>Immediately upon completion of the practice test, learners will receive personalized diagnostic feedback. This feedback will include indicators of their listening and reading abilities, analysis of their strengths and weaknesses, unfamiliar words and sentence patterns, and follow-up study suggestions.
+                      </li>
+                      <li>
+                        <strong>Mobile self-learning:</strong>Learners can easily log in on a mobile device such as a mobile phone or tablet computer, and the system will keep track of their progress.
+                      </li>
+                    </ul>
+                    <p>The GEPT iPrep will guide learners on the path to better English!</p>
+                  </div>
+  
                 </div>
               </div>
               <div class="video-group ratio ratio-16x9">
@@ -225,7 +249,7 @@
         </ul>
         <ul class="logo">
           <li>
-            <div class="img"><img src="images/logo_ndc.png"></div>
+            <div class="img img-logo"><img src="images/logo_ndc.png"></div>
           </li>
           <li>
             <div class="img"><img src="images/logo_lttc.png"></div>

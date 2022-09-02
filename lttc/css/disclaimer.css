@@ -13,30 +13,23 @@ body.page .disclaimer table tbody tr:not(:first-child) {
 body.page .disclaimer table ul li {
   list-style-type: disc;
 }
-body.page main.disclaimer .titlebox .subtitle {
-  color: #f3e6fa;
+
+
+body.page main.disclaimer .table-theme {
+  border: 2px solid #93c782 !important;
 }
-body.page main.disclaimer .contact_box .framebox {
-  background: #f3e6fa;
-}
-body.page main.disclaimer .contact_box .framebox_in {
-  border-color: #cba6e0;
-}
-body.page main.disclaimer table {
-  border: 2px solid #b38aca !important;
-}
-body.page main.disclaimer table tr th {
-  background: #b38aca;
+body.page main.disclaimer .table-theme tr th {
+  background: #93c782;
 }
 
 @media (min-width: 640px) {
-  body.page main.disclaimer table tr td:nth-child(1) {
-    border-right: 2px solid #b38aca;
+  body.page main.disclaimer .table-theme tr td:nth-child(1) {
+    border-right: 2px solid #93c782;
   }
 }
 
 @media (max-width: 639px) {
-  body.page main.diagnose table tr td {
-    border-top: 2px solid #b38aca;
+  body.page main.diagnose .table-theme tr td {
+    border-top: 2px solid #93c782;
   }
 }

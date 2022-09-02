@@ -507,7 +507,7 @@ body header .navbar .nav-more .nav-more-link:hover {
 
   body header .navbar .nav-more .nav-more-link {
     width: 100%;
-    border: 1px solid #20a1d2;
+    border: 1px solid #f7b364;
     border-radius: 25px;
     text-align: center;
     padding: 4px;
@@ -1212,7 +1212,6 @@ footer ul {
 footer .infobox {
   color: #006d93;
   font-weight: 500;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 1.0);
   margin-top: 2.5em;
 }
 
@@ -1240,14 +1239,23 @@ footer .infobox ul.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+}
+
+@media (min-width: 576px) {
+  footer .infobox ul.logo {
+    gap: 15px;
+  }
 }
 
 footer .infobox ul.logo li {
   border-right: none;
-  width: 30%;
+  width: 50% !important;
   max-width: 180px;
 }
+footer .infobox ul.logo li:not(:last-child) {
+  padding-right: 15px;
+}
+
 
 footer .copyright {
   color: #ffffff;
@@ -5614,7 +5622,7 @@ input[type="submit"].color_white:focus {
 footer .infobox .btn-line {
   height: 25px;
   line-height: 25px;
-  color: rgba(255,255,255,0.1);
+  color: #fff;
   font-size: 14px;
   padding: 0 10px 0 30px;
   border-radius: 5px;
@@ -5660,6 +5668,9 @@ footer .infobox ul li .txt {
   padding: 0 15px;
   border-right: none;
   line-height: 1.5;
+}
+footer .infobox ul li a {
+  color: #006d93;
 }
 @media (min-width: 992px) { 
   footer .infobox ul {

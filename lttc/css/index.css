@@ -285,7 +285,7 @@ body.index main .introbox .introbox_content .floatbox:before {
 }
 @media (max-width: 767.98px) {
   body.index main .introbox .introbox_bg {
-    margin-top: 2%;
+    margin-top: 25px;
   }
   body.index main .introbox .list-group .list-group-item {
     margin: 0 0 15px;
