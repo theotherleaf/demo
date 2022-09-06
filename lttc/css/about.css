@@ -129,7 +129,6 @@ body.page main.about .contact_box .video-group {
     width: 200px;
     height: 500px;
   }
-  body.page main.about .contact_box .list-group-item:last-child,
   body.page main.about .contact_box .video-group {
     margin-top: 45px;
   }
