@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>進度查詢(資料補正、繳費)-屏東縣政府｜便民服務整合申辦平台</title>
+  <link rel="shortcut icon" href="frontref/img/favicon.ico" />
+  <link rel="bookmark" href="frontref/img/favicon.ico" />
+
+  <!-- theme -->
+  <link href="frontref/css/sticky-footer-navbar.css" rel="stylesheet" />
+  <link href="frontref/css/all.css" rel="stylesheet" />
+</head>
+
+<body id="wrapper">
+  <header id="header_signin">
+    <!-- layout/header_signin.html -->
+  </header>
+  <main class="mt-5 py-5" id="content">
+    <section class="container">
+      <a class="sr-only sr-only-focusable" href="#C" id="AC" name="C" accesskey="C" title="主要內容區塊">:::</a>
+      <h2 class="h3 text-center font-weight-bold mb-4"><i class="fal fa-search mr-2 text-theme"></i>進度查詢(資料補正、繳費)</h2>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item ml-auto">
+          <a class="nav-link active" data-toggle="tab" href="#tab-01" role="tab">近三個月</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tab-02" role="tab">全部案件</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tab-03" role="tab">預留</a>
+        </li> -->
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab-01" role="tabpanel">
+          <div class="row">
+            <table class="table table-md table-col table-striped border border-theme-light bg-white text-center"
+              summary="此進度查詢(資料補正、繳費)表格中，第一橫欄是申請編號，第二橫欄是送出申請時間，第三橫欄是申請項目，第四橫欄是狀態，第五橫欄是截止時間。">
+              <caption class="sr-only">進度查詢(資料補正、繳費)</caption>
+              <thead class="bg-theme-light">
+                <tr>
+                  <th scope="col">申請編號</th>
+                  <th scope="col">送出申請時間</th>
+                  <th scope="col">申請項目</th>
+                  <th scope="col">狀態</th>
+                  <th scope="col">截止時間</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="申請編號">hg202101200001</td>
+                  <td data-label="送出申請時間">2021-01-08 05:57</td>
+                  <td data-label="申請項目">土地使用分區申請</td>
+                  <td data-label="狀態" class="table-warning">
+                    <ul class="list-unstyled">
+                      <li>待繳費</li>
+                      <li>繳費期限：2021-01-08 23:59</li>
+                      <li>應繳金額：20元</li>
+                      </li>
+                    </ul>
+                    <a class="btn btn-red rounded-0 hvr-forward my-2" href="payment.html" role="button">前往繳費<i
+                        class="far fa-arrow-right ml-1"></i></a>
+                  </td>
+                  <td data-label="截止時間"></td>
+                </tr>
+                <tr>
+                  <td data-label="申請編號">hg202101200001</td>
+                  <td data-label="送出申請時間">2021-01-08 05:57</td>
+                  <td data-label="申請項目">土地使用分區申請</td>
+                  <td data-label="狀態" class="table-warning">
+                    <ul class="list-unstyled">
+                      <li>待繳費</li>
+                      <li>繳費期限：2021-01-08 23:59</li>
+                      <li>應繳金額：20元</li>
+                      </li>
+                    </ul>
+                    <a class="btn btn-red rounded-0 hvr-forward my-2" href="payment.html" role="button">前往繳費<i
+                        class="far fa-arrow-right ml-1"></i></a>
+                  </td>
+                  <td data-label="截止時間"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-02" role="tabpanel">
+          <div class="row align-items-center bg-white pt-3 mb-0">
+            <div class="col-12 col-sm-6 col-lg mb-2">
+              <label class="sr-only" for="inlineFormInput">申請編號</label>
+              <input type="text" class="form-control" id="inlineFormInput" placeholder="申請編號輸入">
+            </div>
+            <div class="col-12 col-sm-6 col-lg mb-2">
+              <label class="sr-only" for="inlineFormInput">案件名稱</label>
+              <input type="text" class="form-control" id="inlineFormInput" placeholder="案件名稱輸入">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-2">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">申請日期</span>
+                </div>
+                <input type="text" class="form-control" id="inputIncident" placeholder="yyyy/mm/dd">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-theme" type="button" id="button-addon2"><i
+                      class="far fa-calendar-day"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg mb-2">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option value="全部狀態">全部狀態</option>
+                <option value="結案">結案</option>
+                <option value="審核中">審核中</option>
+                <option value="待審核">待審核</option>
+                <option value="待補正">待補正</option>
+                <option value="待繳費">待繳費</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg mb-2">
+              <button type="submit" class="btn btn-primary btn-block">確定</button>
+            </div>
+          </div>
+          <div class="row">
+            <table class="table table-md table-col table-striped border border-theme-light bg-white text-center"
+              summary="此進度查詢(資料補正、繳費)表格中，第一橫欄是申請編號，第二橫欄是送出申請時間，第三橫欄是申請項目，第四橫欄是狀態，第五橫欄是截止時間。">
+              <caption class="sr-only">進度查詢(資料補正、繳費)</caption>
+              <thead class="bg-theme-light">
+                <tr>
+                  <th scope="col">申請編號</th>
+                  <th scope="col">送出申請時間</th>
+                  <th scope="col">申請項目</th>
+                  <th scope="col">狀態</th>
+                  <th scope="col">截止時間</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="申請編號">hg202101200001</td>
+                  <td data-label="送出申請時間">2021-01-08 05:57</td>
+                  <td data-label="申請項目">土地使用分區申請</td>
+                  <td data-label="狀態">
+                    <ul class="list-unstyled">
+                      <li>已完成</li>
+                      <li>繳費期限：2021-01-08 23:59</li>
+                      <li>應繳金額：20元</li>
+                      </li>
+                    </ul>
+                  </td>
+                  <td data-label="截止時間">2021-01-08 23:59</td>
+                </tr>
+                <tr>
+                  <td data-label="申請編號">hg202101200001</td>
+                  <td data-label="送出申請時間">2021-01-08 05:57</td>
+                  <td data-label="申請項目">土地使用分區申請</td>
+                  <td data-label="狀態">
+                    <ul class="list-unstyled">
+                      <li>已完成</li>
+                      <li>繳費期限：2021-01-08 23:59</li>
+                      <li>應繳金額：20元</li>
+                      </li>
+                    </ul>
+                  </td>
+                  <td data-label="截止時間">2021-01-08 23:59</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fal fa-angle-left"></i></a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><i class="fal fa-angle-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="tab-pane fade" id="tab-03" role="tabpanel">預留</div> -->
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="footer" id="footer">
+    <!-- layout/footer.html -->
+  </footer>
+  <!-- bootstrap -->
+  <script src="scripts/jquery/jquery-3.5.1.min.js"></script>
+  <script src="scripts/popper/popper.min.js"></script>
+  <script src="scripts/bootstrap/bootstrap.min.js"></script>
+  <!-- theme -->
+  <script src="frontref/js/all.js"></script>
+</body>
+
+</html>

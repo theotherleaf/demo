@@ -1,0 +1,49 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html{
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 229px;
+}
+@media (max-width: 575.98px) { 
+body {
+  margin-bottom: 451px!important;
+}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+  margin-bottom: 383px!important;
+} 
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  body {
+  margin-bottom: 355px!important;
+} 
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+  margin-bottom:229px!important;
+}
+}
+
+@media (min-width: 1200px) { 
+  body {
+  margin-bottom: 229px!important;
+} 
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+

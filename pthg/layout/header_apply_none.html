@@ -1,0 +1,118 @@
+<nav class="navbar navbar-expand-lg navbar-light py-0 fixed-top bg-white border d-flex align-items-center">
+  <a class="sr-only sr-only-focusable" href="#content" title="跳到主要內容區塊" tabindex="1">跳至主要內容</a>
+  <noscript>
+    <div class="NoScript1">
+      您的瀏覽器不支援JavaScript功能，若部份網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態<br>
+      友善列印 :請利用鍵盤按住Ctrl + P開啟列印功能<br>
+      回頂端:請利用鍵盤按按下[Home]鍵回到頁面頂端<br>
+      字級設定：IE6請利用鍵盤按住ALT鍵 + V → X → (G)最大(L)較大(M)中(S)較小(A)小，來選擇適合您的文字大小,而IE7或Firefox瀏覽器則可利用鍵盤 Ctrl + (+)放大 (-)縮小來改變字型大小。
+    </div>
+  </noscript>
+  <h1 class="mt-1 mb-0">
+    <a class="navbar-brand" href="index.html" title="回首頁">
+      <img src="frontref/img/logo.png" class="img-fluid logo" alt="屏東縣政府便民服務整合申辦平台LOGO"><span
+        class="sr-only">屏東縣政府便民服務整合申辦平台</span>
+    </a>
+  </h1>
+  <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto d-flex align-items-center">
+      <li class="nav-item">
+        <a href="#U" id="AU" name="U" accesskey="U" class="sr-only sr-only-focusable" title="右上方功能區塊">:::</a>
+      </li>
+      
+      <li class="nav-item mr-0 mr-lg-2">
+        <a href="index.html" class="nav-link hvr-underline-from-center active" title="連結至申辦服務"><i
+            class="fal fa-clipboard-list mr-1"></i>申辦服務</a>
+      </li>
+      <li class="nav-item mr-0 mr-lg-2">
+        <a href="site_index.html" class="nav-link hvr-underline-from-center" title="連結至場地租借"><i
+            class="fal fa-map-marked-alt mr-1"></i>場地租借</a>
+      </li>
+      <li class="nav-item mr-0 mr-lg-2">
+        <a href="#" class="nav-link hvr-underline-from-center" role="button" title="連結至進度查詢(開啟互動視窗)" data-toggle="modal"
+          data-target="#scheduleModalCenter"><i class="fal fa-search mr-1"></i>進度查詢</a>
+      </li>
+    </ul>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto d-xl-flex align-items-center">
+      <li class="nav-item d-none d-xl-block" data-toggle="button">
+        <a href="javascript:SetFont(1)" class="btn btn-outline-primary btn-sm" role="button" autocomplete="off"
+          title="小字級">小</a>
+        <a href="javascript:SetFont(1.125)" class="btn btn-outline-primary active" role="button" autocomplete="off"
+          title="中字級">中</a>
+        <a href="javascript:SetFont(1.25)" class="btn btn-outline-primary btn-lg" role="button" autocomplete="off"
+          title="大字級">大</a>
+      </li>
+    </ul>
+    <ul class="sideNav list-unstyled d-flex flex-column d-lg-none">
+      <li class="d-flex justify-content-lg-start justify-content-center">
+        <a class="btn btn-dark btn-lg" href="news_list.html" role="button" title="連結至最新消息"><i
+            class="fal fa-newspaper fa-fw"></i><span class="ml-2">最新消息</span></a>
+      </li>
+      <li class="d-flex justify-content-lg-start justify-content-center">
+        <a class="btn btn-dark btn-lg" href="bulletin_list.html" role="button" title="連結至系統公告"><i
+            class="fal fa-bullhorn fa-fw"></i><span class="ml-2">系統公告</span></a>
+      </li>
+      <li class="d-flex justify-content-lg-start justify-content-center">
+        <a class="btn btn-dark btn-lg" href="qa_list.html" role="button" title="連結至Q&A"><i
+            class="fal fa-question-circle fa-fw"></i><span class="ml-2">Q&A</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="scheduleModalCenter" tabindex="-1" role="dialog" aria-labelledby="scheduleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title h4 text-theme" id="scheduleModalCenterTitle"><i class="fas fa-user-circle mr-2"></i>以E-mail登入
+        </p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fal fa-times"></i><span class="sr-only">關閉</span></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="email" class="sr-only">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="請輸入E-mail">
+          </div>
+          <div class="form-group row">
+            <div class="col"><img src="frontref/img/u75.png" alt="img-fluid"></div>
+            <div class="col align-self-center"><button type="submit" class="btn btn-outline-secondary btn-block"><i
+                  class="fas fa-volume-up"></i><span class="sr-only">朗讀圖像驗證碼</span></button></div>
+            <div class="col align-self-center"><button type="submit" class="btn btn-outline-secondary btn-block"><i
+                  class="far fa-sync-alt"></i><span class="sr-only">更新驗證碼</span></button></div>
+          </div>
+          <div class="form-group">
+            <label for="captcha" class="sr-only">圖像驗證碼</label>
+            <input type="text" class="form-control" id="captcha" placeholder="請輸入圖像驗證碼">
+          </div>
+          <button type="submit" class="btn btn-info btn-block mb-2" title="發送E-mail取得驗證碼"><i
+              class="fas fa-paper-plane mr-2"></i>發送E-mail取得驗證碼</button>
+          <div class="form-group">
+            <label for="mobile_captcha" class="sr-only">E-mail驗證碼</label>
+            <input type="text" class="form-control" id="mobile_captcha" placeholder="請輸入E-mail驗證碼">
+          </div>
+          <div class="form-group"><a href="progress_query.html" type="button" class="btn btn-theme btn-block" title="登入" role="button">登入<i class="fas fa-sign-in-alt ml-1"></i></a></div>
+          <div class="form-group"><a href="progress_query.html" type="button" class="btn btn-warning btn-block" title="我有案件查詢碼，直接查詢案件進度" role="button">我有案件查詢碼，直接查詢案件進度</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    $('.btn-outline-primary').click(function () {
+      console.log('test')
+      $('.btn-outline-primary').removeClass('active');
+    })
+  })
+</script>
