@@ -312,7 +312,7 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbo
 }
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {text-align: center;}
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
-	color: #d7ebdf;
+	color: #8BBC9F;
 	font-weight: 600;
 	text-align: right;
 	line-height: 42px;
@@ -358,7 +358,7 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .obox labe
 	content: '';
 	background-image: url(../images/img_white_o.png);
 	background-repeat: no-repeat;
-	background-size: 42px auto;
+	background-size: cover;
 	display: block;
 }
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .obox input.yesno:checked + label:before {
@@ -367,14 +367,14 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .obox inpu
     background-color: inherit;
 	background-image: url(../images/img_white_o-ch.png);
 	background-repeat: no-repeat;
-	background-size: 42px auto;
+	background-size: cover;
 	display: block;
 }
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .xbox label:before {
 	content: '';
 	background-image: url(../images/img_white_x.png);
 	background-repeat: no-repeat;
-	background-size: 42px auto;
+	background-size: cover;
 	display: block;
 }
 body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .xbox input.yesno:checked + label:before {
@@ -383,7 +383,7 @@ body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .xbox inpu
   background-color: inherit;
 	background-image: url(../images/img_white_x-ch.png);
 	background-repeat: no-repeat;
-	background-size: 42px auto;
+	background-size: cover;
 	display: block;
 }
 body.page main.test .contact_box .btn {width: 100%;}
@@ -639,24 +639,25 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 	}
 	/*---評量表---*/
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
-		width: 22%;
+		width: 14%;
     padding-right: 10px;
 	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
+		text-align: left;
+	}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-		width: 78%;
+		width: calc(86% - 58px);
 		line-height: initial;
 		min-height: 42px;
 		display: flex;
     align-items: center;
 	}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
-		width: 100%;
+		width: 58px;
 		display: flex;
     justify-content: flex-start;
 		align-items: center;
 		height: 60px;
-		margin-left: -8px;
-		margin-right: -8px;
 	}
 	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 1.6em;}
 	/*---級數---*/
@@ -668,25 +669,6 @@ body.page main.test .contact_box .framebox .recommend .explainlist li .subjectbo
 		margin-left: 0%;
 		padding-top: 4em;
 		padding-bottom: 1em;
-	}
-}
-@media (max-width: 412px) {
-	/*---評量表---*/
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li {
-		padding-right: 10px;
-	}
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
-		width: 14%;
-		margin-left: -10px;
-	}
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
-		text-align: left;
-	}
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-		width: 86%;
-	}
-	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
-		width: 100%;
 	}
 }
 

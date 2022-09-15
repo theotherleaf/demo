@@ -37,8 +37,6 @@ body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno {
 	margin: 0;
 	padding-top: 0;
 	padding-bottom: 0;
-	padding-left: 20px;
-	padding-right: 20px;
 }
 body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li {
 	padding-top: 10px;
@@ -102,7 +100,7 @@ body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li 
 	content: '';
 	background-image: url(../images/img_white_o.png);
 	background-repeat: no-repeat;
-	background-size: 42px auto;
+	background-size: cover;
 	display: block;
 }
 body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .obox input.yesno:checked + label:before {
@@ -111,14 +109,14 @@ body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li 
     background-color: inherit;
 	background-image: url(../images/img_white_o-ch.png);
 	background-repeat: no-repeat;
-	background-size: 42px auto;
+	background-size: cover;
 	display: block;
 }
 body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .xbox label:before {
 	content: '';
 	background-image: url(../images/img_white_x.png);
 	background-repeat: no-repeat;
-	background-size: 42px auto;
+	background-size: cover;
 	display: block;
 }
 body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .xbox input.yesno:checked + label:before {
@@ -127,22 +125,22 @@ body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li 
     background-color: inherit;
 	background-image: url(../images/img_white_x-ch.png);
 	background-repeat: no-repeat;
-	background-size: 42px auto;
+	background-size: cover;
 	display: block;
 }
 body.page main.test_recommend .contact_box .btn {width: 100%;}
 body.page main.test_recommend .contact_box .btn.send a {
 	font-size: 1.2em;
-    color: #ffffff;
-    border: 2px solid #f7b364;
-    height: 50px;
-    line-height: 48px;
-    background: #f7b364;
+	color: #ffffff;
+	border: 2px solid #f7b364;
+	height: 50px;
+	line-height: 48px;
+	background: #f7b364;
 	padding-left: 35px;
 	padding-right: 15px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
 }
 body.page main.test_recommend .contact_box .btn.send a:hover,
 body.page main.test_recommend .contact_box .btn.send a:active,
@@ -486,16 +484,25 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 	body.page main.test_recommend table tr td {border-top: 2px solid #8bbc9f;}
 	/*---評量表---*/
 	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
-		width: 22%;
+		width: 14%;
 		padding-right: 10px;
 	}
-	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-		width: 78%;
-		line-height: inherit;
-	}
-	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
-		width: 100%;
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
 		text-align: left;
+	}
+	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
+		width: calc(86% - 58px);
+		line-height: initial;
+		min-height: 42px;
+		display: flex;
+    align-items: center;
+	}
+	body.page main.test .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
+		width: 58px;
+		display: flex;
+    justify-content: flex-start;
+		align-items: center;
+		height: 60px;
 	}
 	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {font-size: 1.6em;}
 	/*---級數---*/
@@ -503,7 +510,7 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 	body.page main.test_recommend .contact_box .framebox .recommend .paragraph {width: 100%;}
 	body.page main.test_recommend .contact_box .framebox .recommend .advice {
 		width: 100%;
-		margin-top: -2em;
+		margin-top: -1em;
 		margin-left: 0%;
 		padding-top: 4em;
 		padding-bottom: 1em;
@@ -570,19 +577,6 @@ body.page main.test_recommend .contact_box .framebox .recommend .explainlist li 
 		width: 25%;
 	}
 }
-@media (max-width: 412px) {
-	/*---評量表---*/
-	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox {width: 100%;}
-	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
-		font-size: 2.2em;
-		text-align: left;
-	}
-	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {width: 100%;}
-	body.page main.test_recommend .contact_box .framebox .evaluationbox ul.yesno li .subjectbox .inbox {
-		padding-left: 15px;
-		padding-right: 5px;
-	}
-}
 
 body.page main.explain .tabs-wrapper .nav-tabs .nav-item .nav-link {
   color: #d7ebdf !important;
@@ -605,4 +599,5 @@ body.page main.explain .tabs-wrapper .nav-tabs .nav-item .nav-link.active {
 
 body.page main.explain .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
 	color: #d7ebdf;
+	text-align: left;
 }

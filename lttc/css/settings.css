@@ -2685,6 +2685,7 @@ body.page .contact_box .framebox .optionbox ul.labelauty li label span {
       80% auto;
   }
 
+  body.index .titlebox .subtitle,
   body.page .titlebox .subtitle {
     font-size: 2.6em;
   }
@@ -2743,6 +2744,9 @@ body.page .contact_box .framebox .optionbox ul.labelauty li label span {
 }
 
 @media (max-width: 575.98px) {
+  body.index .titlebox .subtitle {
+    font-size: 2.4em;
+  }
 
   body.page main.diagnose .contact_box .framebox_in,
   body.page main.test .contact_box .framebox_in,
@@ -2752,6 +2756,9 @@ body.page .contact_box .framebox .optionbox ul.labelauty li label span {
 }
 
 @media (max-width: 359px) {
+  body.index .titlebox .subtitle {
+    font-size: 2em;
+  }
 
   /*---測驗選項---*/
   body.page .contact_box .framebox ul.labelauty.level label {
@@ -2874,12 +2881,14 @@ body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .optio
 }
 
 body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
-  color: #cfeffb;
+  color: #1DB8F1;
   font-weight: 600;
   text-align: right;
   line-height: 42px;
   display: block;
+  text-align: left;
 }
+
 
 body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li:nth-child(1) .numberbox:before {
   content: '1.';
@@ -3005,7 +3014,7 @@ body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .obox 
   content: '';
   background-image: url(../images/img_white_o.png);
   background-repeat: no-repeat;
-  background-size: 42px auto;
+  background-size: cover;
   display: block;
 }
 
@@ -3015,7 +3024,7 @@ body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .obox 
   background-color: inherit;
   background-image: url(../images/img_white_o-ch.png);
   background-repeat: no-repeat;
-  background-size: 42px auto;
+  background-size: cover;
   display: block;
 }
 
@@ -3023,7 +3032,7 @@ body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .xbox 
   content: '';
   background-image: url(../images/img_white_x.png);
   background-repeat: no-repeat;
-  background-size: 42px auto;
+  background-size: cover;
   display: block;
 }
 
@@ -3033,7 +3042,7 @@ body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .xbox 
   background-color: inherit;
   background-image: url(../images/img_white_x-ch.png);
   background-repeat: no-repeat;
-  background-size: 42px auto;
+  background-size: cover;
   display: block;
 }
 
@@ -3705,11 +3714,11 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
   }
 
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-    width: 58%;
+    width: 57%;
   }
 
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
-    width: 27%;
+    width: 28%;
   }
 
   /*---級數---*/
@@ -3731,12 +3740,12 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 
   /*---評量表---*/
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
-    width: 22%;
+    width: 14%;
     padding-right: 10px;
   }
 
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-    width: 78%;
+    width: 86%;
     line-height: inherit;
     min-height: 42px;
     display: flex;
@@ -3745,7 +3754,7 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
 
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .optionbox {
     width: 100%;
-    text-align: left;
+    text-align: right;
   }
 
   body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
@@ -3863,22 +3872,6 @@ body.page main.diagnose .contact_box .framebox .recommend .explainlist li .subje
     width: 100%;
     height: auto;
     margin-top: 5px;
-  }
-}
-
-@media (max-width: 412px) {
-
-  /*---評量表---*/
-  body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox {
-    width: 14%;
-  }
-
-  body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .numberbox:before {
-    text-align: left;
-  }
-
-  body.page main.diagnose .contact_box .framebox .evaluationbox ul.yesno li .subjectbox {
-    width: 86%;
   }
 }
 
