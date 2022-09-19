@@ -95,7 +95,7 @@
             <img class="loop" src="./assets/images/services/img-circle-loop.png" alt="loop" />
           </div>
           <div class="button-container">
-            <a class="btn btn-primary" href="#contact" title="Contact us">按下確認鍵</a>
+            <a class="btn btn-primary btn-contact" title="Contact us">按下確認鍵</a>
           </div>
           <img class="bg-enter" src="./assets/images/services/img-bg-enter.png" alt="Enter" />
         </div>
@@ -133,7 +133,7 @@
                 </div>
               </div>
               <div class="button-container">
-                <a class="btn btn-secondary" href="#contact" title="Contact us">按下確認鍵</a>
+                <a class="btn btn-secondary btn-contact" title="Contact us">按下確認鍵</a>
                 <img class="img-smile" src="./assets/images/services/img-smile-pink.png" alt="smile" />
               </div>
             </div>
@@ -158,7 +158,7 @@
               </div>
               <div class="button-container">
                 <img class="img-smile" src="./assets/images/services/img-smile-yellow.png" alt="smile" />
-                <a class="btn btn-pink" href="#contact" title="Contact us">按下確認鍵</a>
+                <a class="btn btn-pink btn-contact" title="Contact us">按下確認鍵</a>
               </div>
             </div>
             <div class="transparent-board">
@@ -194,7 +194,7 @@
               </div>
               <div class="button-container">
                 <img class="img-cursor" src="./assets/images/services/img-cursor-white.png" alt="Cursor" />
-                <a class="btn btn-secondary" href="#contact" title="Contact us">按下確認鍵</a>
+                <a class="btn btn-secondary btn-contact" title="Contact us">按下確認鍵</a>
               </div>
             </div>
             <div class="pink-board">
@@ -228,7 +228,7 @@
                 </div>
               </div>
               <div class="button-container">
-                <a class="btn btn-pink" href="#contact" title="Contact us">按下確認鍵</a>
+                <a class="btn btn-pink btn-contact" title="Contact us">按下確認鍵</a>
               </div>
             </div>
             <div class="transparent-board">
@@ -294,7 +294,7 @@
                 <div>社群</div>
               </div>
               <div class="button-container">
-                <a class="btn btn-outline-primary" href="#contact" title="Contact us">按下確認鍵</a>
+                <a class="btn btn-outline-primary btn-contact" title="Contact us">按下確認鍵</a>
               </div>
             </div>
           </div>
@@ -314,7 +314,7 @@
             </div>
             <div class="button-container">
               <img class="img-smile" src="./assets/images/services/img-smile-yellow.png" alt="smile" />
-              <a class="btn btn-outline-primary" href="#contact" title="Contact us">按下確認鍵</a>
+              <a class="btn btn-outline-primary btn-contact" title="Contact us">按下確認鍵</a>
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@
             <div class="contact-block">
               <div>(02)8521-2774</div>
               <div><a href="mailto:enter@enterimc.com" title="enter@enterimc.com">enter@enterimc.com</a></div>
-              <div>Line:van82121</div>
+              <div>@898fkbxz</div>
               <a class="btn-add" href="https://lin.ee/g9LOCV2">
                 <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友">
               </a>
@@ -372,5 +372,12 @@
     <script src="./assets/js/jquery.slim.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
+    <script>
+      $(function() {
+        $('.btn-contact').click(function() {
+          $('#contact .white-board').get(0).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    </script>
   </body>
 </html>

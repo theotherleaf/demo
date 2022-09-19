@@ -101,7 +101,7 @@
             <img class="enter" src="./assets/images/home/img-welcome-enter.png" alt="ENTER" />
           </div>
           <p>我們是以網路事件行銷<br>為強項的廣告公<span>司</span></p>
-          <a class="btn btn-outline-primary" href="./#contact" title="Contact us">按下確認鍵</a>
+          <a class="btn btn-outline-primary btn-contact" title="Contact us">按下確認鍵</a>
           <img class="enter-vertical-blue" src="./assets/images/home/img-enter-vertical-blue.png" alt="ENTER" />
           <img class="mouse" src="./assets/images/home/img-mouse.png" alt="scroll" />
         </div>
@@ -115,7 +115,7 @@
             <p>確認鍵以<span>年輕叛逆又兼具老派作業原則</span>的核心價值想讓廣大品牌主知道除了傳統4A外市場將有一名<span>真正網路原生世代</span>新將「確認鍵」將成為品牌主市場最高CP值的新選項！</p>
             <div class="position-relative d-flex justify-content-end">
               <img class="cursor-blue" src="./assets/images/home/img-cursor-blue.png" alt="cursor" />
-              <a class="btn btn-outline-secondary" href="./#contact" title="Contact us">按下確認鍵</a>
+              <a class="btn btn-outline-secondary btn-contact" title="Contact us">按下確認鍵</a>
             </div>
           </div>
           <img class="enter-vertical-blue" src="./assets/images/home/img-enter-vertical-blue.png" alt="ENTER" />
@@ -178,7 +178,7 @@
               </div>
             </div>
             <div class="button-container">
-              <a class="btn btn-outline-primary" href="./#contact" title="Contact us">按下確認鍵</a>
+              <a class="btn btn-outline-primary btn-contact" title="Contact us">按下確認鍵</a>
             </div>
           </div>
           <img class="staff" src="./assets/images/home/img-staff.png" alt="Staff" />
@@ -236,7 +236,7 @@
             </div>
           </div>
           <div class="button-container">
-            <a class="btn btn-outline-primary" href="./#contact" title="Contact us">按下確認鍵</a>
+            <a class="btn btn-outline-primary btn-contact" title="Contact us">按下確認鍵</a>
           </div>
           <img class="enter-vertical-blue" src="./assets/images/home/img-enter-vertical-blue.png" alt="ENTER" />
         </div>
@@ -266,7 +266,7 @@
                 <div class="award-from">- 第28屆「廣告流行語金句獎」</div>
               </div>
               <div class="button-container">
-                <a class="btn btn-outline-primary" href="./#contact" title="Contact us">按下確認鍵</a>
+                <a class="btn btn-outline-primary btn-contact" title="Contact us">按下確認鍵</a>
               </div>
             </div>
           </div>
@@ -333,7 +333,7 @@
             </div>
           </div>
           <div class="button-container">
-            <a class="btn btn-outline-primary" href="./#contact" title="Contact us">按下確認鍵</a>
+            <a class="btn btn-outline-primary btn-contact" title="Contact us">按下確認鍵</a>
           </div>
         </div>
       </section>
@@ -356,7 +356,7 @@
             <div class="contact-block">
               <div>(02)8521-2774</div>
               <div><a href="mailto:enter@enterimc.com" title="enter@enterimc.com">enter@enterimc.com</a></div>
-              <div>Line:van82121</div>
+              <div>@898fkbxz</div>
               <a class="btn-add" href="https://lin.ee/g9LOCV2">
                 <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友">
               </a>
@@ -411,6 +411,13 @@
         }
         e.preventDefault();
         scrollContainer.scrollLeft += e.deltaY;
+      });
+    </script>
+    <script>
+      $(function() {
+        $('.btn-contact').click(function() {
+          $('#contact .white-board').get(0).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
       });
     </script>
   </body>
