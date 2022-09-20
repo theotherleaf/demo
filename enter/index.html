@@ -403,18 +403,37 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      var scrollContainer = document.querySelector("#home");
-      scrollContainer.addEventListener("wheel", (e) => {
-        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        if (width < 768) {
-          return;
-        }
-        e.preventDefault();
-        scrollContainer.scrollLeft += e.deltaY;
-      });
-    </script>
-    <script>
       $(function() {
+        var scrollContainer = document.querySelector("#home");
+        scrollContainer.addEventListener("wheel", (e) => {
+          var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+          if (width < 768) {
+            return;
+          }
+          e.preventDefault();
+          scrollContainer.scrollLeft += e.deltaY;
+        });
+
+        var clientY;
+        var deltaY;
+        scrollContainer.addEventListener('touchstart', (e) => {
+          var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+          if (width < 768) {
+            return;
+          }
+          e.preventDefault();
+          clientY = e.touches[0].pageY;
+        }, false);
+        scrollContainer.addEventListener('touchmove', (e) => {
+          var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+          if (width < 768) {
+            return;
+          }
+          e.preventDefault();
+          deltaY = clientY - e.changedTouches[0].pageY;
+          scrollContainer.scrollLeft += (deltaY * 0.5);
+        }, false);
+
         $('.btn-contact').click(function() {
           $('#contact .white-board').get(0).scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
